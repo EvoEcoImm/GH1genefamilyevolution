@@ -1,0 +1,5406 @@
+
+PSN48334.1_Blattella_germanica
+           /-Crassostrea virginica
+          |
+          |                            /-Cryptotermes secundus
+          |                 /Termitoidae
+-Protostomia       /Blattodea          \-Zootermopsis nevadensis
+          |       |        |
+          |       |         \-Blattella germanica
+          |       |
+          |       |                    /-Galleria mellonella
+           \Neoptera          /Pyralidae
+                  |-Obtectomera        \-Amyelois transitella
+                  |          |
+                  |           \-Vanessa tameamea
+                  |
+                   \-Apolygus lucorum
+
+XP_030039701.1_Manduca_sexta
+                      /-Bombyx mandarina
+           /Bombycoidea
+          |           \-Manduca sexta
+-Obtectomera
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+           \Noctuidae          \-Heliothis virescens
+                   |
+                    \-Trichoplusia ni
+
+XP_008189705.2_Acyrthosiphon_pisum
+                          /-Salmonella sp. 3DZ2-4SM
+                  /Bacteria
+-cellular organisms       \-Staphylococcus sciuri
+                 |
+                  \-Acyrthosiphon pisum
+
+XP_027839550.1_Aphis_gossypii
+                      /-Aphis glycines
+                     |
+                 /Aphis-Aphis craccivora
+                |    |
+                |     \-Aphis gossypii
+         /Aphidini
+        |       |--Rhopalosiphum maidis
+        |       |
+-Aphidinae       \-Melanaphis sacchari
+        |
+        |            /-Myzus persicae
+         \Macrosiphini
+                     \-Acyrthosiphon pisum
+
+XP_023289587.1_Orussus_abietinus
+           /-Orussus abietinus
+          |
+          |--Cephus cinctus
+-Hymenoptera
+          |    /-Apis mellifera
+          |   |
+           \Apis-Apis cerana
+              |
+               \-Apis florea
+
+XP_001659854.2_Aedes_aegypti
+                  /-Aedes albopictus
+         /Stegomyia
+-Culicinae        \-Aedes aegypti
+        |
+         \-Culex quinquefasciatus
+
+XP_011554532.1_Plutella_xylostella
+                                       /-Helicoverpa armigera
+                            /Heliothinae
+                   /Noctuidae          \-Heliothis virescens
+                  |        |
+                  |         \-Trichoplusia ni
+        /Obtectomera
+       |          |--Amyelois transitella
+-Ditrysia         |
+       |           \-Manduca sexta
+       |
+        \-Plutella xylostella
+
+XP_011566720.1_Plutella_xylostella
+-EnterobacterEnterobacter cloacae complex-Enterobacter kobei
+
+XP_028029942.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+-Obtectomera          \-Manduca sexta
+          |
+           \-Helicoverpa armigera
+
+XP_030767112.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_028132061.1_virgifera_virgifera
+                          /-Anoplophora glabripennis
+            /Chrysomeloidea
+-Cucujiformia             \-Diabrotica virgifera virgifera
+           |
+            \-Tribolium castaneum
+
+XP_030026267.1_Manduca_sexta
+           /-Manduca sexta
+-Obtectomera
+           \-Arctia plantaginis
+
+XP_001952406.2_Acyrthosiphon_pisum
+                      /-Aphis craccivora
+                 /Aphis
+         /Aphidini    \-Aphis gossypii
+        |       |
+-Aphidinae       \-Rhopalosiphum maidis
+        |
+        |            /-Myzus persicae
+         \Macrosiphini
+                     \-Acyrthosiphon pisum
+
+XP_015431062.1_Dufourea_novaeangliae
+                 /-Dufourea novaeangliae
+                |
+       /Halictidae-Nomia melanderi
+      |         |
+      |          \-Megalopta genalis
+      |
+      |          /-Apis cerana
+-Apoidea     /Apis
+      |-Apidae   \-Apis florea
+      |     |
+      |      \-Bombus terrestris
+      |
+      |     /-Osmia lignaria
+       \Osmia
+            \-Osmia bicornis bicornis
+
+XP_018571865.1_Anoplophora_glabripennis
+                                   /-Anoplophora glabripennis
+                     /Chrysomeloidea
+                    |              \-Callosobruchus maculatus
+                    |
+         /Cucujiformia            /-Asbolus verrucosus
+        |           |-Tenebrionidae
+        |           |             \-Tribolium castaneum
+        |           |
+        |            \-Aethina tumida
+-Polyphaga
+        |           /-Ignelater luminosus
+        |-Elateroidea
+        |           \-Photinus pyralis
+        |
+         \-Nicrophorus vespilloides
+
+XP_021197047.1_Helicoverpa_armigera
+                              /-Helicoverpa armigera
+                   /Heliothinae
+                  |           \-Heliothis virescens
+          /Noctuidae
+         |        |--Trichoplusia ni
+-Noctuoidea       |
+         |         \-Spodoptera litura
+         |
+          \-Arctia plantaginis
+
+XP_972082.1_Tribolium_castaneum
+                          /-Anoplophora glabripennis
+            /Chrysomeloidea
+           |              \-Chrysomela lapponica
+           |
+-Cucujiformia            /-Asbolus verrucosus
+           |-Tenebrionidae
+           |             \-Tribolium castaneum
+           |
+            \-Aethina tumida
+
+XP_018567975.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_021946758.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_021965239.1_Folsomia_candida
+                           /-Folsomia candida
+           /Entomobryomorpha
+-Protostomia               \-Orchesella cincta
+          |
+           \-Lingula anatina
+
+XP_017465109.1_Rhagoletis_zephyria
+                                            /-Bactrocera latifrons
+                                  /Bactrocera
+                        /Bactrocera         \-Bactrocera dorsalis
+                       |         |
+                  /Dacini         \-Bactrocera oleae
+                 |     |
+           /Dacinae     \-Zeugodacus cucurbitae
+          |      |
+-Tephritidae      \-Ceratitis capitata
+          |
+           \-Rhagoletis zephyria
+
+XP_021197058.1_Helicoverpa_armigera
+                               /-Helicoverpa armigera
+                    /Heliothinae
+                   |           \-Heliothis virescens
+           /Noctuidae
+          |        |--Trichoplusia ni
+-Obtectomera       |
+          |         \-Spodoptera litura
+          |
+           \-Manduca sexta
+
+XP_011551788.1_Plutella_xylostella
+                                /-Vanessa tameamea
+                   /Papilionoidea
+                  |             \-Pieris rapae
+                  |
+                  |          /-Amyelois transitella
+        /ObtectomeraPyraloidea
+       |          |          \-Chilo suppressalis
+       |          |
+       |          |           /-Helicoverpa armigera
+-Ditrysia          \Heliothinae
+       |                      \-Heliothis virescens
+       |
+       |--Plutella xylostella
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_972032.1_Tribolium_castaneum
+                         /-Asbolus verrucosus
+            /Tenebrionidae
+           |             \-Tribolium castaneum
+-Cucujiformia
+           |--Aethina tumida
+           |
+            \-Anoplophora glabripennis
+
+XP_019755905.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_015837060.1_Tribolium_castaneum
+                                /-Tribolium castaneum
+                    /Cucujiformia
+                   |            \-Anoplophora glabripennis
+        /Holometabola
+       |           |                    /-Galleria mellonella
+       |           |           /Pyralidae
+-Neoptera           \Obtectomera        \-Amyelois transitella
+       |                      |
+       |                       \-Manduca sexta
+       |
+        \-Zootermopsis nevadensis
+
+XP_975666.1_Tribolium_castaneum
+                                          /-Asbolus verrucosus
+                                         |
+                             /Tenebrionidae-Tenebrio molitor
+                            |            |
+                 /Cucujiformia            \-Tribolium castaneum
+                |           |
+        /Polyphaga           \-Aethina tumida
+       |        |
+-Neoptera        \-Onthophagus taurus
+       |
+        \-Cryptotermes secundus
+
+XP_021965243.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_013188038.1_Amyelois_transitella
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+           /Papilionoidea          \-Bicyclus anynana
+          |            |
+          |             \-Pieris rapae
+          |
+          |          /-Amyelois transitella
+          |-Pyraloidea
+          |          \-Chilo suppressalis
+-Obtectomera
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+          |-Noctuidae          \-Heliothis virescens
+          |        |
+          |         \-Trichoplusia ni
+          |
+           \-Manduca sexta
+
+XP_028142171.1_virgifera_virgifera
+                                      /-Anoplophora glabripennis
+                        /Chrysomeloidea
+            /Cucujiformia             \-Diabrotica virgifera virgifera
+           |           |
+           |            \-Tribolium castaneum
+           |
+           |                          /-Papilio polytes
+-Holometabola                        |
+           |                   /Papilio-Papilio machaon
+           |                  |      |
+           |                  |       \-Papilio xuthus
+           |        /Obtectomera
+           |       |          |--Amyelois transitella
+            \Ditrysia         |
+                   |           \-Manduca sexta
+                   |
+                    \-Hyposmocoma kahamanoa
+
+XP_026764169.1_Galleria_mellonella
+                               /-Papilio polytes
+                              |
+                        /Papilio-Papilio machaon
+                       |      |
+           /Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Pieris rapae
+          |
+          |         /-Galleria mellonella
+-ObtectomeraPyralidae
+          |         \-Amyelois transitella
+          |
+          |--Trichoplusia ni
+          |
+           \-Manduca sexta
+
+XP_011558678.1_Plutella_xylostella
+                   /-Ostrinia furnacalis
+                  |
+                  |--Spodoptera litura
+        /Obtectomera
+       |          |--Papilio polytes
+-Ditrysia         |
+       |           \-Manduca sexta
+       |
+        \-Plutella xylostella
+
+XP_021197068.1_Helicoverpa_armigera
+                               /-Helicoverpa armigera
+                    /Heliothinae
+                   |           \-Heliothis virescens
+           /Noctuidae
+          |        |--Trichoplusia ni
+          |        |
+-Obtectomera        \-Spodoptera litura
+          |
+          |--Pieris rapae
+          |
+           \-Manduca sexta
+
+XP_028132806.1_virgifera_virgifera
+                        /-Phyllotreta striolata
+             /Galerucinae
+-Chrysomelidae          \-Diabrotica virgifera virgifera
+            |
+             \-Chrysomela lapponica
+
+XP_001850321.1_Culex_quinquefasciatus
+                           /-Aedes aegypti
+                  /Stegomyia
+         /Culicinae        \-Aedes albopictus
+        |        |
+        |         \-Culex quinquefasciatus
+-Culicidae
+        |         /-Anopheles gambiae str. PEST
+        |        |
+         \Anopheles-Anopheles darlingi
+                 |
+                  \-Anopheles sinensis
+
+XP_014371456.1_Papilio_machaon
+             /-Leptidea sinapis
+            |
+-Papilionoidea      /-Papilio polytes
+            |      |
+             \Papilio-Papilio machaon
+                   |
+                    \-Papilio xuthus
+
+XP_018320791.1_Agrilus_planipennis
+                         /-Agrilus planipennis
+            /Elateriformia
+-Holometabola            \-Ignelater luminosus
+           |
+            \-Papilio machaon
+
+XP_316460.3_str._PEST
+                  /-Anopheles gambiae str. PEST
+                 |
+         /Anopheles-Anopheles darlingi
+        |        |
+-Culicidae        \-Anopheles sinensis
+        |
+        |         /-Aedes aegypti
+         \Stegomyia
+                  \-Aedes albopictus
+
+XP_310611.5_str._PEST
+                                       /-Aedes aegypti
+                              /Stegomyia
+                     /Culicinae        \-Aedes albopictus
+                    |        |
+                    |         \-Culex quinquefasciatus
+            /Culicidae
+           |        |         /-Anopheles gambiae str. PEST
+           |        |        |
+-Culicomorpha        \Anopheles-Anopheles darlingi
+           |                 |
+           |                  \-Anopheles sinensis
+           |
+            \-Clunio marinus
+
+XP_011560972.1_Plutella_xylostella
+                   /-Chilo suppressalis
+        /Obtectomera
+       |           \-Papilio xuthus
+-Ditrysia
+       |--Plutella xylostella
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_026319443.1_Hyposmocoma_kahamanoa
+                                      /-Helicoverpa armigera
+                             /Noctuidae
+                   /Noctuoidea        \-Spodoptera litura
+                  |         |
+                  |          \-Arctia plantaginis
+                  |
+                  |--Ostrinia furnacalis
+                  |
+        /Obtectomera      /-Papilio machaon
+       |          |      |
+       |          |-Papilio-Papilio polytes
+       |          |      |
+-Ditrysia         |       \-Papilio xuthus
+       |          |
+       |           \-Manduca sexta
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_018565416.1_Anoplophora_glabripennis
+                                                    /-Chrysomela lapponica
+                                       /Chrysomelinae
+                          /Chrysomelidae            \-Leptinotarsa decemlineata
+                         |            |
+            /Chrysomeloidea            \-Diabrotica virgifera virgifera
+           |             |
+-Cucujiformia             \-Anoplophora glabripennis
+           |
+            \-Aethina tumida
+
+XP_001650340.2_Aedes_aegypti
+                  /-Aedes albopictus
+         /Stegomyia
+-Culicinae        \-Aedes aegypti
+        |
+         \-Culex quinquefasciatus
+
+XP_022913994.1_Onthophagus_taurus
+                      /-Agrilus planipennis
+         /Elateriformia
+        |             \-Ignelater luminosus
+        |
+-Polyphaga-Nicrophorus vespilloides
+        |
+        |--Onthophagus taurus
+        |
+         \-Phyllotreta striolata
+
+XP_019755936.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_022915568.1_Onthophagus_taurus
+                     /-Oryctes borbonicus
+         /Scarabaeidae
+-Polyphaga           \-Onthophagus taurus
+        |
+         \-Nicrophorus vespilloides
+
+XP_026292938.1_Frankliniella_occidentalis
+         /-Frankliniella occidentalis
+-Thripinae
+         \-Thrips palmi
+
+XP_011548965.1_Plutella_xylostella
+                                      /-Ostrinia furnacalis
+                             /Crambidae
+                   /Pyraloidea        \-Chilo suppressalis
+                  |         |
+                  |          \-Galleria mellonella
+                  |
+        /Obtectomera            /-Pieris rapae
+       |          |-Papilionoidea
+       |          |             \-Danaus plexippus plexippus
+       |          |
+-Ditrysia         |      /-Bombyx mori
+       |           \Bombyx
+       |                 \-Bombyx mandarina
+       |
+        \-Plutella xylostella
+
+XP_019757500.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_013188067.1_Amyelois_transitella
+                              /-Galleria mellonella
+                     /Pyralidae
+                    |         \-Amyelois transitella
+           /Pyraloidea
+          |         |         /-Ostrinia furnacalis
+          |          \Crambidae
+          |                   \-Chilo suppressalis
+          |
+          |           /-Vanessa tameamea
+-Obtectomera         |
+          |-Nymphalidae-Bicyclus anynana
+          |          |
+          |           \-Danaus plexippus plexippus
+          |
+          |--Helicoverpa armigera
+          |
+           \-Manduca sexta
+
+XP_030025072.1_Manduca_sexta
+                               /-Helicoverpa armigera
+                    /Heliothinae
+           /Noctuidae          \-Heliothis virescens
+          |        |
+          |         \-Spodoptera litura
+          |
+          |       /-Papilio machaon
+-ObtectomeraPapilio
+          |       \-Papilio xuthus
+          |
+          |--Amyelois transitella
+          |
+           \-Manduca sexta
+
+XP_014362019.1_Papilio_machaon
+                  /-Papilio xuthus
+                 |
+           /Papilio-Papilio machaon
+          |      |
+-Obtectomera      \-Papilio polytes
+          |
+           \-Manduca sexta
+
+XP_028151147.1_virgifera_virgifera
+                                      /-Phyllotreta striolata
+                           /Galerucinae
+              /Chrysomelidae          \-Diabrotica virgifera virgifera
+             |            |
+-Chrysomeloidea            \-Leptinotarsa decemlineata
+             |
+              \-Anoplophora glabripennis
+
+XP_014367814.1_Papilio_machaon
+                                           /-Papilio machaon
+                                    /Papilio
+                       /Papilionoidea      \-Papilio xuthus
+                      |            |
+                      |             \-Danaus plexippus plexippus
+            /Obtectomera
+           |          |--Helicoverpa armigera
+-Holometabola         |
+           |           \-Manduca sexta
+           |
+            \-Asbolus verrucosus
+
+XP_022833742.1_Spodoptera_litura
+                              /-Enterococcus moraviensis
+                             |
+                             |--Enterococcus haemoperoxidus
+                             |
+                             |--Enterococcus caccae
+                             |
+                  /Enterococcus-Enterococcus rotai
+                 |           |
+                 |           |--Enterococcus ureasiticus
+                 |           |
+-cellular organisms          |--Enterococcus silesiacus
+                 |           |
+                 |            \-Enterococcus sp. 7F3_DIV0205
+                 |
+                  \-Spodoptera litura
+
+XP_023310604.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_019756936.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_023952801.1_Bicyclus_anynana
+--Bicyclus anynana anynana
+
+XP_028153050.1_virgifera_virgifera
+                                      /-Phyllotreta striolata
+                           /Galerucinae
+              /Chrysomelidae          \-Diabrotica virgifera virgifera
+             |            |
+-Chrysomeloidea            \-Leptinotarsa decemlineata
+             |
+              \-Anoplophora glabripennis
+
+XP_028036762.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+-Obtectomera
+          |--Ostrinia furnacalis
+          |
+           \-Heliothis virescens
+
+XP_028146916.1_virgifera_virgifera
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+                          |             \-Leptinotarsa decemlineata
+              /Chrysomelidae
+             |            |           /-Phyllotreta striolata
+-Chrysomeloidea            \Galerucinae
+             |                        \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_030026240.1_Manduca_sexta
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+-Obtectomera          \-Manduca sexta
+          |
+           \-Spodoptera litura
+
+XP_018573700.1_Anoplophora_glabripennis
+            /-Aethina tumida
+           |
+-Cucujiformia-Tribolium castaneum
+           |
+            \-Anoplophora glabripennis
+
+XP_018573475.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_022827201.1_Spodoptera_litura
+                            /-Helicoverpa armigera
+                   /Noctuidae
+                  |         \-Spodoptera litura
+                  |
+                  |         /-Galleria mellonella
+                  |-Pyralidae
+        /Obtectomera        \-Amyelois transitella
+       |          |
+       |          |       /-Papilio polytes
+       |          |-Papilio
+-Ditrysia         |       \-Papilio machaon
+       |          |
+       |           \-Bombyx mori
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_018564640.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_008195643.1_Tribolium_castaneum
+                         /-Asbolus verrucosus
+            /Tenebrionidae
+-Cucujiformia            \-Tribolium castaneum
+           |
+            \-Aethina tumida
+
+XP_023723774.1_Cryptotermes_secundus
+                     /-Cryptotermes secundus
+                    |
+          /Termitoidae-Coptotermes formosanus
+         |          |
+-Blattoidea          \-Zootermopsis nevadensis
+         |
+          \-Periplaneta americana
+
+XP_028137807.1_virgifera_virgifera
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+              /Chrysomelidae            \-Leptinotarsa decemlineata
+             |            |
+-Chrysomeloidea            \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_025830272.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_023723772.1_Cryptotermes_secundus
+                          /-Coptotermes formosanus
+           /Rhinotermitidae
+          |               \-Reticulitermes flaviceps
+          |
+-Termitoidae             /-Neotermes koshunensis
+          |-Kalotermitidae
+          |              \-Cryptotermes secundus
+          |
+           \-Zootermopsis nevadensis
+
+XP_030032559.1_Manduca_sexta
+                                       /-Helicoverpa armigera
+                            /Heliothinae
+                   /Noctuidae          \-Heliothis virescens
+                  |        |
+                  |         \-Trichoplusia ni
+        /Obtectomera
+       |          |--Vanessa tameamea
+-Ditrysia         |
+       |           \-Manduca sexta
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_032788037.1_Daphnia_magna
+       /-Daphnia magna
+-Daphnia
+       \-Daphnia pulex
+
+XP_022915768.1_Onthophagus_taurus
+                      /-Asbolus verrucosus
+                     |
+         /Tenebrionidae-Tenebrio molitor
+        |            |
+        |             \-Tribolium castaneum
+        |
+-Polyphaga           /-Oryctes borbonicus
+        |-Scarabaeidae
+        |            \-Onthophagus taurus
+        |
+         \-Nicrophorus vespilloides
+
+XP_023723770.1_Cryptotermes_secundus
+                         /-Cryptotermes secundus
+           /Kalotermitidae
+          |              \-Neotermes koshunensis
+-Termitoidae
+          |--Coptotermes formosanus
+          |
+           \-Zootermopsis nevadensis
+
+XP_028146915.1_virgifera_virgifera
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+                          |             \-Leptinotarsa decemlineata
+              /Chrysomelidae
+             |            |           /-Phyllotreta striolata
+-Chrysomeloidea            \Galerucinae
+             |                        \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_011563308.1_Plutella_xylostella
+                                    /-Bombyx mori
+                              /Bombyx
+                   /Bombycoidea     \-Bombyx mandarina
+                  |          |
+                  |           \-Manduca sexta
+        /Obtectomera
+       |          |                   /-Spodoptera frugiperda
+       |          |         /Spodoptera
+-Ditrysia          \Noctuidae         \-Spodoptera litura
+       |                   |
+       |                    \-Helicoverpa armigera
+       |
+        \-Plutella xylostella
+
+XP_030020991.1_Manduca_sexta
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+          |
+          |         /-Trichoplusia ni
+-Obtectomera       |
+          |-Noctuidae-Spodoptera litura
+          |        |
+          |         \-Heliothis virescens
+          |
+           \-Amyelois transitella
+
+XP_014364862.1_Papilio_machaon
+                               /-Papilio machaon
+                              |
+                        /Papilio-Papilio polytes
+                       |      |
+           /Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Danaus plexippus plexippus
+-Obtectomera
+          |--Trichoplusia ni
+          |
+           \-Amyelois transitella
+
+XP_021952675.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_011557578.1_Plutella_xylostella
+                                       /-Helicoverpa armigera
+                            /Heliothinae
+                   /Noctuidae          \-Heliothis virescens
+                  |        |
+                  |         \-Trichoplusia ni
+        /Obtectomera
+       |          |--Amyelois transitella
+-Ditrysia         |
+       |           \-Manduca sexta
+       |
+        \-Plutella xylostella
+
+XP_022827260.1_Spodoptera_litura
+                    /-Helicoverpa armigera
+         /Heliothinae
+        |           \-Heliothis virescens
+-Noctuidae
+        |--Spodoptera litura
+        |
+         \-Trichoplusia ni
+
+XP_028028072.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+          |
+-Obtectomera        /-Trichoplusia ni
+          |-Noctuidae
+          |         \-Heliothis virescens
+          |
+           \-Amyelois transitella
+
+XP_002426209.1_humanus_corporis
+                                        /-Nilaparvata lugens
+                             /Delphacidae
+                    /Hemiptera          \-Laodelphax striatellus
+                   |        |
+                   |         \-Bemisia tabaci
+        /Paraneoptera
+       |           |--Pediculus humanus corporis
+       |           |
+       |            \-Thrips palmi
+       |
+       |                                /-Ignelater luminosus
+-Neoptera                    /Elateroidea
+       |            /Polyphaga          \-Photinus pyralis
+       |           |        |
+       |-Holometabola        \-Oryctes borbonicus
+       |           |
+       |            \-Bombyx mandarina
+       |
+        \-Cryptotermes secundus
+
+XP_021937620.1_Zootermopsis_nevadensis
+           /-Cryptotermes secundus
+-Termitoidae
+           \-Zootermopsis nevadensis
+
+XP_026277353.1_Frankliniella_occidentalis
+                               /-Nilaparvata lugens
+                    /Delphacidae
+                   |           \-Laodelphax striatellus
+        /Paraneoptera
+       |           |         /-Frankliniella occidentalis
+       |            \Thripinae
+-Neoptera                    \-Thrips palmi
+       |
+       |--Agrilus planipennis
+       |
+        \-Cryptotermes secundus
+
+XP_023721113.1_Cryptotermes_secundus
+                         /-Cryptotermes secundus
+           /Kalotermitidae
+          |              \-Neotermes koshunensis
+-Termitoidae
+          |--Coptotermes formosanus
+          |
+           \-Zootermopsis nevadensis
+
+XP_013200053.1_Amyelois_transitella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+-Obtectomera
+          |--Helicoverpa armigera
+          |
+           \-Manduca sexta
+
+XP_026322239.1_Hyposmocoma_kahamanoa
+        /-Hyposmocoma kahamanoa
+       |
+-Ditrysia      /-Papilio polytes
+       |      |
+        \Papilio-Papilio machaon
+              |
+               \-Papilio xuthus
+
+XP_023935498.1_Bicyclus_anynana
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+                       |           \-Danaus plexippus plexippus
+           /Papilionoidea
+          |            |--Papilio polytes
+          |            |
+          |             \-Pieris rapae
+          |
+-Obtectomera                  /-Galleria mellonella
+          |          /Pyralidae
+          |-Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+          |
+           \-Manduca sexta
+
+XP_001850319.1_Culex_quinquefasciatus
+                  /-Aedes albopictus
+         /Stegomyia
+-Culicinae        \-Aedes aegypti
+        |
+         \-Culex quinquefasciatus
+
+XP_001850320.1_Culex_quinquefasciatus
+                  /-Aedes albopictus
+         /Stegomyia
+-Culicinae        \-Aedes aegypti
+        |
+         \-Culex quinquefasciatus
+
+XP_014362958.1_Papilio_machaon
+                               /-Helicoverpa armigera
+                    /Heliothinae
+                   |           \-Heliothis virescens
+           /Noctuidae
+          |        |--Trichoplusia ni
+          |        |
+          |         \-Spodoptera litura
+-Obtectomera
+          |--Ostrinia furnacalis
+          |
+          |       /-Papilio machaon
+          |      |
+           \Papilio-Papilio polytes
+                 |
+                  \-Papilio xuthus
+
+XP_030026885.1_Manduca_sexta
+                              /-Helicoverpa armigera
+                             |
+                     /Noctuidae-Trichoplusia ni
+                    |        |
+           /Noctuoidea        \-Spodoptera litura
+          |         |
+          |          \-Arctia plantaginis
+          |
+-Obtectomera-Ostrinia furnacalis
+          |
+          |--Papilio xuthus
+          |
+           \-Manduca sexta
+
+XP_026755414.1_Galleria_mellonella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Chilo suppressalis
+          |
+          |                        /-Vanessa tameamea
+          |             /Nymphalidae
+          |            |           \-Danaus plexippus plexippus
+-ObtectomeraPapilionoidea
+          |            |       /-Papilio polytes
+          |             \Papilio
+          |                    \-Papilio xuthus
+          |
+          |--Trichoplusia ni
+          |
+           \-Manduca sexta
+
+XP_001650404.2_Aedes_aegypti
+                                       /-Aedes aegypti
+                              /Stegomyia
+                     /Culicinae        \-Aedes albopictus
+                    |        |
+                    |         \-Culex quinquefasciatus
+            /Culicidae
+           |        |         /-Anopheles gambiae str. PEST
+           |        |        |
+-Culicomorpha        \Anopheles-Anopheles darlingi
+           |                 |
+           |                  \-Anopheles sinensis
+           |
+            \-Clunio marinus
+
+XP_021965263.1_Folsomia_candida
+                           /-Folsomia candida
+           /Entomobryomorpha
+-Protostomia               \-Orchesella cincta
+          |
+           \-Lingula anatina
+
+XP_022825294.1_Spodoptera_litura
+                              /-Helicoverpa armigera
+                             |
+                     /Noctuidae-Trichoplusia ni
+                    |        |
+           /Noctuoidea        \-Spodoptera litura
+          |         |
+          |          \-Arctia plantaginis
+          |
+          |                 /-Bombyx mori
+-Obtectomera          /Bombyx
+          |-Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+          |
+          |           /-Vanessa tameamea
+           \Nymphalidae
+                      \-Danaus plexippus plexippus
+
+XP_021952145.1_Folsomia_candida
+                                                /-Aethina tumida
+                                    /Cucujiformia
+                                   |            \-Chrysomela lapponica
+                            /Neoptera
+                           |       |                          /-Coptotermes formosanus
+                           |       |           /Rhinotermitidae
+                   /Pterygota       \Termitoidae              \-Reticulitermes flavipes
+                  |        |                  |
+                  |        |                   \-Nasutitermes takasagoensis
+           /Hexapoda       |
+          |       |         \-Cloeon dipterum
+-Protostomia      |
+          |        \-Folsomia candida
+          |
+           \-Capitella teleta
+
+XP_022827607.1_Spodoptera_litura
+                              /-Ostrinia furnacalis
+                     /Crambidae
+           /Pyraloidea        \-Chilo suppressalis
+          |         |
+          |          \-Galleria mellonella
+          |
+-Obtectomera                             /-Helicoverpa armigera
+          |                   /Heliothinae
+          |                  |           \-Heliothis virescens
+          |          /Noctuidae
+          |         |        |--Trichoplusia ni
+           \Noctuoidea       |
+                    |         \-Spodoptera litura
+                    |
+                     \-Arctia plantaginis
+
+XP_026323169.1_Hyposmocoma_kahamanoa
+                                      /-Ostrinia furnacalis
+                             /Crambidae
+                   /Pyraloidea        \-Chilo suppressalis
+                  |         |
+                  |          \-Galleria mellonella
+                  |
+        /Obtectomera            /-Pieris rapae
+       |          |-Papilionoidea
+       |          |             \-Danaus plexippus plexippus
+       |          |
+-Ditrysia         |      /-Bombyx mori
+       |           \Bombyx
+       |                 \-Bombyx mandarina
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_014362016.1_Papilio_machaon
+       /-Papilio machaon
+      |
+-Papilio-Papilio polytes
+      |
+       \-Papilio xuthus
+
+XP_032529519.1_plexippus_plexippus
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+                       |           \-Danaus plexippus plexippus
+           /Papilionoidea
+          |            |       /-Papilio polytes
+          |            |      |
+          |             \Papilio-Papilio machaon
+          |                   |
+-Obtectomera                   \-Papilio xuthus
+          |
+          |         /-Galleria mellonella
+          |-Pyralidae
+          |         \-Amyelois transitella
+          |
+           \-Manduca sexta
+
+XP_022833294.1_Spodoptera_litura
+                              /-Enterococcus moraviensis
+                             |
+                             |--Enterococcus wangshanyuanii
+                             |
+                             |                         /-Enterococcus sp. 7F3_DIV0205
+                             |-unclassified Enterococcus
+                  /Enterococcus                        \-Enterococcus sp. 9D6_DIV0238
+                 |           |
+                 |           |--Enterococcus ureasiticus
+                 |           |
+-cellular organisms          |--Enterococcus silesiacus
+                 |           |
+                 |            \-Enterococcus termitis
+                 |
+                  \-Spodoptera litura
+
+XP_017484266.1_Rhagoletis_zephyria
+                                            /-Bactrocera latifrons
+                                  /Bactrocera
+                        /Bactrocera         \-Bactrocera dorsalis
+                       |         |
+                  /Dacini         \-Bactrocera oleae
+                 |     |
+           /Dacinae     \-Zeugodacus cucurbitae
+          |      |
+-Tephritidae      \-Ceratitis capitata
+          |
+           \-Rhagoletis zephyria
+
+XP_023289585.1_Orussus_abietinus
+           /-Orussus abietinus
+          |
+          |--Cephus cinctus
+-Hymenoptera
+          |    /-Apis mellifera
+          |   |
+           \Apis-Apis cerana
+              |
+               \-Apis florea
+
+XP_026279277.1_Frankliniella_occidentalis
+                                      /-Oryctes borbonicus
+                          /Scarabaeidae
+                         |            \-Onthophagus taurus
+                 /Polyphaga
+                |        |--Agrilus planipennis
+                |        |
+         /Neoptera        \-Nicrophorus vespilloides
+        |       |
+        |       |         /-Frankliniella occidentalis
+-Pterygota       \Thripinae
+        |                 \-Thrips palmi
+        |
+         \-Cloeon dipterum
+
+XP_014367803.1_Papilio_machaon
+       /-Papilio machaon
+      |
+-Papilio-Papilio polytes
+      |
+       \-Papilio xuthus
+
+XP_022187263.1_Nilaparvata_lugens
+                            /-Nilaparvata lugens
+                 /Delphacidae
+        /Hemiptera          \-Laodelphax striatellus
+       |        |
+       |         \-Bemisia tabaci
+-Neoptera
+       |           /-Cryptotermes secundus
+       |          |
+        \Termitoidae-Coptotermes formosanus
+                  |
+                   \-Zootermopsis nevadensis
+
+XP_017782710.1_Nicrophorus_vespilloides
+                     /-Oryctes borbonicus
+         /Scarabaeidae
+        |            \-Onthophagus taurus
+        |
+-Polyphaga-Ignelater luminosus
+        |
+        |--Nicrophorus vespilloides
+        |
+         \-Tribolium castaneum
+
+XP_022833885.1_Spodoptera_litura
+                              /-Enterococcus ureilyticus
+                             |
+                             |--Enterococcus wangshanyuanii
+                             |
+                             |--Enterococcus rotai
+                             |
+                  /Enterococcus                        /-Enterococcus sp. 7F3_DIV0205
+                 |           |-unclassified Enterococcus
+                 |           |                         \-Enterococcus sp. 12C11_DIV0727
+                 |           |
+-cellular organisms          |--Enterococcus quebecensis
+                 |           |
+                 |            \-Enterococcus silesiacus
+                 |
+                  \-Spodoptera litura
+
+XP_028040485.1_Bombyx_mandarina
+                        /-Vanessa tameamea
+           /Papilionoidea
+          |             \-Pieris rapae
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+          |-Bombycoidea     \-Bombyx mandarina
+-Obtectomera         |
+          |           \-Manduca sexta
+          |
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+          |        |           \-Heliothis virescens
+           \Noctuidae
+                   |--Trichoplusia ni
+                   |
+                    \-Spodoptera litura
+
+XP_028146876.1_virgifera_virgifera
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+                          |             \-Leptinotarsa decemlineata
+              /Chrysomelidae
+             |            |           /-Phyllotreta striolata
+-Chrysomeloidea            \Galerucinae
+             |                        \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_018320216.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_018332984.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_025828888.1_Agrilus_planipennis
+                                 /-Ignelater luminosus
+                      /Elateroidea
+         /Elateriformia          \-Photinus pyralis
+        |            |
+        |             \-Agrilus planipennis
+        |
+-Polyphaga           /-Tribolium castaneum
+        |-Cucujiformia
+        |            \-Callosobruchus maculatus
+        |
+         \-Oryctes borbonicus
+
+XP_023312869.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_018572133.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_023310664.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_008195645.1_Tribolium_castaneum
+                         /-Asbolus verrucosus
+            /Tenebrionidae
+-Cucujiformia            \-Tribolium castaneum
+           |
+            \-Anoplophora glabripennis
+
+XP_021959021.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_018320184.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_019764449.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_030753325.1_Sitophilus_oryzae
+                            /-Lottia gigantea
+                    /Mollusca
+                   |        \-Crassostrea virginica
+                   |
+         /Protostomia                               /-Sitophilus oryzae
+        |          |                    /Cucujiformia
+        |          |        /Holometabola           \-Anoplophora glabripennis
+        |          |       |           |
+-Bilateria          \Neoptera           \-Hyposmocoma kahamanoa
+        |                  |
+        |                   \-Zootermopsis nevadensis
+        |
+         \-Manacus vitellinus
+
+XP_023947354.1_Bicyclus_anynana
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+                       |           \-Bicyclus anynana
+           /Papilionoidea
+          |            |       /-Papilio polytes
+          |            |      |
+          |             \Papilio-Papilio machaon
+-Obtectomera                  |
+          |                    \-Papilio xuthus
+          |
+          |         /-Galleria mellonella
+           \Pyralidae
+                    \-Amyelois transitella
+
+XP_021963506.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_018320233.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_026758988.2_Galleria_mellonella
+                    /-Galleria mellonella
+           /Pyralidae
+          |         \-Amyelois transitella
+          |
+          |       /-Papilio polytes
+-Obtectomera     |
+          |-Papilio-Papilio machaon
+          |      |
+          |       \-Papilio xuthus
+          |
+           \-Manduca sexta
+
+XP_023311344.1_Anoplophora_glabripennis
+                                      /-Anoplophora glabripennis
+                        /Chrysomeloidea
+                       |              \-Diabrotica virgifera virgifera
+            /Cucujiformia
+           |           |--Sitophilus oryzae
+           |           |
+           |            \-Tribolium castaneum
+           |
+-Holometabola                   /-Galleria mellonella
+           |           /Pyralidae
+           |-Obtectomera        \-Amyelois transitella
+           |          |
+           |           \-Manduca sexta
+           |
+            \-Aedes aegypti
+
+XP_023935495.1_Bicyclus_anynana
+                        /-Vanessa tameamea
+                       |
+             /Nymphalidae-Bicyclus anynana
+            |          |
+-Papilionoidea          \-Danaus plexippus plexippus
+            |
+             \-Pieris rapae
+
+XP_021200129.1_Helicoverpa_armigera
+                      /-Bombyx mandarina
+           /Bombycoidea
+          |           \-Manduca sexta
+          |
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+-Obtectomera       |           \-Heliothis virescens
+          |-Noctuidae
+          |        |--Trichoplusia ni
+          |        |
+          |         \-Spodoptera litura
+          |
+           \-Papilio polytes
+
+XP_031768073.1_Galleria_mellonella
+                                          /-Ostrinia furnacalis
+                                /Pyraloidea
+                               |          \-Galleria mellonella
+                               |
+                     /Obtectomera-Helicoverpa armigera
+                    |          |
+                    |          |--Leptidea sinapis
+         /Holometabola         |
+        |           |           \-Manduca sexta
+-Bilateria          |
+        |            \-Tribolium castaneum
+        |
+         \-Camelus dromedarius
+
+XP_011567357.1_Plutella_xylostella
+                                    /Enterobacter-Enterobacter roggenkampii
+                  /Enterobacteriaceae
+-cellular organisms                 \-Escherichia coli
+                 |
+                  \-Plutella xylostella
+
+XP_021965237.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_026277354.1_Frankliniella_occidentalis
+                             /-Frankliniella occidentalis
+                    /Thripinae
+        /Paraneoptera        \-Thrips palmi
+       |           |
+       |            \-Laodelphax striatellus
+       |
+-Neoptera        /-Agrilus planipennis
+       |-Polyphaga
+       |         \-Onthophagus taurus
+       |
+        \-Cryptotermes secundus
+
+XP_023950607.1_Bicyclus_anynana
+           /-Vanessa tameamea
+-Nymphalidae
+           \-Bicyclus anynana
+
+XP_011559165.1_Plutella_xylostella
+                   /-Chilo suppressalis
+        /Obtectomera
+       |           \-Papilio xuthus
+-Ditrysia
+       |--Plutella xylostella
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_013200045.1_Amyelois_transitella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+-Obtectomera
+          |--Papilio xuthus
+          |
+           \-Manduca sexta
+
+XP_018565412.1_Anoplophora_glabripennis
+                          /-Anoplophora glabripennis
+            /Chrysomeloidea
+-Cucujiformia             \-Chrysomela lapponica
+           |
+            \-Aethina tumida
+
+XP_022913989.1_Onthophagus_taurus
+                     /-Aethina tumida
+         /Cucujiformia
+        |            \-Asbolus verrucosus
+        |
+-Polyphaga-Ignelater luminosus
+        |
+        |--Nicrophorus vespilloides
+        |
+         \-Onthophagus taurus
+
+XP_026323140.1_Hyposmocoma_kahamanoa
+        /-Hyposmocoma kahamanoa
+       |
+-Ditrysia      /-Papilio polytes
+       |      |
+        \Papilio-Papilio machaon
+              |
+               \-Papilio xuthus
+
+XP_013194729.1_Amyelois_transitella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+          |
+          |         /-Helicoverpa armigera
+-ObtectomeraNoctuidae
+          |         \-Spodoptera litura
+          |
+          |       /-Papilio machaon
+          |      |
+           \Papilio-Papilio polytes
+                 |
+                  \-Papilio xuthus
+
+XP_028036782.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+-Obtectomera          \-Manduca sexta
+          |
+           \-Arctia plantaginis
+
+XP_028139021.1_virgifera_virgifera
+                                      /-Phyllotreta striolata
+                           /Galerucinae
+              /Chrysomelidae          \-Diabrotica virgifera virgifera
+             |            |
+-Chrysomeloidea            \-Leptinotarsa decemlineata
+             |
+              \-Anoplophora glabripennis
+
+XP_028037389.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+-Obtectomera          \-Manduca sexta
+          |
+          |          /-Spodoptera litura
+           \Noctuoidea
+                     \-Arctia plantaginis
+
+XP_021191415.1_Helicoverpa_armigera
+                    /-Helicoverpa armigera
+         /Heliothinae
+-Noctuidae          \-Heliothis virescens
+        |
+         \-Spodoptera litura
+
+XP_032788031.1_Daphnia_magna
+       /-Daphnia magna
+-Daphnia
+       \-Daphnia pulex
+
+XP_023948991.1_Bicyclus_anynana
+                                           /-Vanessa tameamea
+                                          |
+                                /Nymphalidae-Bicyclus anynana
+                               |          |
+                               |           \-Danaus plexippus plexippus
+                               |
+                   /Papilionoidea      /-Papilio polytes
+                  |            |-Papilio
+                  |            |       \-Papilio xuthus
+        /Obtectomera           |
+       |          |             \-Pieris rapae
+-Ditrysia         |
+       |           \-Manduca sexta
+       |
+        \-Plutella xylostella
+
+XP_028132804.1_virgifera_virgifera
+                        /-Phyllotreta striolata
+             /Galerucinae
+-Chrysomelidae          \-Diabrotica virgifera virgifera
+            |
+             \-Chrysomela lapponica
+
+XP_027839750.1_Aphis_gossypii
+                      /-Aphis craccivora
+                 /Aphis
+                |     \-Aphis gossypii
+         /Aphidini
+        |       |--Rhopalosiphum maidis
+        |       |
+-Aphidinae       \-Melanaphis sacchari
+        |
+        |            /-Myzus persicae
+         \Macrosiphini
+                     \-Acyrthosiphon pisum
+
+XP_033609442.1_Cryptotermes_secundus
+                            /-Cryptotermes secundus
+                 /Termitoidae
+        /Blattodea          \-Zootermopsis nevadensis
+       |        |
+-Neoptera        \-Blattella germanica
+       |
+       |           /-Galleria mellonella
+        \Obtectomera
+                   \-Spodoptera litura
+
+XP_021191447.1_Helicoverpa_armigera
+                            /-Helicoverpa armigera
+                   /Noctuidae
+                  |         \-Spodoptera litura
+                  |
+                  |         /-Galleria mellonella
+        /ObtectomeraPyralidae
+       |          |         \-Amyelois transitella
+       |          |
+-Ditrysia         |--Bombyx mori
+       |          |
+       |           \-Papilio xuthus
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_022833531.1_Spodoptera_litura
+                              /-Enterococcus caccae
+                             |
+                  /Enterococcus                        /-Enterococcus sp. 7F3_DIV0205
+                 |           |                        |
+                 |            \unclassified Enterococcus-Enterococcus sp. 9D6_DIV0238
+-cellular organisms                                   |
+                 |                                     \-Enterococcus sp. 12C11_DIV0727
+                 |
+                  \-Spodoptera litura
+
+XP_032529517.1_plexippus_plexippus
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+                       |           \-Danaus plexippus plexippus
+           /Papilionoidea
+          |            |        /-Leptidea sinapis
+-Obtectomera            \Pieridae
+          |                     \-Pieris rapae
+          |
+           \-Ostrinia furnacalis
+
+XP_028138419.1_virgifera_virgifera
+                                      /-Phyllotreta striolata
+                           /Galerucinae
+              /Chrysomelidae          \-Diabrotica virgifera virgifera
+             |            |
+-Chrysomeloidea            \-Leptinotarsa decemlineata
+             |
+              \-Anoplophora glabripennis
+
+XP_011561511.1_Plutella_xylostella
+                             /-Ostrinia furnacalis
+                   /Pyraloidea
+                  |          \-Galleria mellonella
+                  |
+                  |                        /-Vanessa tameamea
+                  |             /Nymphalidae
+        /ObtectomeraPapilionoidea          \-Danaus plexippus plexippus
+       |          |            |
+       |          |             \-Papilio polytes
+       |          |
+-Ditrysia         |--Helicoverpa armigera
+       |          |
+       |           \-Manduca sexta
+       |
+        \-Plutella xylostella
+
+XP_021923692.1_Zootermopsis_nevadensis
+                               /-Odontotermes formosanus
+                     /Termitidae
+                    |          \-Microcerotermes annandalei
+                    |
+          /Termitoidae-Cryptotermes secundus
+         |          |
+         |          |--Coptotermes formosanus
+-Blattoidea         |
+         |           \-Zootermopsis nevadensis
+         |
+          \-Periplaneta americana
+
+XP_014242467.1_Cimex_lectularius
+                            /-Nilaparvata lugens
+                 /Delphacidae
+                |           \-Laodelphax striatellus
+                |
+                |                              /-Apolygus lucorum
+                |                        /Mirini
+        /Hemiptera             /Cimicoidea     \-Lygus lineolaris
+       |        |             |         |
+       |        |-Panheteroptera         \-Cimex lectularius
+       |        |             |
+-Neoptera       |              \-Halyomorpha halys
+       |        |
+       |         \-Bemisia tabaci
+       |
+        \-Cryptotermes secundus
+
+XP_030767119.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_022833696.1_Spodoptera_litura
+                              /-Enterococcus haemoperoxidus
+                             |
+                             |-unclassified Enterococcus-Enterococcus sp. 4G2_DIV0659
+                             |
+                             |--Enterococcus caccae
+                             |
+                             |--Enterococcus rotai
+                  /Enterococcus
+                 |           |--Enterococcus ureasiticus
+                 |           |
+                 |           |--Enterococcus crotali
+-cellular organisms          |
+                 |           |--Enterococcus silesiacus
+                 |           |
+                 |            \-Enterococcus termitis
+                 |
+                  \-Spodoptera litura
+
+XP_022833843.1_Spodoptera_litura
+                              /-Enterococcus haemoperoxidus
+                             |
+                             |--Enterococcus caccae
+                             |
+                             |--Enterococcus faecium
+                             |
+                  /Enterococcus-Enterococcus rotai
+                 |           |
+                 |           |--Enterococcus quebecensis
+                 |           |
+-cellular organisms          |--Enterococcus silesiacus
+                 |           |
+                 |            \-Enterococcus sp. 7F3_DIV0205
+                 |
+                  \-Spodoptera litura
+
+XP_970224.1_Tribolium_castaneum
+                                   /-Anoplophora glabripennis
+                     /Chrysomeloidea
+                    |              \-Callosobruchus maculatus
+                    |
+         /Cucujiformia            /-Asbolus verrucosus
+        |           |-Tenebrionidae
+        |           |             \-Tribolium castaneum
+-Polyphaga          |
+        |            \-Aethina tumida
+        |
+        |           /-Ignelater luminosus
+         \Elateroidea
+                    \-Photinus pyralis
+
+XP_025830274.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_018570324.1_Anoplophora_glabripennis
+            /-Aethina tumida
+-Cucujiformia
+            \-Anoplophora glabripennis
+
+XP_025830262.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_012287227.1_Orussus_abietinus
+                              /-Bombus impatiens
+                        /Bombus
+                  /Apidae     \-Bombus terrestris
+                 |     |
+                 |      \-Apis mellifera
+                 |
+           /Apoidea           /-Osmia lignaria
+          |      |-Megachilinae
+          |      |            \-Megachile rotundata
+          |      |
+-Hymenoptera      \-Dufourea novaeangliae
+          |
+          |--Orussus abietinus
+          |
+           \-Cephus cinctus
+
+XP_018568750.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_023947340.1_Bicyclus_anynana
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+                       |           \-Danaus plexippus plexippus
+           /Papilionoidea
+          |            |       /-Papilio polytes
+          |            |      |
+          |             \Papilio-Papilio machaon
+          |                   |
+-Obtectomera                   \-Papilio xuthus
+          |
+          |         /-Galleria mellonella
+          |-Pyralidae
+          |         \-Amyelois transitella
+          |
+           \-Manduca sexta
+
+XP_022818244.1_Spodoptera_litura
+                    /-Helicoverpa armigera
+         /Heliothinae
+-Noctuidae          \-Heliothis virescens
+        |
+         \-Spodoptera litura
+
+XP_018320182.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_026324189.1_Hyposmocoma_kahamanoa
+                                      /-Galleria mellonella
+                             /Pyralidae
+                   /Pyraloidea        \-Amyelois transitella
+                  |         |
+                  |          \-Ostrinia furnacalis
+                  |
+                  |                    /-Papilio machaon
+                  |                   |
+        /Obtectomera            /Papilio-Papilio polytes
+       |          |            |      |
+       |          |-Papilionoidea      \-Papilio xuthus
+       |          |            |
+-Ditrysia         |             \-Vanessa tameamea
+       |          |
+       |           \-Manduca sexta
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_018320181.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_030032537.1_Manduca_sexta
+                               /-Helicoverpa armigera
+                    /Heliothinae
+                   |           \-Heliothis virescens
+           /Noctuidae
+          |        |--Trichoplusia ni
+-Obtectomera       |
+          |         \-Spodoptera litura
+          |
+           \-Manduca sexta
+
+XP_019764591.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_021183317.1_Helicoverpa_armigera
+                      /-Bombyx mori
+           /Bombycoidea
+          |           \-Manduca sexta
+          |
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+-Obtectomera       |           \-Heliothis virescens
+          |-Noctuidae
+          |        |--Trichoplusia ni
+          |        |
+          |         \-Spodoptera litura
+          |
+           \-Papilio polytes
+
+XP_018576585.1_Anoplophora_glabripennis
+                 /-Branchiostoma floridae
+                |
+         /Chordata                   /-Manis javanica
+        |       |       /Boreoeutheria
+        |        \Amniota            \-Chlorocebus sabaeus
+        |              |
+-Bilateria              \-Pogona vitticeps
+        |
+        |                          /-Anoplophora glabripennis
+        |            /Chrysomeloidea
+        |           |              \-Callosobruchus maculatus
+         \Cucujiformia
+                    |             /-Rhynchophorus ferrugineus
+                     \Curculionidae
+                                  \-Dendroctonus ponderosae
+
+XP_028133139.1_virgifera_virgifera
+                        /-Phyllotreta striolata
+             /Galerucinae
+-Chrysomelidae          \-Diabrotica virgifera virgifera
+            |
+             \-Chrysomela lapponica
+
+XP_014367000.1_Papilio_machaon
+                               /-Papilio machaon
+                              |
+                        /Papilio-Papilio polytes
+                       |      |
+           /Papilionoidea      \-Papilio xuthus
+          |            |
+-Obtectomera            \-Vanessa tameamea
+          |
+           \-Manduca sexta
+
+XP_022827446.1_Spodoptera_litura
+                    /-Helicoverpa armigera
+         /Heliothinae
+        |           \-Heliothis virescens
+-Noctuidae
+        |--Spodoptera litura
+        |
+         \-Trichoplusia ni
+
+XP_032788034.1_Daphnia_magna
+       /-Daphnia magna
+-Daphnia
+       \-Daphnia pulex
+
+XP_030753323.1_Sitophilus_oryzae
+                                              /-Anoplophora glabripennis
+                                /Chrysomeloidea
+                               |              \-Diabrotica virgifera virgifera
+                               |
+                    /Cucujiformia            /-Sitophilus oryzae
+                   |           |-Curculionidae
+                   |           |             \-Dendroctonus ponderosae
+        /Holometabola          |
+       |           |            \-Tribolium castaneum
+-Neoptera          |
+       |            \-Galleria mellonella
+       |
+        \-Zootermopsis nevadensis
+
+XP_011548743.1_Plutella_xylostella
+                  /-Galleria mellonella
+        /Pyraloidea
+       |          \-Chilo suppressalis
+-Ditrysia
+       |--Plutella xylostella
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_028142751.1_virgifera_virgifera
+                        /-Phyllotreta striolata
+             /Galerucinae
+-Chrysomelidae          \-Diabrotica virgifera virgifera
+            |
+             \-Chrysomela lapponica
+
+XP_023934074.1_Bicyclus_anynana
+                    /-Papilio machaon
+                   |
+             /Papilio-Papilio polytes
+            |      |
+-Papilionoidea      \-Papilio xuthus
+            |
+             \-Bicyclus anynana
+
+XP_557100.2_str._PEST
+                           /-Aedes aegypti
+                  /Stegomyia
+         /Culicinae        \-Aedes albopictus
+        |        |
+        |         \-Culex quinquefasciatus
+-Culicidae
+        |         /-Anopheles gambiae str. PEST
+        |        |
+         \Anopheles-Anopheles darlingi
+                 |
+                  \-Anopheles sinensis
+
+XP_023717244.1_Cryptotermes_secundus
+           /-Cryptotermes secundus
+-Termitoidae
+           \-Zootermopsis nevadensis
+
+XP_017770832.1_Nicrophorus_vespilloides
+                                   /-Anoplophora glabripennis
+                     /Chrysomeloidea
+         /Cucujiformia             \-Chrysomela lapponica
+        |           |
+        |            \-Aethina tumida
+-Polyphaga
+        |--Ignelater luminosus
+        |
+         \-Nicrophorus vespilloides
+
+XP_018320779.1_Agrilus_planipennis
+             /-Agrilus planipennis
+-Elateriformia
+             \-Ignelater luminosus
+
+XP_023952311.1_Bicyclus_anynana
+           /-Vanessa tameamea
+-Nymphalidae
+           \-Bicyclus anynana
+
+XP_026289622.1_Frankliniella_occidentalis
+                            /-Ignelater luminosus
+                 /Elateroidea
+                |           \-Photinus pyralis
+        /Polyphaga
+       |        |--Nicrophorus vespilloides
+       |        |
+       |         \-Onthophagus taurus
+       |
+-Neoptera          /-Cryptotermes secundus
+       |-Termitoidae
+       |           \-Zootermopsis nevadensis
+       |
+       |         /-Frankliniella occidentalis
+        \Thripinae
+                 \-Thrips palmi
+
+XP_033609438.1_Cryptotermes_secundus
+           /-Cryptotermes secundus
+          |
+-Termitoidae-Coptotermes formosanus
+          |
+           \-Zootermopsis nevadensis
+
+XP_022913991.1_Onthophagus_taurus
+         /-Aethina tumida
+        |
+        |--Ignelater luminosus
+-Polyphaga
+        |--Nicrophorus vespilloides
+        |
+         \-Onthophagus taurus
+
+XP_028035150.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+          |
+          |         /-Trichoplusia ni
+-ObtectomeraNoctuidae
+          |         \-Spodoptera litura
+          |
+          |       /-Papilio machaon
+          |      |
+           \Papilio-Papilio polytes
+                 |
+                  \-Papilio xuthus
+
+XP_018565435.1_Anoplophora_glabripennis
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+              /Chrysomelidae            \-Leptinotarsa decemlineata
+             |            |
+-Chrysomeloidea            \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_022830560.1_Spodoptera_litura
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+-Obtectomera
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+          |        |           \-Heliothis virescens
+           \Noctuidae
+                   |--Trichoplusia ni
+                   |
+                    \-Spodoptera litura
+
+XP_011554237.1_Plutella_xylostella
+                                           /-Vanessa tameamea
+                                          |
+                                /Nymphalidae-Bicyclus anynana
+                               |          |
+                               |           \-Danaus plexippus plexippus
+                               |
+                   /Papilionoidea      /-Papilio polytes
+                  |            |-Papilio
+                  |            |       \-Papilio xuthus
+        /Obtectomera           |
+       |          |             \-Pieris rapae
+-Ditrysia         |
+       |           \-Bombyx mandarina
+       |
+        \-Plutella xylostella
+
+XP_014364917.1_Papilio_machaon
+                  /-Papilio machaon
+                 |
+           /Papilio-Papilio polytes
+          |      |
+-Obtectomera      \-Papilio xuthus
+          |
+           \-Amyelois transitella
+
+XP_021196985.1_Helicoverpa_armigera
+                              /-Ostrinia furnacalis
+                     /Crambidae
+           /Pyraloidea        \-Chilo suppressalis
+          |         |
+          |          \-Galleria mellonella
+          |
+          |                              /-Helicoverpa armigera
+          |                   /Heliothinae
+          |                  |           \-Heliothis virescens
+-Obtectomera         /Noctuidae
+          |         |        |--Trichoplusia ni
+          |-Noctuoidea       |
+          |         |         \-Spodoptera litura
+          |         |
+          |          \-Arctia plantaginis
+          |
+           \-Danaus plexippus plexippus
+
+XP_021694990.1_Aedes_aegypti
+                  /-Anopheles gambiae str. PEST
+         /Anopheles
+        |         \-Anopheles darlingi
+-Culicidae
+        |         /-Aedes albopictus
+         \Stegomyia
+                  \-Aedes aegypti
+
+XP_022833797.1_Spodoptera_litura
+                                                       /-Enterococcus sp. 4G2_DIV0659
+                                                      |
+                              /unclassified Enterococcus-Enterococcus sp. 7E2_DIV0204
+                             |                        |
+                             |                         \-Enterococcus sp. 12C11_DIV0727
+                  /Enterococcus
+                 |           |--Enterococcus caccae
+-cellular organisms          |
+                 |            \-Enterococcus quebecensis
+                 |
+                  \-Spodoptera litura
+
+XP_022827202.1_Spodoptera_litura
+                      /-Bombyx mori
+           /Bombycoidea
+          |           \-Manduca sexta
+          |
+          |         /-Galleria mellonella
+          |-Pyralidae
+          |         \-Amyelois transitella
+-Obtectomera
+          |          /-Spodoptera frugiperda
+          |-Spodoptera
+          |          \-Spodoptera litura
+          |
+          |       /-Papilio machaon
+          |      |
+           \Papilio-Papilio polytes
+                 |
+                  \-Papilio xuthus
+
+XP_026313554.1_Hyposmocoma_kahamanoa
+                            /-Helicoverpa armigera
+                   /Noctuidae
+                  |         \-Spodoptera litura
+                  |
+                  |         /-Galleria mellonella
+        /ObtectomeraPyralidae
+       |          |         \-Amyelois transitella
+       |          |
+-Ditrysia         |--Bombyx mori
+       |          |
+       |           \-Leptidea sinapis
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_023312165.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_031768866.1_Galleria_mellonella
+                              /-Ostrinia furnacalis
+                     /Crambidae
+                    |         \-Chilo suppressalis
+           /Pyraloidea
+          |         |         /-Galleria mellonella
+          |          \Pyralidae
+          |                   \-Amyelois transitella
+          |
+          |         /-Helicoverpa armigera
+          |        |
+-ObtectomeraNoctuidae-Trichoplusia ni
+          |        |
+          |         \-Spodoptera litura
+          |
+          |        /-Leptidea sinapis
+          |-Pieridae
+          |        \-Pieris rapae
+          |
+           \-Manduca sexta
+
+PSN50030.1_Blattella_germanica
+                                        /-Odontotermes formosanus
+                              /Termitidae
+                             |          \-Microcerotermes annandalei
+                             |
+                   /Termitoidae-Cryptotermes secundus
+                  |          |
+                  |          |--Coptotermes formosanus
+         /Blattoidea         |
+        |         |           \-Zootermopsis nevadensis
+-Blattodea        |
+        |          \-Periplaneta americana
+        |
+         \-Blattella germanica
+
+XP_019757617.1_Dendroctonus_ponderosae
+--Dendroctonus ponderosae
+
+XP_023951152.1_Bicyclus_anynana
+                    /-Papilio machaon
+             /Papilio
+-Papilionoidea      \-Papilio xuthus
+            |
+             \-Bicyclus anynana
+
+XP_028129562.1_virgifera_virgifera
+                                                           /-Phyllotreta striolata
+                                                /Galerucinae
+                                   /Chrysomelidae          \-Diabrotica virgifera virgifera
+                                  |            |
+                     /Chrysomeloidea            \-Leptinotarsa decemlineata
+                    |             |
+                    |             |        /-Anoplophora glabripennis
+         /Cucujiformia             \Lamiinae
+        |           |                      \-Monochamus alternatus
+        |           |
+-Polyphaga          |             /-Asbolus verrucosus
+        |            \Tenebrionidae
+        |                         \-Tribolium castaneum
+        |
+         \-Ignelater luminosus
+
+XP_001864466.1_Culex_quinquefasciatus
+                                       /-Aedes aegypti
+                              /Stegomyia
+                     /Culicinae        \-Aedes albopictus
+                    |        |
+                    |         \-Culex quinquefasciatus
+            /Culicidae
+           |        |         /-Anopheles gambiae str. PEST
+           |        |        |
+-Culicomorpha        \Anopheles-Anopheles darlingi
+           |                 |
+           |                  \-Anopheles sinensis
+           |
+            \-Clunio marinus
+
+XP_018322931.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_019755906.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_023311712.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_018320177.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_026316492.1_Hyposmocoma_kahamanoa
+                                       /-Helicoverpa armigera
+                            /Heliothinae
+                   /Noctuidae          \-Heliothis virescens
+                  |        |
+                  |         \-Spodoptera litura
+                  |
+        /Obtectomera-Galleria mellonella
+       |          |
+       |          |--Vanessa tameamea
+-Ditrysia         |
+       |           \-Manduca sexta
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_018567960.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_018565439.1_Anoplophora_glabripennis
+                          /-Anoplophora glabripennis
+            /Chrysomeloidea
+           |              \-Chrysomela lapponica
+-Cucujiformia
+           |--Aethina tumida
+           |
+            \-Tribolium castaneum
+
+XP_018565413.1_Anoplophora_glabripennis
+            /-Aethina tumida
+           |
+-Cucujiformia-Tribolium castaneum
+           |
+            \-Anoplophora glabripennis
+
+XP_018568748.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_019764592.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_026296997.1_Apis_mellifera
+          /-Apis mellifera
+         |
+         |-Apis cerana-Apis cerana cerana
+      /Apis
+     |   |--Apis dorsata
+     |   |
+-Apidae   \-Apis florea
+     |
+     |--Habropoda laboriosa
+     |
+      \-Bombus terrestris
+
+XP_021923725.1_Zootermopsis_nevadensis
+                                           /-Vanessa tameamea
+                                /Nymphalidae
+                               |           \-Bicyclus anynana
+                   /Papilionoidea
+                  |            |       /-Papilio machaon
+                  |             \Papilio
+        /Obtectomera                   \-Papilio xuthus
+       |          |
+       |          |         /-Galleria mellonella
+-Neoptera          \Pyralidae
+       |                    \-Amyelois transitella
+       |
+        \-Zootermopsis nevadensis
+
+XP_022917226.1_Onthophagus_taurus
+                     /-Oryctes borbonicus
+         /Scarabaeidae
+-Polyphaga           \-Onthophagus taurus
+        |
+         \-Nicrophorus vespilloides
+
+XP_030032573.1_Manduca_sexta
+                     /-Amyelois transitella
+           /Pyraloidea
+          |          \-Chilo suppressalis
+          |
+          |                    /-Helicoverpa armigera
+-Obtectomera        /Heliothinae
+          |-Noctuidae          \-Heliothis virescens
+          |        |
+          |         \-Trichoplusia ni
+          |
+           \-Manduca sexta
+
+XP_012287125.1_Orussus_abietinus
+                            /-Dufourea novaeangliae
+                  /Halictidae
+                 |          \-Nomia melanderi
+                 |
+           /Apoidea    /-Osmia lignaria
+          |      |-Osmia
+          |      |     \-Osmia bicornis bicornis
+          |      |
+-Hymenoptera      \-Bombus terrestris
+          |
+          |--Orussus abietinus
+          |
+           \-Cephus cinctus
+
+XP_025830271.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_021961403.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_021194593.1_Helicoverpa_armigera
+                    /-Helicoverpa armigera
+         /Heliothinae
+        |           \-Heliothis virescens
+-Noctuidae
+        |--Spodoptera litura
+        |
+         \-Trichoplusia ni
+
+XP_018565386.1_Anoplophora_glabripennis
+                                                           /-Phyllotreta striolata
+                                                /Galerucinae
+                                   /Chrysomelidae          \-Diabrotica virgifera virgifera
+                                  |            |
+                     /Chrysomeloidea            \-Leptinotarsa decemlineata
+                    |             |
+                    |             |        /-Anoplophora glabripennis
+         /Cucujiformia             \Lamiinae
+        |           |                      \-Monochamus alternatus
+        |           |
+-Polyphaga          |             /-Asbolus verrucosus
+        |            \Tenebrionidae
+        |                         \-Tribolium castaneum
+        |
+         \-Ignelater luminosus
+
+XP_032528982.1_plexippus_plexippus
+                        /-Vanessa tameamea
+                       |
+             /Nymphalidae-Bicyclus anynana
+            |          |
+-Papilionoidea          \-Danaus plexippus plexippus
+            |
+             \-Papilio polytes
+
+XP_001237813.1_str._PEST
+                  /-Anopheles gambiae str. PEST
+                 |
+         /Anopheles-Anopheles darlingi
+        |        |
+-Culicidae        \-Anopheles sinensis
+        |
+        |         /-Aedes aegypti
+         \Stegomyia
+                  \-Aedes albopictus
+
+XP_030026264.1_Manduca_sexta
+                               /-Papilio machaon
+                              |
+                        /Papilio-Papilio polytes
+                       |      |
+           /Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Pieris rapae
+          |
+-Obtectomera        /-Trichoplusia ni
+          |-Noctuidae
+          |         \-Spodoptera litura
+          |
+           \-Manduca sexta
+
+XP_028043767.1_Bombyx_mandarina
+                      /-Bombyx mori
+           /Bombycoidea
+          |           \-Manduca sexta
+          |
+          |--Galleria mellonella
+          |
+-Obtectomera      /-Papilio polytes
+          |      |
+          |-Papilio-Papilio machaon
+          |      |
+          |       \-Papilio xuthus
+          |
+           \-Trichoplusia ni
+
+XP_031768072.1_Galleria_mellonella
+                                      /-Galleria mellonella
+                             /Pyralidae
+                   /Pyraloidea        \-Amyelois transitella
+                  |         |
+                  |          \-Ostrinia furnacalis
+                  |
+        /Obtectomera          /-Bombyx mandarina
+       |          |-Bombycoidea
+       |          |           \-Manduca sexta
+-Ditrysia         |
+       |           \-Helicoverpa armigera
+       |
+        \-Plutella xylostella
+
+XP_026279283.1_Frankliniella_occidentalis
+         /-Frankliniella occidentalis
+-Thripinae
+         \-Thrips palmi
+
+XP_021698828.1_Aedes_aegypti
+                           /-Aedes aegypti
+                  /Stegomyia
+         /Culicinae        \-Aedes albopictus
+        |        |
+-Culicidae        \-Culex quinquefasciatus
+        |
+        |         /-Anopheles gambiae str. PEST
+         \Anopheles
+                  \-Anopheles sinensis
+
+XP_017774277.1_Nicrophorus_vespilloides
+                                   /-Anoplophora glabripennis
+                     /Chrysomeloidea
+         /Cucujiformia             \-Callosobruchus maculatus
+        |           |
+        |            \-Aethina tumida
+        |
+        |           /-Ignelater luminosus
+-PolyphagaElateroidea
+        |           \-Photinus pyralis
+        |
+        |--Nicrophorus vespilloides
+        |
+         \-Oryctes borbonicus
+
+XP_026324190.1_Hyposmocoma_kahamanoa
+                             /-Ostrinia furnacalis
+                   /Pyraloidea
+                  |          \-Amyelois transitella
+        /Obtectomera
+       |          |                    /-Papilio machaon
+       |          |             /Papilio
+-Ditrysia          \Papilionoidea      \-Papilio xuthus
+       |                       |
+       |                        \-Vanessa tameamea
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_557098.2_str._PEST
+                           /-Aedes aegypti
+                  /Stegomyia
+         /Culicinae        \-Aedes albopictus
+        |        |
+        |         \-Culex quinquefasciatus
+-Culicidae
+        |         /-Anopheles gambiae str. PEST
+        |        |
+         \Anopheles-Anopheles darlingi
+                 |
+                  \-Anopheles sinensis
+
+XP_022827475.1_Spodoptera_litura
+         /-Helicoverpa armigera
+        |
+-Noctuidae-Spodoptera litura
+        |
+         \-Trichoplusia ni
+
+XP_011560971.1_Plutella_xylostella
+                   /-Helicoverpa armigera
+        /Obtectomera
+-Ditrysia          \-Manduca sexta
+       |
+        \-Plutella xylostella
+
+XP_021698830.1_Aedes_aegypti
+                  /-Aedes albopictus
+         /Stegomyia
+-Culicinae        \-Aedes aegypti
+        |
+         \-Culex quinquefasciatus
+
+XP_023715346.1_Cryptotermes_secundus
+                   /-Cryptotermes secundus
+                  |
+        /Termitoidae-Coptotermes formosanus
+       |          |
+-Neoptera          \-Zootermopsis nevadensis
+       |
+        \-Laodelphax striatellus
+
+XP_015182534.1_Polistes_dominula
+                               /-Microplitis demolitor
+                    /Parasitoida
+                   |           \-Belonocnema treatae
+                   |
+            /Apocrita                 /-Linepithema humile
+           |       |        /Formicidae
+           |       |       |          \-Odontomachus brunneus
+           |        \Aculeata
+           |               |        /-Polistes dominula
+-Holometabola               \Polistes
+           |                        \-Polistes canadensis
+           |
+           |--Agrilus planipennis
+           |
+            \-Anopheles darlingi
+
+XP_021200470.1_Helicoverpa_armigera
+                                         /-Helicoverpa armigera
+                              /Heliothinae
+                             |           \-Heliothis virescens
+                     /Noctuidae
+                    |        |--Trichoplusia ni
+           /Noctuoidea       |
+          |         |         \-Spodoptera litura
+          |         |
+-Obtectomera         \-Arctia plantaginis
+          |
+          |       /-Papilio machaon
+           \Papilio
+                  \-Papilio xuthus
+
+XP_018565428.1_Anoplophora_glabripennis
+            /-Aethina tumida
+-Cucujiformia
+            \-Anoplophora glabripennis
+
+XP_018320224.1_Agrilus_planipennis
+                      /-Agrilus planipennis
+         /Elateriformia
+-Polyphaga            \-Ignelater luminosus
+        |
+         \-Onthophagus taurus
+
+XP_030026260.1_Manduca_sexta
+                    /-Spodoptera litura
+           /Noctuidae
+          |         \-Trichoplusia ni
+-Obtectomera
+          |--Ostrinia furnacalis
+          |
+           \-Manduca sexta
+
+XP_013190175.1_Amyelois_transitella
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+                       |           \-Danaus plexippus plexippus
+           /Papilionoidea
+          |            |--Pieris rapae
+          |            |
+          |             \-Papilio xuthus
+          |
+          |           /-Bombyx mandarina
+          |-Bombycoidea
+-Obtectomera          \-Manduca sexta
+          |
+          |         /-Galleria mellonella
+          |-Pyralidae
+          |         \-Amyelois transitella
+          |
+          |         /-Trichoplusia ni
+           \Noctuidae
+                    \-Spodoptera litura
+
+XP_021196646.1_Helicoverpa_armigera
+                    /-Helicoverpa armigera
+         /Heliothinae
+        |           \-Heliothis virescens
+-Noctuidae
+        |--Spodoptera litura
+        |
+         \-Trichoplusia ni
+
+XP_019761744.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_023936365.1_Bicyclus_anynana
+         /-Branchiostoma belcheri
+        |
+        |                                   /-Vanessa tameamea
+        |                        /Nymphalidae
+-Bilateria          /Papilionoidea          \-Bicyclus anynana
+        |          |            |
+        |          |             \-Papilio xuthus
+        |          |
+        |          |                   /-Trichoplusia ni
+         \Obtectomera         /Noctuidae
+                   |-Noctuoidea        \-Spodoptera litura
+                   |         |
+                   |          \-Arctia plantaginis
+                   |
+                    \-Bombyx mori
+
+XP_023949452.1_Bicyclus_anynana
+                               /-Papilio machaon
+                              |
+                        /Papilio-Papilio polytes
+                       |      |
+           /Papilionoidea      \-Papilio xuthus
+          |            |
+-Obtectomera            \-Bicyclus anynana
+          |
+           \-Manduca sexta
+
+XP_023953689.1_Bicyclus_anynana
+                    /-Papilio machaon
+             /Papilio
+            |       \-Papilio xuthus
+-Papilionoidea
+            |--Pieris rapae
+            |
+             \-Bicyclus anynana
+
+XP_011567408.1_Plutella_xylostella
+                                              /-Enterobacter cloacae
+                                             |
+                  /Enterobacter cloacae complex-Enterobacter roggenkampii
+                 |                           |
+-cellular organisms                           \-Enterobacter hormaechei
+                 |
+                  \-Plutella xylostella
+
+XP_011567270.1_Plutella_xylostella
+                                                          /-Enterobacter cloacae
+                                                         |
+                              /Enterobacter cloacae complex-Enterobacter roggenkampii
+                             |                           |
+                  /Enterobacter                           \-Enterobacter hormaechei
+                 |           |
+-cellular organisms           \-Enterobacter sp. KINAN-G
+                 |
+                  \-Plutella xylostella
+
+XP_032510674.1_plexippus_plexippus
+                    /-Papilio machaon
+                   |
+             /Papilio-Papilio polytes
+            |      |
+-Papilionoidea      \-Papilio xuthus
+            |
+             \-Danaus plexippus plexippus
+
+XP_032523499.1_plexippus_plexippus
+           /-Vanessa tameamea
+          |
+-Nymphalidae-Bicyclus anynana
+          |
+           \-Danaus plexippus plexippus
+
+XP_028037411.1_Bombyx_mandarina
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+           /Papilionoidea          \-Bicyclus anynana
+          |            |
+          |             \-Papilio xuthus
+-Obtectomera
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_001946492.1_Acyrthosiphon_pisum
+                      /-Aphis glycines
+                     |
+                 /Aphis-Aphis craccivora
+                |    |
+                |     \-Aphis gossypii
+         /Aphidini
+        |       |--Rhopalosiphum maidis
+        |       |
+-Aphidinae       \-Melanaphis sacchari
+        |
+        |            /-Myzus persicae
+         \Macrosiphini
+                     \-Acyrthosiphon pisum
+
+XP_032523585.1_plexippus_plexippus
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+           /Papilionoidea          \-Danaus plexippus plexippus
+          |            |
+-Obtectomera            \-Papilio xuthus
+          |
+           \-Manduca sexta
+
+XP_021965305.1_Folsomia_candida
+                           /-Folsomia candida
+           /Entomobryomorpha
+-Protostomia               \-Orchesella cincta
+          |
+           \-Lingula anatina
+
+XP_019757624.1_Dendroctonus_ponderosae
+--Dendroctonus ponderosae
+
+XP_030026258.1_Manduca_sexta
+           /-Manduca sexta
+-Obtectomera
+           \-Arctia plantaginis
+
+XP_023311341.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_030025073.1_Manduca_sexta
+                               /-Papilio polytes
+                              |
+                        /Papilio-Papilio machaon
+                       |      |
+           /Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Vanessa tameamea
+          |
+-Obtectomera        /-Galleria mellonella
+          |-Pyralidae
+          |         \-Amyelois transitella
+          |
+           \-Manduca sexta
+
+XP_018320187.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_030026263.1_Manduca_sexta
+                     /-Helicoverpa armigera
+           /Noctuoidea
+-Obtectomera         \-Arctia plantaginis
+          |
+           \-Manduca sexta
+
+XP_028132802.1_virgifera_virgifera
+                        /-Phyllotreta striolata
+             /Galerucinae
+-Chrysomelidae          \-Diabrotica virgifera virgifera
+            |
+             \-Chrysomela lapponica
+
+XP_028132801.1_virgifera_virgifera
+                         /-Phyllotreta striolata
+              /Galerucinae
+-Chrysomeloidea          \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_022818242.1_Spodoptera_litura
+                               /-Heliothis virescens
+                    /Heliothinae
+           /Noctuidae          \-Helicoverpa armigera
+          |        |
+-Obtectomera        \-Spodoptera litura
+          |
+           \-Manduca sexta
+
+NP_001136332.1_Nasonia_vitripennis
+                                   /-Trichomalopsis sarcophagae
+                       /Pteromalinae
+           /Chalcidoidea           \-Nasonia vitripennis
+          |           |
+-Hymenoptera           \-Copidosoma floridanum
+          |
+           \-Neodiprion lecontei
+
+XP_018568746.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_019764658.1_Dendroctonus_ponderosae
+            /-Dendroctonus ponderosae
+-Cucujiformia
+            \-Tribolium castaneum
+
+XP_032523523.1_plexippus_plexippus
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+           /Papilionoidea          \-Danaus plexippus plexippus
+          |            |
+          |             \-Pieris rapae
+          |
+-Obtectomera         /-Galleria mellonella
+          |-Pyraloidea
+          |          \-Ostrinia furnacalis
+          |
+           \-Helicoverpa armigera
+
+XP_026320223.1_Hyposmocoma_kahamanoa
+                                       /-Papilio machaon
+                                /Papilio
+                   /Papilionoidea      \-Papilio xuthus
+                  |            |
+        /Obtectomera            \-Vanessa tameamea
+       |          |
+-Ditrysia          \-Manduca sexta
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_030026270.1_Manduca_sexta
+                      /-Bombyx mandarina
+           /Bombycoidea
+          |           \-Manduca sexta
+          |
+-Obtectomera                   /-Helicoverpa armigera
+          |         /Heliothinae
+          |        |           \-Heliothis virescens
+           \Noctuidae
+                   |--Trichoplusia ni
+                   |
+                    \-Spodoptera litura
+
+XP_031763669.1_Galleria_mellonella
+                    /-Galleria mellonella
+           /Pyralidae
+          |         \-Amyelois transitella
+          |
+          |       /-Papilio polytes
+-Obtectomera     |
+          |-Papilio-Papilio machaon
+          |      |
+          |       \-Papilio xuthus
+          |
+           \-Manduca sexta
+
+XP_018573477.2_Anoplophora_glabripennis
+                        /-Sitophilus oryzae
+                       |
+            /Cucujiformia-Tribolium castaneum
+           |           |
+           |            \-Anoplophora glabripennis
+-Holometabola
+           |                    /-Galleria mellonella
+           |           /Pyralidae
+           |          |         \-Amyelois transitella
+            \Obtectomera
+                      |--Papilio xuthus
+                      |
+                       \-Manduca sexta
+
+XP_023935450.1_Bicyclus_anynana
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+                       |           \-Bicyclus anynana
+                       |
+           /Papilionoidea      /-Papilio polytes
+          |            |-Papilio
+          |            |       \-Papilio xuthus
+-Obtectomera           |
+          |             \-Pieris rapae
+          |
+           \-Amyelois transitella
+
+XP_023935446.1_Bicyclus_anynana
+                        /-Vanessa tameamea
+                       |
+             /Nymphalidae-Bicyclus anynana
+            |          |
+            |           \-Danaus plexippus plexippus
+-Papilionoidea
+            |--Papilio polytes
+            |
+             \-Pieris rapae
+
+XP_026683681.1_Diaphorina_citri
+                    /-Lingula anatina
+                   |
+         /Protostomia                   /-Asbolus verrucosus
+        |          |        /Holometabola
+        |           \Neoptera           \-Danaus plexippus plexippus
+        |                  |
+        |                   \-Diaphorina citri
+        |
+-Bilateria                                    /-Tupaia chinensis
+        |                     /Euarchontoglires
+        |                    |                \-Peromyscus leucopus
+        |        /Boreoeutheria
+        |       |            |   /-Bos mutus
+        |       |             \Bos
+         \Eutheria               \-Bos taurus
+                |
+                |--Elephantulus edwardii
+                |
+                 \-Dasypus novemcinctus
+
+XP_026273946.1_Frankliniella_occidentalis
+         /-Frankliniella occidentalis
+-Thripinae
+         \-Thrips palmi
+
+XP_025830317.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_029345815.1_Acyrthosiphon_pisum
+                      /-Aphis craccivora
+                 /Aphis
+                |     \-Aphis gossypii
+         /Aphidini
+        |       |--Rhopalosiphum maidis
+        |       |
+-Aphidinae       \-Melanaphis sacchari
+        |
+        |            /-Myzus persicae
+         \Macrosiphini
+                     \-Acyrthosiphon pisum
+
+XP_021961902.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_017483824.1_Rhagoletis_zephyria
+                                         /-Zeugodacus cucurbitae
+                                  /Dacinae
+                       /Tephritidae      \-Ceratitis capitata
+                      |          |
+           /Acalyptratae          \-Rhagoletis zephyria
+          |           |
+          |           |          /-Drosophila ficusphila
+          |            \Sophophora
+-Schizophora                     \-Drosophila willistoni
+          |
+          |                   /-Stomoxys calcitrans
+          |           /Muscinae
+           \Calyptratae       \-Musca domestica
+                     |
+                      \-Lucilia cuprina
+
+XP_021942419.1_Zootermopsis_nevadensis
+           /-Cryptotermes secundus
+-Termitoidae
+           \-Zootermopsis nevadensis
+
+NP_648918.1_Drosophila_melanogaster
+                                       /-Drosophila sechellia
+                                      |
+                                      |--Drosophila simulans
+                                      |
+                                      |--Drosophila yakuba
+                  /melanogaster subgroup
+                 |                    |--Drosophila erecta
+                 |                    |
+                 |                    |--Drosophila mauritiana
+                 |                    |
+-melanogaster group                    \-Drosophila melanogaster
+                 |
+                 |--Drosophila eugracilis
+                 |
+                 |--Drosophila takahashii
+                 |
+                  \-Drosophila elegans
+
+XP_025835611.1_Agrilus_planipennis
+             /-Agrilus planipennis
+-Elateriformia
+             \-Ignelater luminosus
+
+XP_017782121.1_Nicrophorus_vespilloides
+                             /-Oryctes borbonicus
+                 /Scarabaeidae
+                |            \-Onthophagus taurus
+                |
+        /Polyphaga-Ignelater luminosus
+       |        |
+       |        |--Aethina tumida
+-Neoptera       |
+       |         \-Nicrophorus vespilloides
+       |
+        \-Thrips palmi
+
+XP_021698831.1_Aedes_aegypti
+                  /-Anopheles gambiae str. PEST
+         /Anopheles
+        |         \-Anopheles darlingi
+-Culicidae
+        |         /-Aedes albopictus
+         \Stegomyia
+                  \-Aedes aegypti
+
+XP_022822475.1_Spodoptera_litura
+                                         /-Helicoverpa armigera
+                              /Heliothinae
+                             |           \-Heliothis virescens
+                     /Noctuidae
+                    |        |--Trichoplusia ni
+           /Noctuoidea       |
+          |         |         \-Spodoptera litura
+          |         |
+-Obtectomera         \-Arctia plantaginis
+          |
+          |       /-Papilio machaon
+           \Papilio
+                  \-Papilio xuthus
+
+XP_026759049.1_Galleria_mellonella
+                     /-Ostrinia furnacalis
+           /Pyraloidea
+          |          \-Galleria mellonella
+          |
+          |                    /-Papilio machaon
+          |                   |
+          |             /Papilio-Papilio polytes
+-Obtectomera           |      |
+          |-Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Vanessa tameamea
+          |
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+           \Noctuidae          \-Heliothis virescens
+                   |
+                    \-Spodoptera litura
+
+XP_021200637.1_Helicoverpa_armigera
+                                         /-Helicoverpa armigera
+                              /Heliothinae
+                             |           \-Heliothis virescens
+                     /Noctuidae
+                    |        |--Trichoplusia ni
+           /Noctuoidea       |
+          |         |         \-Spodoptera litura
+          |         |
+-Obtectomera         \-Arctia plantaginis
+          |
+          |--Manduca sexta
+          |
+           \-Bicyclus anynana
+
+XP_021200721.1_Helicoverpa_armigera
+                              /-Helicoverpa armigera
+                             |
+                     /Noctuidae-Trichoplusia ni
+                    |        |
+           /Noctuoidea        \-Spodoptera litura
+          |         |
+          |          \-Arctia plantaginis
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+-ObtectomeraBombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+          |
+          |--Chilo suppressalis
+          |
+           \-Danaus plexippus plexippus
+
+XP_014366706.1_Papilio_machaon
+       /-Papilio machaon
+      |
+-Papilio-Papilio polytes
+      |
+       \-Papilio xuthus
+
+XP_030026236.1_Manduca_sexta
+                              /-Helicoverpa armigera
+                     /Noctuidae
+           /Noctuoidea        \-Trichoplusia ni
+          |         |
+          |          \-Arctia plantaginis
+-Obtectomera
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_030041345.1_Manduca_sexta
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+           /Papilionoidea          \-Danaus plexippus plexippus
+          |            |
+          |             \-Pieris rapae
+          |
+          |                   /-Trichoplusia ni
+          |          /Noctuidae
+-ObtectomeraNoctuoidea        \-Spodoptera litura
+          |         |
+          |          \-Arctia plantaginis
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_023948571.1_Bicyclus_anynana
+                    /-Papilio machaon
+                   |
+             /Papilio-Papilio polytes
+            |      |
+-Papilionoidea      \-Papilio xuthus
+            |
+             \-Bicyclus anynana
+
+XP_022827203.1_Spodoptera_litura
+                            /-Helicoverpa armigera
+                   /Noctuidae
+                  |         \-Spodoptera litura
+                  |
+                  |         /-Galleria mellonella
+                  |-Pyralidae
+        /Obtectomera        \-Amyelois transitella
+       |          |
+       |          |       /-Papilio polytes
+       |          |-Papilio
+-Ditrysia         |       \-Papilio machaon
+       |          |
+       |           \-Bombyx mori
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_014362018.1_Papilio_machaon
+                  /-Papilio xuthus
+                 |
+           /Papilio-Papilio machaon
+          |      |
+-Obtectomera      \-Papilio polytes
+          |
+           \-Manduca sexta
+
+XP_005191668.2_Musca_domestica
+                                /-Lucilia cuprina
+                      /Oestroidea
+                     |          \-Sarcophaga bullata
+           /Calyptratae
+          |          |        /-Stomoxys calcitrans
+          |           \Muscinae
+          |                   \-Musca domestica
+-Schizophora
+          |                                       /-Drosophila sechellia
+          |                                      |
+          |                  /melanogaster subgroup-Drosophila simulans
+          |                 |                    |
+           \melanogaster group                    \-Drosophila mauritiana
+                            |
+                             \-Drosophila ananassae
+
+PSN35602.1_Blattella_germanica
+                                             /-Coptotermes formosanus
+                              /Rhinotermitidae
+                   /Termitoidae              \-Reticulitermes flavipes
+                  |          |
+         /Blattoidea          \-Cryptotermes secundus
+        |         |
+-Blattodea         \-Periplaneta americana
+        |
+        |           /-Blattella germanica
+         \Blaberoidea
+                    \-Panesthia angustipennis spadica
+
+XP_022710940.1_Varroa_jacobsoni
+                          /-Spirochaetes bacterium
+                         |
+                         |                                  /-Cytophaga hutchinsonii
+                  /Bacteria                        /Cytophaga
+                 |       |             /Cytophagales        \-Cytophaga aurantiaca
+                 |       |            |           |
+                 |       |            |            \-Cytophagales bacterium
+                 |        \Bacteroidetes
+                 |                    |                                   /-Mucilaginibacter sp. OK098
+-cellular organisms                   |                   /Mucilaginibacter
+                 |                    |                  |                \-Mucilaginibacter gotjawali
+                 |                     \Sphingobacteriaceae
+                 |                                       |          /-Pedobacter sp. AR-3-17
+                 |                                        \Pedobacter
+                 |                                                  \-Pedobacter glucosidilyticus
+                 |
+                  \-Varroa jacobsoni
+
+XP_014367804.1_Papilio_machaon
+       /-Papilio machaon
+      |
+-Papilio-Papilio polytes
+      |
+       \-Papilio xuthus
+
+XP_032523564.1_plexippus_plexippus
+           /-Vanessa tameamea
+          |
+-Nymphalidae-Bicyclus anynana
+          |
+           \-Danaus plexippus plexippus
+
+XP_019764667.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_011566332.1_Plutella_xylostella
+                              /Enterobacter cloacae complex-Enterobacter kobei
+                  /Enterobacter
+-cellular organisms           \-Enterobacter sp. AM17-18
+                 |
+                  \-Plutella xylostella
+
+XP_023950089.1_Bicyclus_anynana
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+           /Papilionoidea          \-Danaus plexippus plexippus
+          |            |
+-Obtectomera            \-Papilio xuthus
+          |
+           \-Manduca sexta
+
+XP_030753401.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_019764512.1_Dendroctonus_ponderosae
+            /-Dendroctonus ponderosae
+-Cucujiformia
+            \-Anoplophora glabripennis
+
+XP_019764511.1_Dendroctonus_ponderosae
+            /-Dendroctonus ponderosae
+-Cucujiformia
+            \-Anoplophora glabripennis
+
+XP_030026255.1_Manduca_sexta
+           /-Manduca sexta
+-Obtectomera
+           \-Arctia plantaginis
+
+XP_966332.1_Tribolium_castaneum
+                                           /-Anoplophora glabripennis
+                                   /Lamiinae
+                                  |        \-Monochamus alternatus
+                     /Chrysomeloidea
+                    |             |           /-Phyllotreta striolata
+                    |              \Galerucinae
+         /Cucujiformia                        \-Diabrotica virgifera virgifera
+        |           |
+        |           |             /-Asbolus verrucosus
+-Polyphaga           \Tenebrionidae
+        |                         \-Tribolium castaneum
+        |
+        |           /-Ignelater luminosus
+         \Elateroidea
+                    \-Photinus pyralis
+
+XP_023311342.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_018570851.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_018573206.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_014364994.1_Papilio_machaon
+                               /-Papilio machaon
+                              |
+                        /Papilio-Papilio polytes
+                       |      |
+                       |       \-Papilio xuthus
+           /Papilionoidea
+          |            |--Vanessa tameamea
+          |            |
+          |             \-Pieris rapae
+          |
+-Obtectomera                   /-Helicoverpa armigera
+          |         /Heliothinae
+          |-Noctuidae          \-Heliothis virescens
+          |        |
+          |         \-Trichoplusia ni
+          |
+           \-Chilo suppressalis
+
+XP_022818653.1_Spodoptera_litura
+                              /-Helicoverpa armigera
+                   /Heliothinae
+                  |           \-Heliothis virescens
+          /Noctuidae
+         |        |--Trichoplusia ni
+-Noctuoidea       |
+         |         \-Spodoptera litura
+         |
+          \-Arctia plantaginis
+
+XP_028133140.1_virgifera_virgifera
+                        /-Phyllotreta striolata
+             /Galerucinae
+-Chrysomelidae          \-Diabrotica virgifera virgifera
+            |
+             \-Chrysomela lapponica
+
+XP_022915744.1_Onthophagus_taurus
+                             /-Oryctes borbonicus
+                 /Scarabaeidae
+                |            \-Onthophagus taurus
+        /Polyphaga
+       |        |--Ignelater luminosus
+-Neoptera       |
+       |         \-Nicrophorus vespilloides
+       |
+        \-Cryptotermes secundus
+
+XP_032523501.1_plexippus_plexippus
+                        /-Vanessa tameamea
+             /Nymphalidae
+-Papilionoidea          \-Danaus plexippus plexippus
+            |
+             \-Leptidea sinapis
+
+XP_028132800.1_virgifera_virgifera
+                        /-Phyllotreta striolata
+             /Galerucinae
+-Chrysomelidae          \-Diabrotica virgifera virgifera
+            |
+             \-Chrysomela lapponica
+
+XP_011560990.1_Plutella_xylostella
+        /-Plutella xylostella
+-Ditrysia
+        \-Manduca sexta
+
+XP_022906938.1_Onthophagus_taurus
+                                         /-Ignelater luminosus
+                              /Elateroidea
+                 /Elateriformia          \-Photinus pyralis
+                |            |
+                |             \-Agrilus planipennis
+                |
+        /Polyphaga           /-Oryctes borbonicus
+       |        |-Scarabaeidae
+       |        |            \-Onthophagus taurus
+-Neoptera       |
+       |         \-Nicrophorus vespilloides
+       |
+        \-Frankliniella occidentalis
+
+XP_026762202.1_Galleria_mellonella
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+           /Papilionoidea          \-Bicyclus anynana
+          |            |
+          |             \-Papilio xuthus
+          |
+-Obtectomera-Galleria mellonella
+          |
+          |--Helicoverpa armigera
+          |
+           \-Manduca sexta
+
+NP_001295947.1_Musca_domestica
+                                /-Lucilia cuprina
+                      /Oestroidea
+                     |          \-Sarcophaga bullata
+           /Calyptratae
+          |          |        /-Stomoxys calcitrans
+          |           \Muscinae
+          |                   \-Musca domestica
+-Schizophora
+          |                       /-Bactrocera oleae
+          |             /Bactrocera
+          |       /Dacini         \-Bactrocera dorsalis
+          |      |     |
+           \Dacinae     \-Zeugodacus cucurbitae
+                 |
+                  \-Ceratitis capitata
+
+XP_032523527.1_plexippus_plexippus
+                        /-Vanessa tameamea
+                       |
+             /Nymphalidae-Bicyclus anynana
+            |          |
+-Papilionoidea          \-Danaus plexippus plexippus
+            |
+             \-Papilio xuthus
+
+XP_021959023.1_Folsomia_candida
+                /-Folsomia candida
+-Entomobryomorpha
+                \-Orchesella cincta
+
+XP_022818655.1_Spodoptera_litura
+                        /-Pieris rapae
+           /Papilionoidea
+          |             \-Papilio xuthus
+          |
+          |         /-Galleria mellonella
+          |-Pyralidae
+          |         \-Amyelois transitella
+-Obtectomera
+          |         /-Helicoverpa armigera
+          |        |
+          |-Noctuidae-Trichoplusia ni
+          |        |
+          |         \-Spodoptera litura
+          |
+           \-Manduca sexta
+
+XP_019755904.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_023935490.1_Bicyclus_anynana
+                        /-Bicyclus anynana
+             /Nymphalidae
+            |           \-Danaus plexippus plexippus
+-Papilionoidea
+            |--Papilio xuthus
+            |
+             \-Pieris rapae
+
+XP_028030232.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+          |
+-Obtectomera        /-Galleria mellonella
+          |-Pyralidae
+          |         \-Amyelois transitella
+          |
+          |       /-Papilio machaon
+           \Papilio
+                  \-Papilio xuthus
+
+XP_018320225.2_Agrilus_planipennis
+                      /-Agrilus planipennis
+         /Elateriformia
+-Polyphaga            \-Ignelater luminosus
+        |
+         \-Onthophagus taurus
+
+XP_018565424.1_Anoplophora_glabripennis
+                          /-Anoplophora glabripennis
+            /Chrysomeloidea
+-Cucujiformia             \-Leptinotarsa decemlineata
+           |
+            \-Aethina tumida
+
+XP_018565434.1_Anoplophora_glabripennis
+                                                    /-Chrysomela lapponica
+                                       /Chrysomelinae
+                          /Chrysomelidae            \-Leptinotarsa decemlineata
+                         |            |
+            /Chrysomeloidea            \-Diabrotica virgifera virgifera
+           |             |
+-Cucujiformia             \-Anoplophora glabripennis
+           |
+            \-Aethina tumida
+
+XP_025835618.1_Agrilus_planipennis
+             /-Agrilus planipennis
+-Elateriformia
+             \-Ignelater luminosus
+
+XP_021923730.1_Zootermopsis_nevadensis
+                         /-Cryptotermes secundus
+           /Kalotermitidae
+          |              \-Neotermes koshunensis
+-Termitoidae
+          |--Coptotermes formosanus
+          |
+           \-Zootermopsis nevadensis
+
+XP_011135914.1_Harpegnathos_saltator
+        /-Odontomachus brunneus
+       |
+-Ponerini-Harpegnathos saltator
+       |
+        \-Dinoponera quadriceps
+
+XP_011559164.1_Plutella_xylostella
+                   /-Helicoverpa armigera
+        /Obtectomera
+-Ditrysia          \-Manduca sexta
+       |
+        \-Plutella xylostella
+
+XP_028149029.1_virgifera_virgifera
+                                      /-Phyllotreta striolata
+                           /Galerucinae
+              /Chrysomelidae          \-Diabrotica virgifera virgifera
+             |            |
+-Chrysomeloidea            \-Leptinotarsa decemlineata
+             |
+              \-Anoplophora glabripennis
+
+XP_023952790.1_Bicyclus_anynana
+--Bicyclus anynana anynana
+
+XP_023936329.1_Bicyclus_anynana
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+           /Papilionoidea          \-Bicyclus anynana
+          |            |
+          |             \-Pieris rapae
+          |
+          |           /-Bombyx mandarina
+          |-Bombycoidea
+-Obtectomera          \-Manduca sexta
+          |
+          |         /-Trichoplusia ni
+          |-Noctuidae
+          |         \-Spodoptera litura
+          |
+           \-Ostrinia furnacalis
+
+XP_032527041.1_plexippus_plexippus
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+                       |           \-Danaus plexippus plexippus
+                       |
+                       |       /-Papilio machaon
+           /Papilionoidea     |
+          |            |-Papilio-Papilio polytes
+          |            |      |
+-Obtectomera           |       \-Papilio xuthus
+          |            |
+          |             \-Pieris rapae
+          |
+           \-Spodoptera litura
+
+XP_023951871.1_Bicyclus_anynana
+                                           /-Vanessa tameamea
+                                          |
+                                /Nymphalidae-Bicyclus anynana
+                               |          |
+                               |           \-Danaus plexippus plexippus
+                   /Papilionoidea
+                  |            |       /-Papilio polytes
+                  |            |      |
+        /Obtectomera            \Papilio-Papilio machaon
+       |          |                   |
+       |          |                    \-Papilio xuthus
+-Ditrysia         |
+       |           \-Spodoptera litura
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_022913995.1_Onthophagus_taurus
+         /-Aethina tumida
+        |
+-Polyphaga-Ignelater luminosus
+        |
+         \-Onthophagus taurus
+
+XP_011556095.1_Plutella_xylostella
+                                           /-Vanessa tameamea
+                                          |
+                                /Nymphalidae-Bicyclus anynana
+                               |          |
+                   /Papilionoidea          \-Danaus plexippus plexippus
+                  |            |
+                  |            |       /-Papilio polytes
+        /Obtectomera            \Papilio
+       |          |                    \-Papilio xuthus
+       |          |
+-Ditrysia         |      /-Bombyx mori
+       |           \Bombyx
+       |                 \-Bombyx mandarina
+       |
+        \-Plutella xylostella
+
+XP_032513180.1_plexippus_plexippus
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+                       |           \-Danaus plexippus plexippus
+                       |
+           /Papilionoidea      /-Papilio polytes
+          |            |-Papilio
+          |            |       \-Papilio xuthus
+          |            |
+          |             \-Pieris rapae
+-Obtectomera
+          |         /-Trichoplusia ni
+          |-Noctuidae
+          |         \-Spodoptera litura
+          |
+           \-Manduca sexta
+
+XP_028026026.1_Bombyx_mandarina
+                                      /-Helicoverpa armigera
+                                     |
+                             /Noctuidae-Trichoplusia ni
+                            |        |
+                   /Noctuoidea        \-Spodoptera litura
+                  |         |
+                  |          \-Arctia plantaginis
+        /Obtectomera
+       |          |                 /-Bombyx mori
+       |          |           /Bombyx
+-Ditrysia          \Bombycoidea     \-Bombyx mandarina
+       |                     |
+       |                      \-Manduca sexta
+       |
+        \-Plutella xylostella
+
+XP_001864161.1_Culex_quinquefasciatus
+                  /-Aedes albopictus
+         /Stegomyia
+-Culicinae        \-Aedes aegypti
+        |
+         \-Culex quinquefasciatus
+
+XP_011059477.1_Acromyrmex_echinatior
+                  /-Trachymyrmex septentrionalis
+                 |
+      /Trachymyrmex-Trachymyrmex zeteki
+     |           |
+     |            \-Trachymyrmex cornetzi
+-Attini
+     |--Acromyrmex echinatior
+     |
+      \-Atta colombica
+
+XP_021923688.1_Zootermopsis_nevadensis
+         /-Branchiostoma belcheri
+        |
+        |                            /-Cryptotermes secundus
+-Bilateria                /Termitoidae
+        |        /Blattodea          \-Zootermopsis nevadensis
+        |       |        |
+         \Neoptera        \-Blattella germanica
+                |
+                |           /-Galleria mellonella
+                 \Obtectomera
+                            \-Pieris rapae
+
+XP_026324191.1_Hyposmocoma_kahamanoa
+                                      /-Galleria mellonella
+                             /Pyralidae
+                   /Pyraloidea        \-Amyelois transitella
+                  |         |
+                  |          \-Ostrinia furnacalis
+                  |
+                  |                    /-Papilio machaon
+                  |                   |
+        /Obtectomera            /Papilio-Papilio polytes
+       |          |            |      |
+       |          |-Papilionoidea      \-Papilio xuthus
+       |          |            |
+-Ditrysia         |             \-Vanessa tameamea
+       |          |
+       |           \-Manduca sexta
+       |
+        \-Hyposmocoma kahamanoa
+
+PSN34231.1_Blattella_germanica
+                                            /-Neotermes koshunensis
+                              /Kalotermitidae
+                   /Termitoidae             \-Cryptotermes secundus
+                  |          |
+         /Blattoidea          \-Coptotermes formosanus
+        |         |
+-Blattodea         \-Periplaneta americana
+        |
+         \-Blattella germanica
+
+XP_026322188.1_Hyposmocoma_kahamanoa
+                                           /-Vanessa tameamea
+                                          |
+                                /Nymphalidae-Bicyclus anynana
+                               |          |
+                               |           \-Danaus plexippus plexippus
+                               |
+                   /Papilionoidea       /-Leptidea sinapis
+                  |            |-Pieridae
+                  |            |        \-Pieris rapae
+        /Obtectomera           |
+       |          |             \-Papilio xuthus
+-Ditrysia         |
+       |           \-Chilo suppressalis
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_032526253.1_plexippus_plexippus
+                                               /-Vanessa tameamea
+                                    /Nymphalidae
+                       /Papilionoidea          \-Danaus plexippus plexippus
+                      |            |
+                      |             \-Papilio machaon
+            /Obtectomera
+           |          |--Helicoverpa armigera
+-Holometabola         |
+           |           \-Bombyx mandarina
+           |
+            \-Asbolus verrucosus
+
+XP_028036753.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+-Obtectomera          \-Manduca sexta
+          |
+           \-Chilo suppressalis
+
+XP_028139020.1_virgifera_virgifera
+                         /-Phyllotreta striolata
+              /Galerucinae
+-Chrysomeloidea          \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_022818485.1_Spodoptera_litura
+                              /-Helicoverpa armigera
+                   /Heliothinae
+                  |           \-Heliothis virescens
+          /Noctuidae
+         |        |--Trichoplusia ni
+-Noctuoidea       |
+         |         \-Spodoptera litura
+         |
+          \-Arctia plantaginis
+
+XP_022835024.1_Spodoptera_litura
+                              /-Enterococcus haemoperoxidus
+                             |
+                             |                         /-Enterococcus sp. 4G2_DIV0659
+                             |                        |
+                  /Enterococcusunclassified Enterococcus-Enterococcus sp. 7F3_DIV0205
+                 |           |                        |
+                 |           |                         \-Enterococcus sp. 12C11_DIV0727
+-cellular organisms          |
+                 |            \-Enterococcus caccae
+                 |
+                  \-Spodoptera litura
+
+PSN50028.1_Blattella_germanica
+                              /-Odontotermes formosanus
+                    /Termitidae
+                   |          \-Microcerotermes annandalei
+                   |
+         /Termitoidae-Cryptotermes secundus
+        |          |
+        |          |--Coptotermes formosanus
+-Blattodea         |
+        |           \-Zootermopsis nevadensis
+        |
+         \-Blattella germanica
+
+XP_028038643.1_Bombyx_mandarina
+                              /-Helicoverpa armigera
+                     /Noctuidae
+           /Noctuoidea        \-Trichoplusia ni
+          |         |
+          |          \-Arctia plantaginis
+-Obtectomera
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_019755907.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_021197062.1_Helicoverpa_armigera
+                              /-Helicoverpa armigera
+                   /Heliothinae
+                  |           \-Heliothis virescens
+          /Noctuidae
+         |        |--Trichoplusia ni
+-Noctuoidea       |
+         |         \-Spodoptera litura
+         |
+          \-Arctia plantaginis
+
+XP_018321395.1_Agrilus_planipennis
+                      /-Agrilus planipennis
+         /Elateriformia
+        |             \-Ignelater luminosus
+        |
+-Polyphaga           /-Asbolus verrucosus
+        |-Cucujiformia
+        |            \-Aethina tumida
+        |
+         \-Onthophagus taurus
+
+XP_030753399.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_018573699.1_Anoplophora_glabripennis
+                          /-Anoplophora glabripennis
+            /Chrysomeloidea
+-Cucujiformia             \-Leptinotarsa decemlineata
+           |
+            \-Aethina tumida
+
+XP_018573214.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_018575352.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_972134.1_Tribolium_castaneum
+                          /-Anoplophora glabripennis
+            /Chrysomeloidea
+           |              \-Chrysomela lapponica
+           |
+-Cucujiformia            /-Asbolus verrucosus
+           |-Tenebrionidae
+           |             \-Tribolium castaneum
+           |
+            \-Aethina tumida
+
+XP_028143930.1_virgifera_virgifera
+                                                           /-Phyllotreta striolata
+                                                /Galerucinae
+                                   /Chrysomelidae          \-Diabrotica virgifera virgifera
+                                  |            |
+                     /Chrysomeloidea            \-Leptinotarsa decemlineata
+                    |             |
+                    |             |        /-Anoplophora glabripennis
+         /Cucujiformia             \Lamiinae
+        |           |                      \-Monochamus alternatus
+-Polyphaga          |
+        |            \-Asbolus verrucosus
+        |
+         \-Ignelater luminosus
+
+XP_018320185.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_023723773.1_Cryptotermes_secundus
+                                            /-Neotermes koshunensis
+                              /Kalotermitidae
+                             |              \-Cryptotermes secundus
+                             |
+                   /Termitoidae              /-Coptotermes formosanus
+                  |          |-Rhinotermitidae
+                  |          |               \-Reticulitermes flavipes
+         /Blattoidea         |
+        |         |           \-Zootermopsis nevadensis
+-Blattodea        |
+        |          \-Periplaneta americana
+        |
+         \-Panesthia angustipennis spadica
+
+XP_968318.1_Tribolium_castaneum
+                         /-Asbolus verrucosus
+            /Tenebrionidae
+           |             \-Tribolium castaneum
+-Cucujiformia
+           |--Aethina tumida
+           |
+            \-Anoplophora glabripennis
+
+XP_011564248.1_Plutella_xylostella
+                                /-Vanessa tameamea
+                   /Papilionoidea
+                  |             \-Pieris rapae
+                  |
+                  |          /-Amyelois transitella
+        /ObtectomeraPyraloidea
+       |          |          \-Chilo suppressalis
+       |          |
+       |          |           /-Helicoverpa armigera
+-Ditrysia          \Heliothinae
+       |                      \-Heliothis virescens
+       |
+       |--Plutella xylostella
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_022818247.1_Spodoptera_litura
+                               /-Helicoverpa armigera
+                    /Heliothinae
+           /Noctuidae          \-Heliothis virescens
+          |        |
+          |         \-Spodoptera litura
+          |
+          |      /-Bombyx mori
+-ObtectomeraBombyx
+          |      \-Bombyx mandarina
+          |
+          |--Galleria mellonella
+          |
+           \-Papilio xuthus
+
+XP_022822385.1_Spodoptera_litura
+                               /-Helicoverpa armigera
+                    /Heliothinae
+                   |           \-Heliothis virescens
+           /Noctuidae
+          |        |--Trichoplusia ni
+          |        |
+-Obtectomera        \-Spodoptera litura
+          |
+          |--Ostrinia furnacalis
+          |
+           \-Manduca sexta
+
+XP_025830269.1_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_972386.3_Tribolium_castaneum
+                         /-Asbolus verrucosus
+            /Tenebrionidae
+-Cucujiformia            \-Tribolium castaneum
+           |
+            \-Aethina tumida
+
+XP_026754137.1_Galleria_mellonella
+                              /-Ostrinia furnacalis
+                     /Crambidae
+           /Pyraloidea        \-Chilo suppressalis
+          |         |
+          |          \-Galleria mellonella
+          |
+          |             /-Pieris rapae
+-ObtectomeraPapilionoidea
+          |             \-Danaus plexippus plexippus
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_032777164.1_Daphnia_magna
+       /-Daphnia magna
+-Daphnia
+       \-Daphnia pulex
+
+XP_013185165.1_Amyelois_transitella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+          |
+          |             /-Vanessa tameamea
+          |-Papilionoidea
+          |             \-Papilio xuthus
+-Obtectomera
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+          |-Noctuidae          \-Heliothis virescens
+          |        |
+          |         \-Spodoptera litura
+          |
+           \-Manduca sexta
+
+XP_028043691.1_Bombyx_mandarina
+                              /-Ostrinia furnacalis
+                     /Crambidae
+           /Pyraloidea        \-Chilo suppressalis
+          |         |
+          |          \-Galleria mellonella
+          |
+          |             /-Pieris rapae
+-ObtectomeraPapilionoidea
+          |             \-Danaus plexippus plexippus
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_316461.3_str._PEST
+                           /-Aedes aegypti
+                  /Stegomyia
+         /Culicinae        \-Aedes albopictus
+        |        |
+        |         \-Culex quinquefasciatus
+-Culicidae
+        |         /-Anopheles gambiae str. PEST
+        |        |
+         \Anopheles-Anopheles darlingi
+                 |
+                  \-Anopheles sinensis
+
+XP_001850318.1_Culex_quinquefasciatus
+                              /-Aedes aegypti
+                     /Culicinae
+            /Culicidae        \-Culex quinquefasciatus
+           |        |
+           |         \-Anopheles sinensis
+           |
+           |                                           /-Vanessa tameamea
+           |                                /Nymphalidae
+-Holometabola                              |           \-Bicyclus anynana
+           |                   /Papilionoidea
+           |                  |            |       /-Papilio machaon
+           |                  |             \Papilio
+           |        /Obtectomera                   \-Papilio xuthus
+           |       |          |
+           |       |          |          /-Galleria mellonella
+            \Ditrysia          \Pyraloidea
+                   |                     \-Ostrinia furnacalis
+                   |
+                    \-Hyposmocoma kahamanoa
+
+XP_023935452.1_Bicyclus_anynana
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+           /Papilionoidea          \-Danaus plexippus plexippus
+          |            |
+-Obtectomera            \-Papilio polytes
+          |
+           \-Amyelois transitella
+
+XP_028028070.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+          |
+-Obtectomera        /-Trichoplusia ni
+          |-Noctuidae
+          |         \-Heliothis virescens
+          |
+           \-Amyelois transitella
+
+XP_032530179.1_plexippus_plexippus
+                        /-Vanessa tameamea
+             /Nymphalidae
+            |           \-Danaus plexippus plexippus
+            |
+-Papilionoidea      /-Papilio machaon
+            |-Papilio
+            |       \-Papilio xuthus
+            |
+             \-Leptidea sinapis
+
+XP_011548449.1_Plutella_xylostella
+                                    /-Bombyx mori
+                              /Bombyx
+                   /Bombycoidea     \-Bombyx mandarina
+                  |          |
+        /Obtectomera          \-Manduca sexta
+       |          |
+       |          |         /-Spodoptera litura
+-Ditrysia          \Noctuidae
+       |                    \-Heliothis virescens
+       |
+        \-Plutella xylostella
+
+XP_021191417.1_Helicoverpa_armigera
+                    /-Helicoverpa armigera
+         /Heliothinae
+-Noctuidae          \-Heliothis virescens
+        |
+         \-Spodoptera litura
+
+XP_028029974.1_Bombyx_mandarina
+                 /-Bombyx mori
+           /Bombyx
+-Bombycoidea     \-Bombyx mandarina
+          |
+           \-Manduca sexta
+
+XP_028134781.1_virgifera_virgifera
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+                          |             \-Leptinotarsa decemlineata
+              /Chrysomelidae
+             |            |           /-Phyllotreta striolata
+-Chrysomeloidea            \Galerucinae
+             |                        \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_018565438.1_Anoplophora_glabripennis
+                                       /-Chrysomela lapponica
+                          /Chrysomelinae
+            /Chrysomeloidea            \-Leptinotarsa decemlineata
+           |             |
+-Cucujiformia             \-Anoplophora glabripennis
+           |
+            \-Aethina tumida
+
+XP_011144220.1_Harpegnathos_saltator
+        /-Odontomachus brunneus
+       |
+-Ponerini-Harpegnathos saltator
+       |
+        \-Dinoponera quadriceps
+
+XP_032788032.1_Daphnia_magna
+       /-Daphnia magna
+-Daphnia
+       \-Daphnia pulex
+
+XP_026754269.1_Galleria_mellonella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+          |
+          |           /-Vanessa tameamea
+          |          |
+-ObtectomeraNymphalidae-Bicyclus anynana
+          |          |
+          |           \-Danaus plexippus plexippus
+          |
+          |--Helicoverpa armigera
+          |
+           \-Manduca sexta
+
+XP_028132805.1_virgifera_virgifera
+                        /-Phyllotreta striolata
+             /Galerucinae
+-Chrysomelidae          \-Diabrotica virgifera virgifera
+            |
+             \-Chrysomela lapponica
+
+XP_026756863.1_Galleria_mellonella
+                  /-Papilio xuthus
+           /Papilio
+          |       \-Papilio machaon
+-Obtectomera
+          |--Galleria mellonella
+          |
+           \-Spodoptera litura
+
+XP_022825432.1_Spodoptera_litura
+                                           /-Vanessa tameamea
+                                /Nymphalidae
+                   /Papilionoidea          \-Danaus plexippus plexippus
+                  |            |
+                  |             \-Pieris rapae
+                  |
+                  |                   /-Trichoplusia ni
+        /Obtectomera         /Noctuidae
+       |          |-Noctuoidea        \-Spodoptera litura
+       |          |         |
+-Ditrysia         |          \-Arctia plantaginis
+       |          |
+       |           \-Manduca sexta
+       |
+        \-Zygaena filipendulae
+
+XP_030037804.1_Manduca_sexta
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+           /Papilionoidea          \-Danaus plexippus plexippus
+          |            |
+          |             \-Papilio xuthus
+          |
+          |         /-Helicoverpa armigera
+-ObtectomeraNoctuidae
+          |         \-Spodoptera litura
+          |
+          |--Galleria mellonella
+          |
+           \-Manduca sexta
+
+XP_032525939.1_plexippus_plexippus
+                                   /-Vanessa tameamea
+                                  |
+                        /Nymphalidae-Bicyclus anynana
+                       |          |
+           /Papilionoidea          \-Danaus plexippus plexippus
+          |            |
+          |             \-Pieris rapae
+          |
+          |                   /-Trichoplusia ni
+          |          /Noctuidae
+-ObtectomeraNoctuoidea        \-Spodoptera litura
+          |         |
+          |          \-Arctia plantaginis
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_015181990.1_Polistes_dominula
+                                    /-Trachymyrmex septentrionalis
+                        /Trachymyrmex
+                  /Attini           \-Trachymyrmex cornetzi
+                 |     |
+                 |      \-Atta colombica
+                 |
+        /Formicidae-Ooceraea biroi
+       |         |
+       |         |--Linepithema humile
+-Aculeata        |
+       |          \-Nylanderia fulva
+       |
+       |        /-Polistes dominula
+        \Polistes
+                \-Polistes canadensis
+
+XP_011567669.1_Plutella_xylostella
+                             /-Ostrinia furnacalis
+                   /Pyraloidea
+                  |          \-Galleria mellonella
+                  |
+                  |                        /-Vanessa tameamea
+        /Obtectomera            /Nymphalidae
+       |          |-Papilionoidea          \-Danaus plexippus plexippus
+       |          |            |
+       |          |             \-Papilio polytes
+-Ditrysia         |
+       |           \-Manduca sexta
+       |
+       |--Plutella xylostella
+       |
+        \-Eumeta japonica
+
+XP_021932743.1_Zootermopsis_nevadensis
+                      /-Branchiostoma japonicum
+         /Branchiostoma
+        |             \-Branchiostoma floridae
+        |
+-Bilateria                   /-Anoplophora glabripennis
+        |        /Holometabola
+        |       |            \-Galleria mellonella
+         \Neoptera
+                |         /-Blattella germanica
+                 \Blattodea
+                          \-Zootermopsis nevadensis
+
+XP_026757122.1_Galleria_mellonella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+          |
+          |                    /-Papilio polytes
+          |                   |
+-Obtectomera            /Papilio-Papilio machaon
+          |            |      |
+          |-Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Vanessa tameamea
+          |
+           \-Manduca sexta
+
+XP_026319716.1_Hyposmocoma_kahamanoa
+                                       /-Papilio machaon
+                                /Papilio
+                   /Papilionoidea      \-Papilio xuthus
+                  |            |
+                  |             \-Vanessa tameamea
+                  |
+        /Obtectomera        /-Ostrinia furnacalis
+       |          |-Crambidae
+       |          |         \-Chilo suppressalis
+-Ditrysia         |
+       |           \-Helicoverpa armigera
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_019756934.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_026331740.1_Hyposmocoma_kahamanoa
+                            /-Papilio polytes
+                           |
+                     /Papilio-Papilio machaon
+                    |      |
+        /Papilionoidea      \-Papilio xuthus
+       |            |
+-Ditrysia            \-Pieris rapae
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_023948567.1_Bicyclus_anynana
+                                  /-Bicyclus anynana
+                       /Nymphalidae
+                      |           \-Danaus plexippus plexippus
+            /Obtectomera
+           |          |--Helicoverpa armigera
+           |          |
+-Holometabola          \-Bombyx mori
+           |
+           |--Callosobruchus maculatus
+           |
+            \-Aedes albopictus
+
+XP_030754216.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_027839519.1_Aphis_gossypii
+                      /-Aphis glycines
+                     |
+                 /Aphis-Aphis craccivora
+                |    |
+                |     \-Aphis gossypii
+         /Aphidini
+        |       |--Rhopalosiphum maidis
+        |       |
+-Aphidinae       \-Melanaphis sacchari
+        |
+        |            /-Myzus persicae
+         \Macrosiphini
+                     \-Acyrthosiphon pisum
+
+XP_022833751.1_Spodoptera_litura
+                              /-Enterococcus caccae
+                             |
+                             |--Enterococcus plantarum
+                             |
+                             |--Enterococcus rotai
+                             |
+                             |                         /-Enterococcus sp. 7F3_DIV0205
+                  /Enterococcusunclassified Enterococcus
+                 |           |                         \-Enterococcus sp. 12C11_DIV0727
+                 |           |
+                 |           |--Enterococcus quebecensis
+-cellular organisms          |
+                 |           |--Enterococcus ureasiticus
+                 |           |
+                 |            \-Enterococcus termitis
+                 |
+                  \-Spodoptera litura
+
+XP_030026265.1_Manduca_sexta
+                      /-Bombyx mandarina
+           /Bombycoidea
+-Obtectomera          \-Manduca sexta
+          |
+           \-Arctia plantaginis
+
+XP_972182.1_Tribolium_castaneum
+                         /-Asbolus verrucosus
+            /Tenebrionidae
+-Cucujiformia            \-Tribolium castaneum
+           |
+            \-Aethina tumida
+
+XP_023949451.1_Bicyclus_anynana
+                    /-Papilio machaon
+                   |
+             /Papilio-Papilio polytes
+            |      |
+-Papilionoidea      \-Papilio xuthus
+            |
+             \-Bicyclus anynana
+
+XP_014362015.1_Papilio_machaon
+                               /-Papilio polytes
+                              |
+                        /Papilio-Papilio machaon
+                       |      |
+           /Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Vanessa tameamea
+          |
+-Obtectomera        /-Galleria mellonella
+          |-Pyralidae
+          |         \-Amyelois transitella
+          |
+           \-Manduca sexta
+
+XP_015837080.1_Tribolium_castaneum
+                                          /-Asbolus verrucosus
+                                         |
+                             /Tenebrionidae-Tenebrio molitor
+                            |            |
+                 /Cucujiformia            \-Tribolium castaneum
+                |           |
+        /Polyphaga           \-Aethina tumida
+       |        |
+-Neoptera        \-Onthophagus taurus
+       |
+        \-Cryptotermes secundus
+
+XP_018573476.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_018565422.1_Anoplophora_glabripennis
+            /-Aethina tumida
+           |
+-Cucujiformia-Tribolium castaneum
+           |
+            \-Anoplophora glabripennis
+
+XP_018565423.1_Anoplophora_glabripennis
+                     /-Aethina tumida
+         /Cucujiformia
+-Polyphaga           \-Anoplophora glabripennis
+        |
+         \-Nicrophorus vespilloides
+
+XP_017782709.1_Nicrophorus_vespilloides
+                     /-Oryctes borbonicus
+         /Scarabaeidae
+        |            \-Onthophagus taurus
+-Polyphaga
+        |--Nicrophorus vespilloides
+        |
+         \-Ignelater luminosus
+
+XP_012174803.1_Bombus_terrestris
+                      /-Bombus vosnesenskii
+                     |
+            /Pyrobombus-Bombus impatiens
+           |         |
+      /Bombus         \-Bombus bifarius
+     |     |
+     |      \-Bombus terrestris
+     |
+     |    /-Apis mellifera
+-Apidae  |
+     |-Apis-Apis cerana
+     |   |
+     |    \-Apis florea
+     |
+      \-Habropoda laboriosa
+
+XP_019755616.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_018320189.2_Agrilus_planipennis
+--Agrilus planipennis
+
+XP_028145693.1_virgifera_virgifera
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+                          |             \-Leptinotarsa decemlineata
+                          |
+              /Chrysomelidae          /-Phyllotreta striolata
+             |            |-Galerucinae
+             |            |           \-Diabrotica virgifera virgifera
+-Chrysomeloidea           |
+             |             \-Callosobruchus maculatus
+             |
+              \-Anoplophora glabripennis
+
+XP_019758264.1_Dendroctonus_ponderosae
+                         /-Sitophilus oryzae
+            /Curculionidae
+-Cucujiformia            \-Dendroctonus ponderosae
+           |
+            \-Chrysomela lapponica
+
+XP_028149430.1_virgifera_virgifera
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+                          |             \-Leptinotarsa decemlineata
+              /Chrysomelidae
+             |            |           /-Phyllotreta striolata
+-Chrysomeloidea            \Galerucinae
+             |                        \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_008213502.1_Nasonia_vitripennis
+                                   /-Nasonia vitripennis
+                       /Pteromalinae
+                      |            \-Trichomalopsis sarcophagae
+                      |
+           /Chalcidoidea           /-Trichogramma pretiosum
+          |           |-Trichogramma
+          |           |            \-Trichogramma brassicae
+-Hymenoptera          |
+          |            \-Copidosoma floridanum
+          |
+           \-Neodiprion lecontei
+
+XP_022818654.1_Spodoptera_litura
+                              /-Helicoverpa armigera
+                   /Heliothinae
+                  |           \-Heliothis virescens
+          /Noctuidae
+         |        |--Trichoplusia ni
+-Noctuoidea       |
+         |         \-Spodoptera litura
+         |
+          \-Arctia plantaginis
+
+XP_018571131.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_023952689.1_Bicyclus_anynana
+                    /-Papilio machaon
+                   |
+             /Papilio-Papilio polytes
+            |      |
+-Papilionoidea      \-Papilio xuthus
+            |
+             \-Bicyclus anynana
+
+XP_016842778.1_Nasonia_vitripennis
+                                              /-Nasonia vitripennis
+                                  /Pteromalinae
+                                 |            \-Trichomalopsis sarcophagae
+                      /Chalcidoidea
+                     |           |            /-Trichogramma pretiosum
+           /Parasitoida           \Trichogramma
+          |          |                        \-Trichogramma brassicae
+-Hymenoptera         |
+          |           \-Belonocnema treatae
+          |
+           \-Neodiprion lecontei
+
+XP_028040808.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+-Obtectomera          \-Manduca sexta
+          |
+          |       /-Papilio machaon
+           \Papilio
+                  \-Papilio polytes
+
+XP_018054703.1_Atta_colombica
+                  /-Trachymyrmex septentrionalis
+      /Trachymyrmex
+     |            \-Trachymyrmex cornetzi
+     |
+-Attini   /-Atta colombica
+     |-Atta
+     |    \-Atta cephalotes
+     |
+      \-Acromyrmex echinatior
+
+PSN36756.1_Blattella_germanica
+         /-Acanthaster planci
+        |
+        |                            /-Cryptotermes secundus
+        |                           |
+-Bilateria                /Termitoidae-Coptotermes formosanus
+        |                |          |
+        |        /Blattodea          \-Zootermopsis nevadensis
+        |       |        |
+         \Neoptera        \-Blattella germanica
+                |
+                 \-Aedes aegypti
+
+XP_030037524.1_Manduca_sexta
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+-Obtectomera
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+          |        |           \-Heliothis virescens
+           \Noctuidae
+                   |--Trichoplusia ni
+                   |
+                    \-Spodoptera litura
+
+XP_028142169.1_virgifera_virgifera
+                                        /-Chrysomela lapponica
+                           /Chrysomelinae
+                          |             \-Leptinotarsa decemlineata
+              /Chrysomelidae
+             |            |           /-Phyllotreta striolata
+-Chrysomeloidea            \Galerucinae
+             |                        \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_028029973.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+-Obtectomera          \-Manduca sexta
+          |
+           \-Chilo suppressalis
+
+XP_022188302.1_Nilaparvata_lugens
+                            /-Nilaparvata lugens
+                 /Delphacidae
+        /Hemiptera          \-Laodelphax striatellus
+       |        |
+       |         \-Bemisia tabaci
+       |
+       |                     /-Odontotermes formosanus
+-Neoptera          /Termitidae
+       |-Termitoidae         \-Microcerotermes annandalei
+       |          |
+       |           \-Coptotermes formosanus
+       |
+        \-Onthophagus taurus
+
+XP_030752209.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_015191850.1_Polistes_dominula
+                         /-Nomia melanderi
+               /Halictidae
+              |          \-Megalopta genalis
+              |
+              |          /-Apis mellifera
+              |         |
+        /Apoidea     /Apis-Apis dorsata
+       |      |     |   |
+       |      |-Apidae   \-Apis florea
+       |      |     |
+-Aculeata     |      \-Habropoda laboriosa
+       |      |
+       |       \-Megachile rotundata
+       |
+       |        /-Polistes dominula
+        \Polistes
+                \-Polistes canadensis
+
+XP_023715347.1_Cryptotermes_secundus
+                    /-Cryptotermes secundus
+                   |
+         /Termitoidae-Coptotermes formosanus
+        |          |
+-Blattodea          \-Zootermopsis nevadensis
+        |
+         \-Rhyparobia maderae
+
+XP_011569365.1_Plutella_xylostella
+                                       /-Helicoverpa armigera
+                            /Heliothinae
+                   /Noctuidae          \-Heliothis virescens
+                  |        |
+        /Obtectomera        \-Trichoplusia ni
+       |          |
+-Ditrysia          \-Ostrinia furnacalis
+       |
+        \-Plutella xylostella
+
+XP_001864465.1_Culex_quinquefasciatus
+                                       /-Aedes aegypti
+                              /Stegomyia
+                     /Culicinae        \-Aedes albopictus
+                    |        |
+                    |         \-Culex quinquefasciatus
+            /Culicidae
+           |        |         /-Anopheles gambiae str. PEST
+           |        |        |
+-Culicomorpha        \Anopheles-Anopheles darlingi
+           |                 |
+           |                  \-Anopheles sinensis
+           |
+            \-Clunio marinus
+
+XP_022820790.1_Spodoptera_litura
+                    /-Galleria mellonella
+           /Pyralidae
+          |         \-Amyelois transitella
+          |
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+          |-Noctuidae          \-Heliothis virescens
+-Obtectomera       |
+          |         \-Spodoptera litura
+          |
+          |       /-Papilio machaon
+          |-Papilio
+          |       \-Papilio xuthus
+          |
+           \-Manduca sexta
+
+PSN34232.1_Blattella_germanica
+                                            /-Neotermes koshunensis
+                              /Kalotermitidae
+                             |              \-Cryptotermes secundus
+                   /Termitoidae
+                  |          |--Coptotermes formosanus
+         /Blattoidea         |
+        |         |           \-Zootermopsis nevadensis
+        |         |
+-Blattodea         \-Periplaneta americana
+        |
+        |           /-Blattella germanica
+         \Blaberoidea
+                    \-Panesthia angustipennis spadica
+
+XP_026322901.1_Hyposmocoma_kahamanoa
+                             /-Ostrinia furnacalis
+                   /Pyraloidea
+                  |          \-Galleria mellonella
+                  |
+                  |         /-Helicoverpa armigera
+        /ObtectomeraNoctuidae
+       |          |         \-Spodoptera litura
+       |          |
+-Ditrysia         |--Pieris rapae
+       |          |
+       |           \-Manduca sexta
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_017775985.1_Nicrophorus_vespilloides
+                                   /-Anoplophora glabripennis
+                     /Chrysomeloidea
+         /Cucujiformia             \-Chrysomela lapponica
+        |           |
+        |            \-Tribolium castaneum
+-Polyphaga
+        |--Ignelater luminosus
+        |
+         \-Nicrophorus vespilloides
+
+XP_030029896.1_Manduca_sexta
+                     /-Ostrinia furnacalis
+           /Pyraloidea
+          |          \-Galleria mellonella
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+          |-Bombycoidea     \-Bombyx mandarina
+-Obtectomera         |
+          |           \-Manduca sexta
+          |
+          |         /-Helicoverpa armigera
+          |-Noctuidae
+          |         \-Spodoptera litura
+          |
+           \-Vanessa tameamea
+
+XP_030033142.1_Manduca_sexta
+                              /-Ostrinia furnacalis
+                     /Crambidae
+           /Pyraloidea        \-Chilo suppressalis
+          |         |
+          |          \-Galleria mellonella
+          |
+          |             /-Pieris rapae
+-ObtectomeraPapilionoidea
+          |             \-Danaus plexippus plexippus
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_014366709.1_Papilio_machaon
+       /-Papilio machaon
+      |
+-Papilio-Papilio polytes
+      |
+       \-Papilio xuthus
+
+XP_023717252.2_Cryptotermes_secundus
+                                   /-Cryptotermes secundus
+                     /Kalotermitidae
+          /Termitoidae             \-Neotermes koshunensis
+         |          |
+-Blattoidea          \-Coptotermes formosanus
+         |
+          \-Periplaneta americana
+
+XP_030752208.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_013182836.1_Amyelois_transitella
+                    /-Galleria mellonella
+           /Pyralidae
+          |         \-Amyelois transitella
+          |
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+-ObtectomeraNoctuidae          \-Heliothis virescens
+          |        |
+          |         \-Spodoptera litura
+          |
+          |       /-Papilio polytes
+          |      |
+           \Papilio-Papilio machaon
+                 |
+                  \-Papilio xuthus
+
+XP_013201179.1_Amyelois_transitella
+                    /-Galleria mellonella
+           /Pyralidae
+          |         \-Amyelois transitella
+          |
+          |       /-Papilio polytes
+-Obtectomera     |
+          |-Papilio-Papilio machaon
+          |      |
+          |       \-Papilio xuthus
+          |
+           \-Manduca sexta
+
+XP_030035516.1_Manduca_sexta
+                      /-Bombyx mori
+           /Bombycoidea
+          |           \-Manduca sexta
+          |
+-Obtectomera-Galleria mellonella
+          |
+          |       /-Papilio polytes
+          |      |
+           \Papilio-Papilio machaon
+                 |
+                  \-Papilio xuthus
+
+XP_017461585.1_Rhagoletis_zephyria
+                                /-Lucilia cuprina
+                      /Oestroidea
+           /Calyptratae         \-Sarcophaga bullata
+          |          |
+          |           \-Musca domestica
+          |
+-Schizophora                       /-Zeugodacus cucurbitae
+          |                  /Dacini
+          |           /Dacinae     \-Bactrocera oleae
+          |          |      |
+           \Tephritidae      \-Ceratitis capitata
+                     |
+                      \-Rhagoletis zephyria
+
+XP_019772434.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_019754716.1_Dendroctonus_ponderosae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_014370888.1_Papilio_machaon
+                                /-Vanessa tameamea
+                     /Nymphalidae
+                    |           \-Danaus plexippus plexippus
+        /Papilionoidea
+       |            |       /-Papilio machaon
+       |            |      |
+-Ditrysia            \Papilio-Papilio polytes
+       |                   |
+       |                    \-Papilio xuthus
+       |
+        \-Plutella xylostella
+
+XP_018573472.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_022835647.1_Spodoptera_litura
+                                                                    /-Flectobacillus major
+                                                      /Flectobacillus
+                                                     |              \-Flectobacillus sp. BAB-3569
+                                         /Cytophagaceae
+                                        |            |--Arcicella aurantiaca
+                               /Cytophagia           |
+                              |         |             \-Pseudarcicella hirudinis
+                  /Bacteroidetes        |
+                 |            |          \-Cytophagia bacterium
+-cellular organisms           |
+                 |             \-Crocinitomicaceae bacterium
+                 |
+                  \-Spodoptera litura
+
+XP_023721122.1_Cryptotermes_secundus
+                               /-Odontotermes formosanus
+                     /Termitidae
+                    |          \-Microcerotermes annandalei
+                    |
+          /Termitoidae-Cryptotermes secundus
+         |          |
+         |          |--Coptotermes formosanus
+-Blattoidea         |
+         |           \-Zootermopsis nevadensis
+         |
+          \-Periplaneta americana
+
+XP_031763958.1_Galleria_mellonella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+          |
+-Obtectomera-Trichoplusia ni
+          |
+          |--Vanessa tameamea
+          |
+           \-Manduca sexta
+
+XP_013189559.1_Amyelois_transitella
+                              /-Galleria mellonella
+                     /Pyralidae
+           /Pyraloidea        \-Amyelois transitella
+          |         |
+          |          \-Ostrinia furnacalis
+          |
+          |                    /-Papilio polytes
+          |                   |
+-Obtectomera            /Papilio-Papilio machaon
+          |            |      |
+          |-Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Vanessa tameamea
+          |
+           \-Manduca sexta
+
+XP_019766466.1_Dendroctonus_ponderosae
+--Dendroctonus ponderosae
+
+XP_001600108.2_Nasonia_vitripennis
+                                           /-Nasonia vitripennis
+                               /Pteromalinae
+                   /Chalcidoidea           \-Trichomalopsis sarcophagae
+                  |           |
+        /Parasitoida           \-Copidosoma floridanum
+       |          |
+-Apocrita          \-Belonocnema treatae
+       |
+        \-Ooceraea biroi
+
+XP_028029940.1_Bombyx_mandarina
+                              /-Helicoverpa armigera
+                     /Noctuidae
+           /Noctuoidea        \-Spodoptera litura
+          |         |
+          |          \-Arctia plantaginis
+-Obtectomera
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
+
+XP_023311495.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_025828881.1_Agrilus_planipennis
+                                 /-Ignelater luminosus
+                      /Elateroidea
+         /Elateriformia          \-Photinus pyralis
+        |            |
+        |             \-Agrilus planipennis
+        |
+        |            /-Tribolium castaneum
+-PolyphagaCucujiformia
+        |            \-Callosobruchus maculatus
+        |
+        |--Nicrophorus vespilloides
+        |
+         \-Oryctes borbonicus
+
+XP_018573524.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_018568749.1_Anoplophora_glabripennis
+--Anoplophora glabripennis
+
+XP_032529516.1_plexippus_plexippus
+                               /-Papilio polytes
+                              |
+                        /Papilio-Papilio machaon
+                       |      |
+           /Papilionoidea      \-Papilio xuthus
+          |            |
+          |             \-Danaus plexippus plexippus
+-Obtectomera
+          |--Galleria mellonella
+          |
+           \-Manduca sexta
+
+XP_022915458.1_Onthophagus_taurus
+                      /-Agrilus planipennis
+         /Elateriformia
+        |             \-Ignelater luminosus
+        |
+        |            /-Oryctes borbonicus
+-PolyphagaScarabaeidae
+        |            \-Onthophagus taurus
+        |
+        |--Nicrophorus vespilloides
+        |
+         \-Asbolus verrucosus
+
+XP_022915650.1_Onthophagus_taurus
+                      /-Asbolus verrucosus
+                     |
+         /Tenebrionidae-Tenebrio molitor
+        |            |
+        |             \-Tribolium castaneum
+        |
+-Polyphaga           /-Oryctes borbonicus
+        |-Scarabaeidae
+        |            \-Onthophagus taurus
+        |
+         \-Nicrophorus vespilloides
+
+XP_023941626.1_Bicyclus_anynana
+                                   /-Vanessa tameamea
+                        /Nymphalidae
+           /Papilionoidea          \-Bicyclus anynana
+          |            |
+          |             \-Pieris rapae
+          |
+          |          /-Amyelois transitella
+-ObtectomeraPyraloidea
+          |          \-Chilo suppressalis
+          |
+          |                    /-Helicoverpa armigera
+          |         /Heliothinae
+          |        |           \-Heliothis virescens
+           \Noctuidae
+                   |--Trichoplusia ni
+                   |
+                    \-Spodoptera litura
+
+XP_030754217.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_012287111.1_Orussus_abietinus
+                            /-Dufourea novaeangliae
+                  /Halictidae
+                 |          \-Nomia melanderi
+           /Apoidea
+          |      |          /-Bombus impatiens
+          |       \Pyrobombus
+-Hymenoptera                \-Bombus bifarius
+          |
+          |--Orussus abietinus
+          |
+           \-Cephus cinctus
+
+XP_021191446.1_Helicoverpa_armigera
+                                /-Leptidea sinapis
+                   /Papilionoidea
+                  |             \-Papilio machaon
+                  |
+                  |         /-Helicoverpa armigera
+                  |-Noctuidae
+        /Obtectomera        \-Spodoptera litura
+       |          |
+       |          |         /-Galleria mellonella
+       |          |-Pyralidae
+-Ditrysia         |         \-Amyelois transitella
+       |          |
+       |           \-Bombyx mori
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_025830222.1_Agrilus_planipennis
+                         /-Agrilus planipennis
+            /Elateriformia
+           |             \-Ignelater luminosus
+-Holometabola
+           |           /-Amyelois transitella
+            \Obtectomera
+                       \-Papilio xuthus
+
+XP_018335102.1_Agrilus_planipennis
+                                 /-Ignelater luminosus
+                      /Elateroidea
+         /Elateriformia          \-Photinus pyralis
+        |            |
+        |             \-Agrilus planipennis
+-Polyphaga
+        |                          /-Anoplophora glabripennis
+        |            /Chrysomeloidea
+         \Cucujiformia             \-Callosobruchus maculatus
+                    |
+                     \-Aethina tumida
+
+XP_023953337.1_Bicyclus_anynana
+--Bicyclus anynana anynana
+
+XP_027839553.1_Aphis_gossypii
+                     /-Acyrthosiphon pisum
+         /Macrosiphini
+        |            \-Myzus persicae
+-Aphidinae
+        |     /-Aphis gossypii
+         \Aphis
+              \-Aphis craccivora
+
+XP_030037279.1_Manduca_sexta
+                    /-Spodoptera litura
+           /Noctuidae
+          |         \-Heliothis virescens
+          |
+          |       /-Papilio machaon
+-ObtectomeraPapilio
+          |       \-Papilio polytes
+          |
+          |--Chilo suppressalis
+          |
+           \-Manduca sexta
+
+XP_022821775.1_Spodoptera_litura
+                                         /-Helicoverpa armigera
+                              /Heliothinae
+                             |           \-Heliothis virescens
+                     /Noctuidae
+                    |        |--Trichoplusia ni
+           /Noctuoidea       |
+          |         |         \-Spodoptera litura
+-Obtectomera        |
+          |          \-Arctia plantaginis
+          |
+           \-Pieris rapae
+
+XP_013193075.1_Amyelois_transitella
+                    /-Galleria mellonella
+           /Pyralidae
+          |         \-Amyelois transitella
+          |
+          |       /-Papilio polytes
+          |      |
+-ObtectomeraPapilio-Papilio machaon
+          |      |
+          |       \-Papilio xuthus
+          |
+          |--Trichoplusia ni
+          |
+           \-Manduca sexta
+
+XP_030752211.1_Sitophilus_oryzae
+             /-Sitophilus oryzae
+-Curculionidae
+             \-Dendroctonus ponderosae
+
+XP_028028071.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+-Obtectomera
+          |         /-Trichoplusia ni
+          |        |
+           \Noctuidae-Spodoptera litura
+                   |
+                    \-Heliothis virescens
+
+XP_015182011.1_Polistes_dominula
+                         /-Nomia melanderi
+               /Halictidae
+              |          \-Megalopta genalis
+              |
+              |          /-Apis mellifera
+              |         |
+        /Apoidea     /Apis-Apis dorsata
+       |      |     |   |
+       |      |-Apidae   \-Apis florea
+       |      |     |
+-Aculeata     |      \-Habropoda laboriosa
+       |      |
+       |       \-Megachile rotundata
+       |
+       |        /-Polistes dominula
+        \Polistes
+                \-Polistes canadensis
+
+XP_015608814.1_Cephus_cinctus
+                                    /-Dufourea novaeangliae
+                          /Halictidae
+                   /Apoidea         \-Nomia melanderi
+                  |      |
+           /Apocrita      \-Bombus terrestris
+          |       |
+          |        \-Belonocnema treatae
+          |
+-Hymenoptera-Orussus abietinus
+          |
+          |--Cephus cinctus
+          |
+           \-Neodiprion lecontei
+
+XP_021194049.1_Helicoverpa_armigera
+                               /-Helicoverpa armigera
+                    /Heliothinae
+           /Noctuidae          \-Heliothis virescens
+          |        |
+          |         \-Spodoptera litura
+          |
+-Obtectomera-Chilo suppressalis
+          |
+          |--Papilio machaon
+          |
+           \-Manduca sexta
+
+XP_021194605.1_Helicoverpa_armigera
+                                         /-Helicoverpa armigera
+                              /Heliothinae
+                             |           \-Heliothis virescens
+                     /Noctuidae
+                    |        |--Trichoplusia ni
+           /Noctuoidea       |
+          |         |         \-Spodoptera litura
+-Obtectomera        |
+          |          \-Arctia plantaginis
+          |
+           \-Manduca sexta
+
+XP_021196645.1_Helicoverpa_armigera
+                    /-Helicoverpa armigera
+         /Heliothinae
+        |           \-Heliothis virescens
+-Noctuidae
+        |--Spodoptera litura
+        |
+         \-Trichoplusia ni
+
+XP_013194175.1_Amyelois_transitella
+                  /-Papilio machaon
+                 |
+           /Papilio-Papilio polytes
+          |      |
+-Obtectomera      \-Papilio xuthus
+          |
+           \-Amyelois transitella
+
+XP_021186007.1_Helicoverpa_armigera
+                               /-Helicoverpa armigera
+                    /Heliothinae
+           /Noctuidae          \-Heliothis virescens
+          |        |
+          |         \-Spodoptera litura
+          |
+          |       /-Papilio machaon
+-ObtectomeraPapilio
+          |       \-Papilio xuthus
+          |
+          |--Amyelois transitella
+          |
+           \-Manduca sexta
+
+XP_022917213.1_Onthophagus_taurus
+                     /-Oryctes borbonicus
+         /Scarabaeidae
+-Polyphaga           \-Onthophagus taurus
+        |
+         \-Nicrophorus vespilloides
+
+XP_028028205.1_Bombyx_mandarina
+                            /-Bombyx mori
+                      /Bombyx
+           /Bombycoidea     \-Bombyx mandarina
+          |          |
+          |           \-Manduca sexta
+          |
+          |         /-Galleria mellonella
+          |-Pyralidae
+-Obtectomera        \-Amyelois transitella
+          |
+          |         /-Helicoverpa armigera
+          |-Noctuidae
+          |         \-Spodoptera litura
+          |
+           \-Vanessa tameamea
+
+XP_022915096.1_Onthophagus_taurus
+                     /-Oryctes borbonicus
+         /Scarabaeidae
+-Polyphaga           \-Onthophagus taurus
+        |
+         \-Nicrophorus vespilloides
+
+XP_026319979.1_Hyposmocoma_kahamanoa
+                                           /-Vanessa tameamea
+                                /Nymphalidae
+                               |           \-Bicyclus anynana
+                   /Papilionoidea
+                  |            |--Papilio polytes
+                  |            |
+                  |             \-Pieris rapae
+                  |
+                  |          /-Amyelois transitella
+        /ObtectomeraPyraloidea
+       |          |          \-Chilo suppressalis
+       |          |
+       |          |         /-Trichoplusia ni
+-Ditrysia         |-Noctuidae
+       |          |         \-Heliothis virescens
+       |          |
+       |           \-Manduca sexta
+       |
+        \-Hyposmocoma kahamanoa
+
+XP_028139023.1_virgifera_virgifera
+                           /-Leptinotarsa decemlineata
+              /Chrysomelidae
+-Chrysomeloidea            \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_011553997.1_Plutella_xylostella
+                                    /-Bombyx mori
+                              /Bombyx
+                   /Bombycoidea     \-Bombyx mandarina
+                  |          |
+                  |           \-Manduca sexta
+                  |
+        /Obtectomera        /-Trichoplusia ni
+       |          |-Noctuidae
+       |          |         \-Heliothis virescens
+-Ditrysia         |
+       |           \-Papilio polytes
+       |
+        \-Plutella xylostella
+
+XP_018330919.1_Agrilus_planipennis
+                                  /-Agrilus planipennis
+                     /Elateriformia
+                    |             \-Ignelater luminosus
+            /Polyphaga
+           |        |            /-Aethina tumida
+-Holometabola        \Cucujiformia
+           |                     \-Chrysomela lapponica
+           |
+            \-Amyelois transitella
+
+XP_028139019.1_virgifera_virgifera
+                         /-Phyllotreta striolata
+              /Galerucinae
+-Chrysomeloidea          \-Diabrotica virgifera virgifera
+             |
+              \-Anoplophora glabripennis
+
+XP_032523485.1_plexippus_plexippus
+                              /-Ostrinia furnacalis
+                     /Crambidae
+           /Pyraloidea        \-Chilo suppressalis
+          |         |
+          |          \-Galleria mellonella
+          |
+          |             /-Pieris rapae
+-ObtectomeraPapilionoidea
+          |             \-Danaus plexippus plexippus
+          |
+          |                 /-Bombyx mori
+          |           /Bombyx
+           \Bombycoidea     \-Bombyx mandarina
+                     |
+                      \-Manduca sexta
