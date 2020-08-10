@@ -1,0 +1,3 @@
+HMM Profile	Profile Length	Gene ID	Gene Length	E Value	Profile Start	Profile End	Gene Start	Gene End	Coverage
+GH1.hmm	429	XP_018054703.1	505	8.2e-158	4	428	28	487	0.9883449883449883
+GH1.hmm	429	XP_018054705.1	498	7.8e-158	4	428	28	487	0.9883449883449883

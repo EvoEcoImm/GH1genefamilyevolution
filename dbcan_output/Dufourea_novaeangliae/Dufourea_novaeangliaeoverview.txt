@@ -1,0 +1,2 @@
+Gene ID	HMMER	Hotpep	DIAMOND	Signalp	#ofTools
+XP_015431062.1	GH1(32-489)	GH1	GH1	N	3
