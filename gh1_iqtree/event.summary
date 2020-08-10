@@ -1,0 +1,540 @@
+COST: 743.5
+
+
+Duplications
+Gene                L. Bound            U. Bound            
+=================== =================== =================== 
+n980                n5989               N/A
+n4                  Frankliniella       n5910
+r12719              Frankliniella       n5910
+n979                n5989               N/A
+n952                Daphnia             n5989
+n950                Daphnia             n5989
+n948                Daphnia             n5989
+n946                Daphnia             n5989
+n977                Folsomia            n5987
+n967                Folsomia            n5987
+n965                Folsomia            n5987
+n963                Folsomia            n5987
+n957                Folsomia            n5987
+n955                Folsomia            n5987
+n962                Folsomia            n5987
+n960                Folsomia            n5987
+n976                Folsomia            n5987
+n972                Folsomia            n5987
+n970                Folsomia            n5987
+n975                Folsomia            n5987
+r12723              n5985               n5987
+r12724              n5985               n5987
+n120                n5931               n5981
+n112                n5931               n5981
+n90                 n5913               n5927
+n80                 Nasonia             n5913
+n89                 n5913               n5927
+n87                 n5913               n5927
+n93                 Polistes            n5926
+n108                Orussus             n5929
+n106                Orussus             n5929
+n102                Orussus             n5929
+n105                Orussus             n5929
+n127                n5899               n5985
+n279                n5985               n5987
+n239                n5985               n5987
+n171                n5899               n5985
+r12767              n5899               n5985
+r12768              n5899               n5985
+n137                n5899               n5985
+n133                n5897               n5899
+n144                n5899               n5985
+n166                n5899               n5985
+n160                n5899               n5985
+r12772              n5897               n5899
+r12776              Cryptotermes        n5897
+n157                Blattella           n5899
+n165                n5897               n5899
+n174                Tribolium           n5943
+n238                n5984               n5985
+n203                Frankliniella       n5910
+n201                Frankliniella       n5910
+n194                n5965               n5967
+r12800              n5964               n5965
+n219                n5902               n5904
+n213                Aphis               n5902
+n226                Rhagoletis          n5975
+n231                Culex               n5970
+r12757              n5946               n5980
+n252                n5946               n5980
+n249                Agrilus             n5946
+n247                Agrilus             n5946
+r12760              n5934               n5944
+n275                n5934               n5944
+n271                n5934               n5944
+n267                n5934               n5944
+n261                Onthophagus         n5934
+n259                Onthophagus         n5934
+n257                Onthophagus         n5934
+n264                Onthophagus         n5934
+n270                Onthophagus         n5934
+n274                Nicrophorus         n5934
+n9                  n5927               n5929
+r12742              n5944               n5946
+n16                 Onthophagus         n5934
+n14                 Onthophagus         n5934
+n12                 Onthophagus         n5934
+n23                 n5937               n5941
+n938                n5943               n5944
+n732                n5941               n5943
+n718                Dendroctonus        n5940
+n729                Anoplophora         n5937
+n721                Anoplophora         n5937
+n728                Anoplophora         n5937
+n726                Anoplophora         n5937
+n724                Anoplophora         n5937
+n739                Tribolium           n5943
+r12811              Tribolium           n5943
+n735                Tribolium           n5943
+n937                n5943               n5944
+n849                n5943               n5944
+n841                Tribolium           n5943
+n848                Tribolium           n5943
+n846                Tribolium           n5943
+r12814              n5941               n5943
+r12819              n5937               n5941
+n803                Diabrotica          n5937
+n793                Diabrotica          n5937
+n789                Diabrotica          n5937
+n792                Diabrotica          n5937
+n802                Diabrotica          n5937
+n800                Diabrotica          n5937
+n798                Diabrotica          n5937
+n796                Diabrotica          n5937
+r12825              Anoplophora         n5937
+n832                Anoplophora         n5937
+n814                Anoplophora         n5937
+n812                Anoplophora         n5937
+n810                Anoplophora         n5937
+n806                Anoplophora         n5937
+n809                Anoplophora         n5937
+n831                Anoplophora         n5937
+n823                Anoplophora         n5937
+n819                Anoplophora         n5937
+n817                Anoplophora         n5937
+n822                Anoplophora         n5937
+n830                Anoplophora         n5937
+n828                Anoplophora         n5937
+n826                Anoplophora         n5937
+r12821              Diabrotica          n5937
+r12822              Diabrotica          n5937
+r12823              Diabrotica          n5937
+n778                Diabrotica          n5937
+n784                Diabrotica          n5937
+n782                Diabrotica          n5937
+n768                Sitophilus          n5940
+n766                Sitophilus          n5940
+n771                Dendroctonus        n5940
+r12816              n5937               n5941
+n763                n5937               n5941
+n757                n5937               n5941
+n749                Diabrotica          n5937
+n747                Diabrotica          n5937
+n745                Diabrotica          n5937
+n743                Diabrotica          n5937
+n754                Anoplophora         n5937
+n752                Anoplophora         n5937
+n762                n5937               n5941
+n882                n5937               n5941
+n854                Diabrotica          n5937
+n859                Diabrotica          n5937
+n880                Anoplophora         n5937
+r12827              Anoplophora         n5937
+r12828              Anoplophora         n5937
+r12829              Anoplophora         n5937
+n864                Anoplophora         n5937
+n862                Anoplophora         n5937
+n873                Anoplophora         n5937
+n871                Anoplophora         n5937
+n869                Anoplophora         n5937
+n877                Anoplophora         n5937
+n936                n5940               n5941
+r12831              n5940               n5941
+n899                n5940               n5941
+n891                Dendroctonus        n5940
+n894                Dendroctonus        n5940
+n897                Sitophilus          n5940
+n935                n5940               n5941
+n909                n5940               n5941
+n907                n5940               n5941
+n903                Sitophilus          n5940
+n934                n5940               n5941
+n916                Dendroctonus        n5940
+n914                Dendroctonus        n5940
+n912                Dendroctonus        n5940
+n919                Sitophilus          n5940
+n923                Sitophilus          n5940
+n932                Dendroctonus        n5940
+n926                Dendroctonus        n5940
+n931                Dendroctonus        n5940
+n929                Dendroctonus        n5940
+n888                Dendroctonus        n5940
+n886                Dendroctonus        n5940
+n76                 Agrilus             n5946
+n42                 Agrilus             n5946
+n38                 Agrilus             n5946
+n34                 Agrilus             n5946
+n32                 Agrilus             n5946
+n30                 Agrilus             n5946
+n37                 Agrilus             n5946
+n41                 Agrilus             n5946
+n75                 Agrilus             n5946
+n73                 Agrilus             n5946
+n71                 Agrilus             n5946
+n67                 Agrilus             n5946
+n51                 Agrilus             n5946
+n49                 Agrilus             n5946
+n45                 Agrilus             n5946
+n48                 Agrilus             n5946
+n66                 Agrilus             n5946
+n64                 Agrilus             n5946
+n56                 Agrilus             n5946
+n54                 Agrilus             n5946
+n63                 Agrilus             n5946
+r12835              Agrilus             n5946
+r12836              Agrilus             n5946
+n70                 Agrilus             n5946
+r12838              n5967               n5979
+n597                n5967               n5979
+n407                n5967               n5979
+n297                n5965               n5967
+n287                n5957               n5961
+n296                n5965               n5967
+n406                n5967               n5979
+r12840              n5965               n5967
+r12852              Manduca             n5960
+n304                Bombyx              n5960
+n302                Bombyx              n5960
+n300                Bombyx              n5960
+n321                n5951               n5965
+n317                Bicyclus            n5949
+n313                Bicyclus            n5949
+n311                Bicyclus            n5949
+n316                Bicyclus            n5949
+n398                Papilio             n5951
+r12843              n5962               n5964
+n345                Galleria            n5954
+n348                Amyelois            n5954
+r12845              n5961               n5962
+r12846              n5961               n5962
+n329                Bombyx              n5960
+n340                n5957               n5961
+n338                n5957               n5961
+r12855              Spodoptera          n5957
+n391                n5961               n5962
+n367                Bombyx              n5960
+n390                n5961               n5962
+n376                n5957               n5961
+n389                Manduca             n5960
+n387                Manduca             n5960
+n381                Manduca             n5960
+n386                Manduca             n5960
+n384                Manduca             n5960
+n325                Spodoptera          n5957
+n360                Plutella            n5967
+n354                Plutella            n5967
+r12858              Plutella            n5967
+n359                Plutella            n5967
+n357                Plutella            n5967
+n405                Danaus              n5949
+n596                n5967               n5979
+n578                n5967               n5979
+n566                n5967               n5979
+n550                n5967               n5979
+n482                n5967               n5979
+n410                Plutella            n5967
+n481                n5967               n5979
+n413                Plutella            n5967
+n476                n5965               n5967
+n416                Helicoverpa         n5957
+n475                n5965               n5967
+n459                n5965               n5967
+n449                n5965               n5967
+n444                n5949               n5951
+n434                Danaus              n5949
+n432                Danaus              n5949
+n430                Danaus              n5949
+n443                Bicyclus            n5949
+n441                Bicyclus            n5949
+n439                Bicyclus            n5949
+r12870              n5964               n5965
+n457                Manduca             n5960
+n454                Bombyx              n5960
+n452                Bombyx              n5960
+n474                n5957               n5961
+n464                n5957               n5961
+n473                n5957               n5961
+n467                Spodoptera          n5957
+n479                Plutella            n5967
+n549                n5965               n5967
+n489                Hyposmocoma         n5964
+n485                Hyposmocoma         n5964
+n488                Hyposmocoma         n5964
+n548                n5965               n5967
+n530                n5965               n5967
+n522                n5965               n5967
+r12880              Galleria            n5954
+n505                n5949               n5951
+n499                Bicyclus            n5949
+n502                Danaus              n5949
+n512                Papilio             n5951
+n510                Papilio             n5951
+n508                Papilio             n5951
+n517                Manduca             n5960
+n529                n5954               n5962
+n528                Amyelois            n5954
+n541                Bicyclus            n5949
+n539                Bicyclus            n5949
+n533                Bicyclus            n5949
+n538                Bicyclus            n5949
+n536                Bicyclus            n5949
+n546                Danaus              n5949
+n544                Danaus              n5949
+n563                n5965               n5967
+n571                Hyposmocoma         n5964
+n569                Hyposmocoma         n5964
+n576                Papilio             n5951
+n574                Papilio             n5951
+n581                Plutella            n5967
+n594                n5965               n5967
+n588                n5965               n5967
+n711                n5967               n5979
+n683                n5967               n5979
+n663                n5967               n5979
+n661                n5967               n5979
+n641                n5957               n5961
+n660                n5967               n5979
+n657                Plutella            n5967
+n682                n5965               n5967
+n680                n5965               n5967
+n670                n5965               n5967
+n710                n5967               n5979
+n686                Plutella            n5967
+n709                n5965               n5967
+n702                n5957               n5961
+n695                Manduca             n5960
+n693                Manduca             n5960
+n636                n5978               n5979
+n622                n5972               n5978
+n602                n5970               n5972
+n621                n5972               n5978
+n619                n5972               n5978
+n617                n5972               n5978
+n616                n5970               n5972
+n614                n5970               n5972
+n629                n5977               n5978
+n625                Rhagoletis          n5975
+Duplications: 327 
+
+
+Losses
+Species             No. of Losses  
+=================== ============== 
+n5940               4
+Manduca             5
+Plutella            9
+Apis                0
+n5989               0
+Aedes               1
+n5927               0
+Culex               2
+n5979               2
+n5931               4
+n5970               2
+Helicoverpa         3
+n5944               0
+Dufourea            0
+Nasonia             2
+Hyposmocoma         22
+n5897               1
+n5907               1
+Galleria            4
+Agrilus             2
+Orussus             3
+n5949               5
+Acyrthosiphon       0
+Cimex               1
+Diabrotica          5
+n5977               1
+n5985               1
+Polistes            1
+Dendroctonus        0
+n5926               1
+Tribolium           1
+n5961               8
+n5924               1
+n5980               1
+Anopheles           1
+Harpegnathos        0
+n5987               0
+n5964               5
+n5981               0
+Zootermopsis        5
+Acromyrmex          0
+Nicrophorus         3
+n5962               5
+Drosophila          2
+n5983               1
+n5967               1
+Daphnia             2
+n5975               0
+n5904               1
+n5954               13
+Bombus              0
+n5984               0
+n5943               2
+n5910               3
+Musca               1
+n5960               4
+Amyelois            6
+Nilaparvata         0
+n5972               0
+Diaphorina          1
+n5937               0
+n5923               2
+Danaus              6
+n5902               0
+Anoplophora         2
+n5899               4
+n5978               1
+Spodoptera          4
+n5941               2
+n5957               11
+Onthophagus         3
+Frankliniella       1
+n5934               2
+n5946               2
+Copidosoma          1
+Bicyclus            2
+Sitophilus          5
+Bombyx              6
+Papilio             9
+Atta                0
+Cryptotermes        1
+Folsomia            2
+Aphis               0
+n5908               1
+n5951               17
+n5916               1
+Blattella           4
+n5918               1
+n5921               0
+n5965               2
+Cephus              3
+n5929               0
+Pediculus           5
+Rhagoletis          1
+n5913               3
+
+Losses: 253
+
+
+Species             Duplications   cD_Nodes       Transfers_from Transfers_to   Losses         
+=================== ============== ============== ============== ============== ============== 
+n5940               7              0              0              0              4              
+Manduca             10             0              0              0              5              
+Plutella            11             0              0              0              9              
+Apis                0              0              0              0              0              
+n5989               2              0              0              0              0              
+Aedes               0              0              0              0              1              
+n5927               1              0              0              0              0              
+Culex               1              0              0              0              2              
+n5979               0              0              0              0              2              
+n5931               2              0              0              0              4              
+n5970               3              0              0              0              2              
+Helicoverpa         1              0              0              0              3              
+n5944               1              0              0              0              0              
+Dufourea            0              0              0              0              0              
+Nasonia             1              0              0              0              2              
+Hyposmocoma         5              0              0              0              22             
+n5897               3              0              0              0              1              
+n5907               0              0              0              0              1              
+Galleria            2              0              0              0              4              
+Agrilus             26             0              0              0              2              
+Orussus             4              0              0              0              3              
+n5949               2              0              0              0              5              
+Acyrthosiphon       0              0              0              0              0              
+Cimex               0              0              0              0              1              
+Diabrotica          20             0              0              0              5              
+n5977               1              0              0              0              1              
+n5985               4              0              0              0              1              
+Polistes            1              0              0              0              1              
+Dendroctonus        13             0              0              0              0              
+n5926               0              0              0              0              1              
+Tribolium           7              0              0              0              1              
+n5961               4              0              0              0              8              
+n5924               0              0              0              0              1              
+n5980               0              0              0              0              1              
+Anopheles           0              0              0              0              1              
+Harpegnathos        0              0              0              0              0              
+n5987               0              0              0              0              0              
+n5964               2              0              0              0              5              
+n5981               0              0              0              0              0              
+Zootermopsis        0              0              0              0              5              
+Acromyrmex          0              0              0              0              0              
+Nicrophorus         1              0              0              0              3              
+n5962               1              0              0              0              5              
+Drosophila          0              0              0              0              2              
+n5983               0              0              0              0              1              
+n5967               16             0              0              0              1              
+Daphnia             4              0              0              0              2              
+n5975               0              0              0              0              0              
+n5904               0              0              0              0              1              
+n5954               1              0              0              0              13             
+Bombus              0              0              0              0              0              
+n5984               1              0              0              0              0              
+n5943               3              0              0              0              2              
+n5910               0              0              0              0              3              
+Musca               0              0              0              0              1              
+n5960               0              0              0              0              4              
+Amyelois            2              0              0              0              6              
+Nilaparvata         0              0              0              0              0              
+n5972               4              0              0              0              0              
+Diaphorina          0              0              0              0              1              
+n5937               7              0              0              0              0              
+n5923               0              0              0              0              2              
+Danaus              7              0              0              0              6              
+n5902               1              0              0              0              0              
+Anoplophora         32             0              0              0              2              
+n5899               8              0              0              0              4              
+n5978               1              0              0              0              1              
+Spodoptera          3              0              0              0              4              
+n5941               2              0              0              0              2              
+n5957               9              0              0              0              11             
+Onthophagus         8              0              0              0              3              
+Frankliniella       4              0              0              0              1              
+n5934               4              0              0              0              2              
+n5946               2              0              0              0              2              
+Copidosoma          0              0              0              0              1              
+Bicyclus            13             0              0              0              2              
+Sitophilus          6              0              0              0              5              
+Bombyx              7              0              0              0              6              
+Papilio             6              0              0              0              9              
+Atta                0              0              0              0              0              
+Cryptotermes        1              0              0              0              1              
+Folsomia            12             0              0              0              2              
+Aphis               1              0              0              0              0              
+n5908               0              0              0              0              1              
+n5951               1              0              0              0              17             
+n5916               0              0              0              0              1              
+Blattella           1              0              0              0              4              
+n5918               0              0              0              0              1              
+n5921               0              0              0              0              0              
+n5965               19             0              0              0              2              
+Cephus              0              0              0              0              3              
+n5929               0              0              0              0              0              
+Pediculus           0              0              0              0              5              
+Rhagoletis          2              0              0              0              1              
+n5913               3              0              0              0              3              
+
+Duplications: 327
+Losses: 253
+
+

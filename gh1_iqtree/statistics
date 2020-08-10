@@ -1,0 +1,44 @@
+Statistics for: GH1s_genome_protein.faa.mafft.rascal.contree.modified.tree.selected.nwk.reconcile.gene.nwk
+
+Reconciliation Information
+- Duplications: 327
+- Co-Divergences: 0
+- Transfers: 0
+- Losses: 253
+- Number of Temporally Feasible Optimal Solutions: 1
+
+
+Tree Without Losses
+- Total nodes: 981
+- Internal nodes: 490
+- Leaf nodes: 491
+- Polytomies: 0
+- Size of largest polytomy: 0
+- Height: 27
+
+Tree With Losses
+- Total nodes: 1487
+- Internal nodes: 743
+- Leaf nodes: 744
+- Size of largest polytomy: 0
+- Height: 31
+
+Edge weight range: [0.0, 100.0]
+
+
+This gene tree is reconciled.
+ - In GUI mode, the pruned species tree can be viewed
+   by clicking "Show Species Tree" in the
+   Reconcile Panel.
+ - From the command line, the pruned species tree can
+   be saved with the option --stpruned.
+
+Statistics for species tree pruned from: GH1s_genome_species.tree.modified
+
+- Total nodes: 95
+- Internal nodes: 47
+- Leaf nodes: 48
+- Polytomies: 0
+- Size of largest polytomy: 0
+- Height: 14
+
