@@ -1,0 +1,494 @@
+650.0	298	0	0	203	456	911	91	31	13	true	n5565	n5565	0.0,100.0	0	1	1	1.5	0.0	3.0	1.0
+Cost	nD	nCD	nT	nL	|L(G)|	|G|	|S|	h(G)	h(S)	isRoot	 root(G)	 root(S)	minEW,maxEW	Roots	Cand	Feas	cD	cCD	cT	cL
+
+
+#D	Gene Node	L. Bound	U. Bound
+#D	n910	n5565	N/A
+#D	n904	n5565	N/A
+#D	n868	n5561	n5563
+#D	n644	n5561	n5563
+#D	n642	n5561	n5563
+#D	n547	n5561	n5563
+#D	n499	n5561	n5563
+#D	n461	n5561	n5563
+#D	r9695	n5479	n5561
+#D	n451	n5479	n5561
+#D	r9713	n5479	n5561
+#D	r9714	n5479	n5561
+#D	r9715	n5479	n5561
+#D	n420	n5479	n5561
+#D	n428	n5479	n5561
+#D	n444	n5479	n5561
+#D	n432	Blattella	n5479
+#D	r9724	n5477	n5479
+#D	n439	Cryptotermes	n5477
+#D	r9717	n5477	n5479
+#D	r9718	n5477	n5479
+#D	n409	n5477	n5479
+#D	n458	Tribolium	n5523
+#D	r9682	n5488	n5490
+#D	n488	n5488	n5490
+#D	n484	n5482	n5484
+#D	n478	Aphis	n5482
+#D	n498	Frankliniella	n5490
+#D	n496	Frankliniella	n5490
+#D	n464	Culex	n5546
+#D	n471	Rhagoletis	n5551
+#D	n542	n5511	n5557
+#D	n534	n5511	n5557
+#D	n507	Polistes	n5506
+#D	n517	Orussus	n5509
+#D	n515	Orussus	n5509
+#D	n511	Orussus	n5509
+#D	n514	Orussus	n5509
+#D	n533	n5493	n5507
+#D	n527	n5493	n5507
+#D	r9728	Copidosoma	n5493
+#D	n530	Nasonia	n5493
+#D	r9657	n5559	n5560
+#D	r9735	Agrilus	n5526
+#D	n604	Agrilus	n5526
+#D	n602	Agrilus	n5526
+#D	n600	Agrilus	n5526
+#D	n596	Agrilus	n5526
+#D	n586	Agrilus	n5526
+#D	n584	Agrilus	n5526
+#D	r9739	Agrilus	n5526
+#D	r9740	Agrilus	n5526
+#D	r9741	Agrilus	n5526
+#D	n576	Agrilus	n5526
+#D	n574	Agrilus	n5526
+#D	n595	Agrilus	n5526
+#D	n593	Agrilus	n5526
+#D	n589	Agrilus	n5526
+#D	n592	Agrilus	n5526
+#D	n599	Agrilus	n5526
+#D	n619	Agrilus	n5526
+#D	n615	Agrilus	n5526
+#D	n611	Agrilus	n5526
+#D	n609	Agrilus	n5526
+#D	n607	Agrilus	n5526
+#D	n614	Agrilus	n5526
+#D	n618	Agrilus	n5526
+#D	n637	n5543	n5555
+#D	r9659	n5557	n5559
+#D	n554	Onthophagus	n5514
+#D	n552	Onthophagus	n5514
+#D	n550	Onthophagus	n5514
+#D	n561	n5517	n5521
+#D	n569	n5507	n5509
+#D	n404	n5556	n5557
+#D	n402	n5526	n5556
+#D	n397	Agrilus	n5526
+#D	n395	Agrilus	n5526
+#D	n325	n5543	n5555
+#D	n303	n5543	n5555
+#D	n285	n5543	n5555
+#D	n269	n5537	n5541
+#D	n302	n5543	n5555
+#D	n300	n5543	n5555
+#D	n298	n5543	n5555
+#D	n324	n5543	n5555
+#D	n313	n5537	n5541
+#D	n308	Manduca	n5540
+#D	n306	Manduca	n5540
+#D	n364	n5554	n5555
+#D	n357	n5553	n5554
+#D	n353	Rhagoletis	n5551
+#D	r9773	n5548	n5554
+#D	r9774	n5548	n5554
+#D	n340	n5548	n5554
+#D	n338	n5548	n5554
+#D	n332	n5546	n5548
+#D	n347	n5546	n5548
+#D	n387	n5514	n5524
+#D	n383	n5514	n5524
+#D	n379	n5514	n5524
+#D	n373	Onthophagus	n5514
+#D	n371	Onthophagus	n5514
+#D	n369	Onthophagus	n5514
+#D	n376	Onthophagus	n5514
+#D	n382	Onthophagus	n5514
+#D	n386	Nicrophorus	n5514
+#D	n264	n5543	n5555
+#D	n150	n5543	n5555
+#D	n138	n5543	n5555
+#D	r9779	n5543	n5555
+#D	n120	n5543	n5555
+#D	n60	n5543	n5555
+#D	n44	n5543	n5555
+#D	r9794	n5531	n5543
+#D	n16	n5529	n5531
+#D	n6	Danaus	n5529
+#D	r9801	Danaus	n5529
+#D	r9802	Danaus	n5529
+#D	n15	Bicyclus	n5529
+#D	n13	Bicyclus	n5529
+#D	n11	Bicyclus	n5529
+#D	r9789	n5541	n5542
+#D	n27	Helicoverpa	n5537
+#D	n43	Manduca	n5540
+#D	n38	Bombyx	n5540
+#D	n36	Bombyx	n5540
+#D	n59	n5537	n5541
+#D	r9804	n5537	n5541
+#D	n47	Spodoptera	n5537
+#D	r9806	Helicoverpa	n5537
+#D	n119	n5543	n5555
+#D	n69	n5529	n5531
+#D	n63	Bicyclus	n5529
+#D	n66	Danaus	n5529
+#D	r9821	Galleria	n5534
+#D	n112	Bicyclus	n5529
+#D	n110	Bicyclus	n5529
+#D	n106	Bicyclus	n5529
+#D	n104	Bicyclus	n5529
+#D	n109	Bicyclus	n5529
+#D	n117	Danaus	n5529
+#D	n115	Danaus	n5529
+#D	n76	Papilio	n5531
+#D	n74	Papilio	n5531
+#D	n72	Papilio	n5531
+#D	r9815	n5534	n5542
+#D	n99	Amyelois	n5534
+#D	n88	Manduca	n5540
+#D	n131	n5543	n5555
+#D	n137	Papilio	n5531
+#D	n135	Papilio	n5531
+#D	n149	n5543	n5555
+#D	n145	n5543	n5555
+#D	n263	n5543	n5555
+#D	n245	n5543	n5555
+#D	n239	n5543	n5555
+#D	n219	n5543	n5555
+#D	n209	Danaus	n5529
+#D	n212	Papilio	n5531
+#D	n178	n5531	n5543
+#D	n174	Bicyclus	n5529
+#D	n170	Bicyclus	n5529
+#D	n168	Bicyclus	n5529
+#D	n173	Bicyclus	n5529
+#D	r9850	n5541	n5542
+#D	r9851	n5541	n5542
+#D	n197	n5537	n5541
+#D	r9856	n5540	n5541
+#D	r9859	Bombyx	n5540
+#D	n190	Manduca	n5540
+#D	n188	Manduca	n5540
+#D	n184	Manduca	n5540
+#D	n182	Manduca	n5540
+#D	n187	Manduca	n5540
+#D	n232	n5537	n5541
+#D	r9862	Spodoptera	n5537
+#D	n235	Bombyx	n5540
+#D	n164	Spodoptera	n5537
+#D	n161	n5540	n5541
+#D	n157	Bombyx	n5540
+#D	n155	Bombyx	n5540
+#D	n153	Bombyx	n5540
+#D	n242	Amyelois	n5534
+#D	n262	n5543	n5555
+#D	n252	n5537	n5541
+#D	n867	n5523	n5524
+#D	n841	n5523	n5524
+#D	n753	n5521	n5523
+#D	n697	n5520	n5521
+#D	n691	n5520	n5521
+#D	n679	n5520	n5521
+#D	r9874	n5520	n5521
+#D	n669	n5520	n5521
+#D	n651	Dendroctonus	n5520
+#D	n649	Dendroctonus	n5520
+#D	n647	Dendroctonus	n5520
+#D	n654	Sitophilus	n5520
+#D	n664	Dendroctonus	n5520
+#D	n660	Dendroctonus	n5520
+#D	n658	Dendroctonus	n5520
+#D	n663	Dendroctonus	n5520
+#D	n667	Sitophilus	n5520
+#D	n672	Sitophilus	n5520
+#D	r9876	Dendroctonus	n5520
+#D	n690	n5520	n5521
+#D	r9879	Dendroctonus	n5520
+#D	n682	Sitophilus	n5520
+#D	n689	Dendroctonus	n5520
+#D	r9871	Dendroctonus	n5520
+#D	n694	Dendroctonus	n5520
+#D	n728	n5517	n5521
+#D	n718	Anoplophora	n5517
+#D	r9881	Anoplophora	n5517
+#D	r9882	Anoplophora	n5517
+#D	r9883	Anoplophora	n5517
+#D	n702	Anoplophora	n5517
+#D	n700	Anoplophora	n5517
+#D	n711	Anoplophora	n5517
+#D	n709	Anoplophora	n5517
+#D	n707	Anoplophora	n5517
+#D	n715	Anoplophora	n5517
+#D	n721	Diabrotica	n5517
+#D	n725	Diabrotica	n5517
+#D	n752	n5517	n5521
+#D	n746	n5517	n5521
+#D	n738	Diabrotica	n5517
+#D	n736	Diabrotica	n5517
+#D	n734	Diabrotica	n5517
+#D	n732	Diabrotica	n5517
+#D	n743	Anoplophora	n5517
+#D	n741	Anoplophora	n5517
+#D	n751	n5517	n5521
+#D	n840	n5523	n5524
+#D	r9885	n5517	n5521
+#D	n804	n5517	n5521
+#D	n784	Anoplophora	n5517
+#D	n782	Anoplophora	n5517
+#D	n764	Anoplophora	n5517
+#D	n762	Anoplophora	n5517
+#D	n760	Anoplophora	n5517
+#D	n756	Anoplophora	n5517
+#D	n759	Anoplophora	n5517
+#D	n781	Anoplophora	n5517
+#D	n773	Anoplophora	n5517
+#D	n769	Anoplophora	n5517
+#D	n767	Anoplophora	n5517
+#D	n772	Anoplophora	n5517
+#D	n780	Anoplophora	n5517
+#D	n778	Anoplophora	n5517
+#D	n776	Anoplophora	n5517
+#D	n801	Diabrotica	n5517
+#D	n793	Diabrotica	n5517
+#D	n791	Diabrotica	n5517
+#D	n789	Diabrotica	n5517
+#D	n787	Diabrotica	n5517
+#D	n800	Diabrotica	n5517
+#D	n796	Diabrotica	n5517
+#D	n799	Diabrotica	n5517
+#D	r9887	Diabrotica	n5517
+#D	r9888	Diabrotica	n5517
+#D	n807	Diabrotica	n5517
+#D	n816	Diabrotica	n5517
+#D	n814	Diabrotica	n5517
+#D	n822	Sitophilus	n5520
+#D	n820	Sitophilus	n5520
+#D	n825	Dendroctonus	n5520
+#D	n839	n5523	n5524
+#D	n831	Tribolium	n5523
+#D	n838	Tribolium	n5523
+#D	n836	Tribolium	n5523
+#D	n852	Anoplophora	n5517
+#D	n848	Anoplophora	n5517
+#D	n846	Anoplophora	n5517
+#D	n844	Anoplophora	n5517
+#D	n851	Anoplophora	n5517
+#D	n855	Dendroctonus	n5520
+#D	n865	Tribolium	n5523
+#D	n863	Tribolium	n5523
+#D	n861	Tribolium	n5523
+#D	n893	Folsomia	n5563
+#D	n889	Folsomia	n5563
+#D	n883	Folsomia	n5563
+#D	n881	Folsomia	n5563
+#D	n879	Folsomia	n5563
+#D	n873	Folsomia	n5563
+#D	n871	Folsomia	n5563
+#D	n878	Folsomia	n5563
+#D	n876	Folsomia	n5563
+#D	n888	Folsomia	n5563
+#D	n886	Folsomia	n5563
+#D	n892	Folsomia	n5563
+#D	n902	Daphnia	n5565
+#D	n900	Daphnia	n5565
+#D	n898	Daphnia	n5565
+#D	n896	Daphnia	n5565
+#D	r9648	Frankliniella	n5490
+#D	n907	Frankliniella	n5490
+
+#LinS	Species	Losses
+#L	Acromyrmex	0
+#L	n5540	4
+#L	Anopheles	1
+#L	Dendroctonus	0
+#L	Harpegnathos	0
+#L	n5503	2
+#L	n5546	2
+#L	Folsomia	2
+#L	Onthophagus	3
+#L	Cryptotermes	1
+#L	n5504	1
+#L	Amyelois	5
+#L	Apis	0
+#L	Spodoptera	2
+#L	n5496	1
+#L	n5511	6
+#L	n5501	0
+#L	Frankliniella	1
+#L	Nasonia	1
+#L	n5565	0
+#L	Tribolium	2
+#L	n5551	0
+#L	n5487	2
+#L	n5477	1
+#L	n5542	2
+#L	Diaphorina	2
+#L	n5490	4
+#L	Papilio	6
+#L	n5493	3
+#L	Helicoverpa	2
+#L	Culex	1
+#L	Anoplophora	2
+#L	n5488	2
+#L	n5554	2
+#L	n5507	0
+#L	n5541	6
+#L	Drosophila	2
+#L	Manduca	4
+#L	Nicrophorus	3
+#L	Polistes	1
+#L	Cephus	3
+#L	n5531	13
+#L	Sitophilus	4
+#L	n5548	0
+#L	Rhagoletis	1
+#L	n5563	0
+#L	Bombus	0
+#L	Galleria	2
+#L	Danaus	6
+#L	Orussus	3
+#L	n5543	1
+#L	Musca	1
+#L	Acyrthosiphon	0
+#L	Aphis	0
+#L	Cimex	1
+#L	n5498	1
+#L	n5559	2
+#L	n5520	4
+#L	n5506	1
+#L	Zootermopsis	5
+#L	Pediculus	6
+#L	n5561	1
+#L	n5560	0
+#L	n5521	2
+#L	n5517	0
+#L	Diabrotica	4
+#L	Bombyx	6
+#L	Dufourea	0
+#L	Blattella	3
+#L	Copidosoma	1
+#L	n5514	2
+#L	n5523	3
+#L	Daphnia	2
+#L	n5529	2
+#L	Nilaparvata	0
+#L	n5555	4
+#L	n5509	0
+#L	n5537	9
+#L	n5484	1
+#L	n5526	1
+#L	Agrilus	5
+#L	n5524	1
+#L	n5557	0
+#L	Aedes	0
+#L	Atta	0
+#L	n5534	11
+#L	n5482	1
+#L	n5479	7
+#L	n5553	1
+#L	Bicyclus	2
+#L	n5556	1
+
+#S	Species	Dups	cDs	Trans_from	Trans_to	Losses
+#S	Acromyrmex	0	0	0	0	0
+#S	n5540	2	0	0	0	4
+#S	Anopheles	0	0	0	0	1
+#S	Dendroctonus	14	0	0	0	0
+#S	Harpegnathos	0	0	0	0	0
+#S	n5503	0	0	0	0	2
+#S	n5546	2	0	0	0	2
+#S	Folsomia	12	0	0	0	2
+#S	Onthophagus	8	0	0	0	3
+#S	Cryptotermes	1	0	0	0	1
+#S	n5504	0	0	0	0	1
+#S	Amyelois	2	0	0	0	5
+#S	Apis	0	0	0	0	0
+#S	Spodoptera	3	0	0	0	2
+#S	n5496	0	0	0	0	1
+#S	n5511	2	0	0	0	6
+#S	n5501	0	0	0	0	0
+#S	Frankliniella	4	0	0	0	1
+#S	Nasonia	1	0	0	0	1
+#S	n5565	2	0	0	0	0
+#S	Tribolium	7	0	0	0	2
+#S	n5551	0	0	0	0	0
+#S	n5487	0	0	0	0	2
+#S	n5477	4	0	0	0	1
+#S	n5542	0	0	0	0	2
+#S	Diaphorina	0	0	0	0	2
+#S	n5490	0	0	0	0	4
+#S	Papilio	6	0	0	0	6
+#S	n5493	2	0	0	0	3
+#S	Helicoverpa	2	0	0	0	2
+#S	Culex	1	0	0	0	1
+#S	Anoplophora	32	0	0	0	2
+#S	n5488	2	0	0	0	2
+#S	n5554	1	0	0	0	2
+#S	n5507	1	0	0	0	0
+#S	n5541	3	0	0	0	6
+#S	Drosophila	0	0	0	0	2
+#S	Manduca	9	0	0	0	4
+#S	Nicrophorus	1	0	0	0	3
+#S	Polistes	1	0	0	0	1
+#S	Cephus	0	0	0	0	3
+#S	n5531	2	0	0	0	13
+#S	Sitophilus	6	0	0	0	4
+#S	n5548	4	0	0	0	0
+#S	Rhagoletis	2	0	0	0	1
+#S	n5563	0	0	0	0	0
+#S	Bombus	0	0	0	0	0
+#S	Galleria	1	0	0	0	2
+#S	Danaus	7	0	0	0	6
+#S	Orussus	4	0	0	0	3
+#S	n5543	24	0	0	0	1
+#S	Musca	0	0	0	0	1
+#S	Acyrthosiphon	0	0	0	0	0
+#S	Aphis	1	0	0	0	0
+#S	Cimex	0	0	0	0	1
+#S	n5498	0	0	0	0	1
+#S	n5559	1	0	0	0	2
+#S	n5520	6	0	0	0	4
+#S	n5506	0	0	0	0	1
+#S	Zootermopsis	0	0	0	0	5
+#S	Pediculus	0	0	0	0	6
+#S	n5561	6	0	0	0	1
+#S	n5560	0	0	0	0	0
+#S	n5521	1	0	0	0	2
+#S	n5517	7	0	0	0	0
+#S	Diabrotica	19	0	0	0	4
+#S	Bombyx	7	0	0	0	6
+#S	Dufourea	0	0	0	0	0
+#S	Blattella	1	0	0	0	3
+#S	Copidosoma	1	0	0	0	1
+#S	n5514	3	0	0	0	2
+#S	n5523	4	0	0	0	3
+#S	Daphnia	4	0	0	0	2
+#S	n5529	2	0	0	0	2
+#S	Nilaparvata	0	0	0	0	0
+#S	n5555	0	0	0	0	4
+#S	n5509	0	0	0	0	0
+#S	n5537	7	0	0	0	9
+#S	n5484	0	0	0	0	1
+#S	n5526	1	0	0	0	1
+#S	Agrilus	26	0	0	0	5
+#S	n5524	0	0	0	0	1
+#S	n5557	1	0	0	0	0
+#S	Aedes	0	0	0	0	0
+#S	Atta	0	0	0	0	0
+#S	n5534	1	0	0	0	11
+#S	n5482	1	0	0	0	1
+#S	n5479	8	0	0	0	7
+#S	n5553	1	0	0	0	1
+#S	Bicyclus	13	0	0	0	2
+#S	n5556	1	0	0	0	1
+
+#R	SpeciesAtRoot
+#R	n5565
+
+
