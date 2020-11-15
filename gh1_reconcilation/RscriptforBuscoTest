@@ -1,0 +1,6 @@
+library(ggpubr)
+abc=read.csv("busco_correlation_test.csv",header=T,sep="\t",stringsAsFactors=F)
+ggscatter(abc[abc$Color!="",], x="M", y="Loss", add="reg.line",conf.int=T, cor.coef=T,cor.method="pearson",xlab="BUSCO Missing", ylab="Gene Loss")
+dev.print(pdf,"Missing2Loss.pdf")
+ggscatter(abc[abc$Color!="",], x="D", y="Dup", add="reg.line",conf.int=T, cor.coef=T,cor.method="pearson",xlab="BUSCO Duplication", ylab="Gene Duplicate")
+dev.print(pdf,"Dup2Duplication.pdf")
