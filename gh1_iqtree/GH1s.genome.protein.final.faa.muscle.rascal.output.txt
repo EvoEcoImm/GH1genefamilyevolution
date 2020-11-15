@@ -1,0 +1,632 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    lm3-w003.cluster (AVX512, FMA3, 93 GB RAM)
+Command: iqtree -s final1 -m LG+R10 -nt 12 -bb 3000 -alrt 1000 -seed 7896788
+Seed:    7896788 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Oct 25 20:44:46 2020
+Kernel:  AVX+FMA - 12 threads (24 CPU cores detected)
+
+Reading alignment file final1 ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 456 sequences with 2881 columns, 2466 distinct patterns
+1637 parsimony-informative, 676 singleton sites, 568 constant sites
+                                Gap/Ambiguity  Composition  p-value
+   1  XP_026292938.1_Frankliniella_o   81.88%    passed     18.84%
+   2  XP_026279283.1_Frankliniella_o   75.95%    failed      0.00%
+   3  XP_014217440.1_Copidosoma_flor   80.77%    failed      0.06%
+   4  XP_011135914.1_Harpegnathos_sa   81.08%    passed     15.97%
+   5  XP_019764511.1_Dendroctonus_po   83.03%    passed     13.31%
+   6  XP_019764512.1_Dendroctonus_po   83.17%    passed     55.89%
+   7  XP_028149029.1_virgifera_virgi   81.43%    passed     54.65%
+   8  XP_019764449.1_Dendroctonus_po   82.75%    failed      2.55%
+   9  XP_019758264.1_Dendroctonus_po   82.71%    passed     29.06%
+  10  XP_028132061.1_virgifera_virgi   83.17%    passed     43.28%
+  11  XP_018565428.1_Anoplophora_gla   81.71%    passed      8.43%
+  12  XP_030752211.1_Sitophilus_oryz   82.40%    passed     67.49%
+  13  XP_030752208.1_Sitophilus_oryz   82.16%    passed     26.04%
+  14  XP_030752209.1_Sitophilus_oryz   82.37%    passed     29.33%
+  15  XP_019754716.1_Dendroctonus_po   86.95%    passed     86.57%
+  16  XP_019761744.1_Dendroctonus_po   81.99%    passed     72.79%
+  17  XP_018573699.1_Anoplophora_gla   82.89%    passed      8.02%
+  18  XP_018573700.1_Anoplophora_gla   82.92%    passed     15.56%
+  19  XP_018565413.1_Anoplophora_gla   82.85%    passed     92.86%
+  20  XP_018565422.1_Anoplophora_gla   82.85%    passed     33.75%
+  21  XP_018565412.1_Anoplophora_gla   81.36%    passed     27.30%
+  22  XP_018565423.1_Anoplophora_gla   82.85%    passed     32.62%
+  23  XP_028138419.1_virgifera_virgi   86.25%    passed     67.46%
+  24  XP_019764658.1_Dendroctonus_po   82.71%    passed     65.41%
+  25  XP_018565424.1_Anoplophora_gla   79.00%    failed      0.00%
+  26  XP_015837060.1_Tribolium_casta   65.05%    failed      0.04%
+  27  XP_008195643.1_Tribolium_casta   82.82%    passed     71.22%
+  28  XP_972182.1_Tribolium_castaneu   83.23%    passed     44.71%
+  29  XP_972386.3_Tribolium_castaneu   82.61%    passed     95.46%
+  30  XP_018570324.1_Anoplophora_gla   82.92%    passed     99.61%
+  31  XP_028151147.1_virgifera_virgi   87.71%    passed     39.76%
+  32  XP_028153050.1_virgifera_virgi   83.27%    passed     41.39%
+  33  XP_019757500.1_Dendroctonus_po   81.99%    passed     38.00%
+  34  XP_028139021.1_virgifera_virgi   81.71%    passed     65.99%
+  35  XP_028139019.1_virgifera_virgi   82.12%    passed     68.14%
+  36  XP_028139020.1_virgifera_virgi   84.38%    passed     56.51%
+  37  XP_028139023.1_virgifera_virgi   82.19%    passed     24.69%
+  38  XP_018565438.1_Anoplophora_gla   82.33%    passed     93.21%
+  39  XP_018565434.1_Anoplophora_gla   80.22%    failed      2.12%
+  40  XP_018565416.1_Anoplophora_gla   81.57%    passed     57.27%
+  41  XP_018565435.1_Anoplophora_gla   81.71%    passed     25.19%
+  42  XP_019764592.1_Dendroctonus_po   82.82%    passed     14.19%
+  43  XP_019764591.1_Dendroctonus_po   82.64%    passed     34.62%
+  44  XP_030753323.1_Sitophilus_oryz   67.30%    failed      3.50%
+  45  XP_030754216.1_Sitophilus_oryz   84.42%    passed     83.62%
+  46  XP_019764667.1_Dendroctonus_po   83.76%    passed     56.51%
+  47  XP_019772434.1_Dendroctonus_po   88.86%    passed     14.37%
+  48  XP_019756934.1_Dendroctonus_po   88.82%    passed      8.78%
+  49  XP_019756936.1_Dendroctonus_po   83.62%    passed      8.57%
+  50  XP_030767112.1_Sitophilus_oryz   83.23%    passed     21.62%
+  51  XP_030767119.1_Sitophilus_oryz   83.37%    passed     37.86%
+  52  XP_030753401.1_Sitophilus_oryz   83.23%    passed     10.49%
+  53  XP_030753325.1_Sitophilus_oryz   65.01%    failed      0.60%
+  54  XP_019755906.1_Dendroctonus_po   83.20%    passed     16.23%
+  55  XP_019755907.1_Dendroctonus_po   83.17%    passed     16.67%
+  56  XP_019757617.1_Dendroctonus_po   85.32%    passed     10.82%
+  57  XP_019757624.1_Dendroctonus_po   83.13%    failed      4.01%
+  58  XP_019766466.1_Dendroctonus_po   83.06%    passed     30.71%
+  59  XP_018576585.1_Anoplophora_gla   82.58%    passed     28.25%
+  60  XP_028146915.1_virgifera_virgi   82.58%    passed     46.57%
+  61  XP_028146916.1_virgifera_virgi   83.10%    passed     33.68%
+  62  XP_019755904.1_Dendroctonus_po   82.47%    passed     62.75%
+  63  XP_019755936.1_Dendroctonus_po   81.81%    passed     78.76%
+  64  XP_019755616.1_Dendroctonus_po   82.75%    passed     16.03%
+  65  XP_019755905.1_Dendroctonus_po   82.68%    passed     26.19%
+  66  XP_030753399.1_Sitophilus_oryz   82.92%    passed     21.06%
+  67  XP_030754217.1_Sitophilus_oryz   82.78%    passed     13.87%
+  68  XP_028142169.1_virgifera_virgi   82.40%    passed     87.84%
+  69  XP_028134781.1_virgifera_virgi   82.33%    passed     73.95%
+  70  XP_028133139.1_virgifera_virgi   82.54%    passed     65.35%
+  71  XP_028133140.1_virgifera_virgi   82.75%    passed     86.91%
+  72  XP_028137807.1_virgifera_virgi   82.75%    passed     28.47%
+  73  XP_028149430.1_virgifera_virgi   82.71%    passed     59.31%
+  74  XP_018564640.1_Anoplophora_gla   82.85%    passed     61.98%
+  75  XP_018568746.1_Anoplophora_gla   82.71%    passed     68.20%
+  76  XP_018573524.1_Anoplophora_gla   82.85%    passed     83.30%
+  77  XP_023312165.1_Anoplophora_gla   89.83%    passed     84.36%
+  78  XP_018570851.1_Anoplophora_gla   82.85%    passed     54.47%
+  79  XP_018572133.1_Anoplophora_gla   82.85%    passed     67.45%
+  80  XP_018568749.1_Anoplophora_gla   82.85%    passed     51.72%
+  81  XP_018568748.1_Anoplophora_gla   82.85%    passed     46.90%
+  82  XP_023310664.1_Anoplophora_gla   82.85%    passed     73.41%
+  83  XP_018568750.1_Anoplophora_gla   82.85%    passed     52.98%
+  84  XP_018575352.1_Anoplophora_gla   82.85%    passed     47.64%
+  85  XP_968318.1_Tribolium_castaneu   82.75%    passed     33.01%
+  86  XP_972032.1_Tribolium_castaneu   82.71%    passed     35.36%
+  87  XP_028146876.1_virgifera_virgi   83.10%    passed     81.09%
+  88  XP_018565439.1_Anoplophora_gla   82.89%    passed     75.30%
+  89  XP_008195645.1_Tribolium_casta   82.82%    passed     86.77%
+  90  XP_972082.1_Tribolium_castaneu   82.85%    passed     77.21%
+  91  XP_972134.1_Tribolium_castaneu   82.85%    passed     60.81%
+  92  XP_028142751.1_virgifera_virgi   75.43%    passed     23.76%
+  93  XP_028132806.1_virgifera_virgi   79.07%    passed     56.25%
+  94  XP_028132800.1_virgifera_virgi   82.71%    passed     75.66%
+  95  XP_028132802.1_virgifera_virgi   82.82%    passed     75.81%
+  96  XP_028132804.1_virgifera_virgi   81.99%    passed     33.59%
+  97  XP_028132805.1_virgifera_virgi   82.23%    passed     60.78%
+  98  XP_028132801.1_virgifera_virgi   82.78%    passed     77.60%
+  99  XP_018567975.1_Anoplophora_gla   82.85%    passed     64.57%
+ 100  XP_018571131.1_Anoplophora_gla   82.61%    passed      7.61%
+ 101  XP_023311712.1_Anoplophora_gla   83.13%    passed     95.89%
+ 102  XP_023311342.1_Anoplophora_gla   82.89%    passed     93.37%
+ 103  XP_018573475.1_Anoplophora_gla   82.89%    passed     91.92%
+ 104  XP_023311344.1_Anoplophora_gla   65.50%    passed     41.76%
+ 105  XP_023311341.1_Anoplophora_gla   82.92%    passed     95.46%
+ 106  XP_018573477.2_Anoplophora_gla   65.22%    passed     54.03%
+ 107  XP_018573476.1_Anoplophora_gla   82.89%    passed     93.09%
+ 108  XP_023310604.1_Anoplophora_gla   84.10%    passed     74.39%
+ 109  XP_023311495.1_Anoplophora_gla   82.89%    passed     91.14%
+ 110  XP_018567960.1_Anoplophora_gla   82.89%    failed      2.06%
+ 111  XP_023312869.1_Anoplophora_gla   82.89%    passed     77.82%
+ 112  XP_018573214.1_Anoplophora_gla   82.89%    passed     86.09%
+ 113  XP_018573206.1_Anoplophora_gla   82.85%    passed     87.11%
+ 114  XP_018573472.1_Anoplophora_gla   84.52%    passed     53.10%
+ 115  XP_026273946.1_Frankliniella_o   73.17%    failed      0.00%
+ 116  XP_310611.5_str._PEST            81.33%    failed      0.00%
+ 117  XP_001864466.1_Culex_quinquefa   83.44%    failed      0.23%
+ 118  XP_001650404.2_Aedes_aegypti     81.81%    passed     33.45%
+ 119  XP_001864465.1_Culex_quinquefa   82.30%    passed      7.77%
+ 120  NP_001295947.1_Musca_domestica   82.71%    passed     61.91%
+ 121  XP_017465109.1_Rhagoletis_zeph   82.75%    passed     93.53%
+ 122  XP_017484266.1_Rhagoletis_zeph   87.37%    passed     72.05%
+ 123  XP_015182534.1_Polistes_dominu   81.60%    failed      0.15%
+ 124  XP_032777164.1_Daphnia_magna     82.54%    passed     57.95%
+ 125  XP_032788032.1_Daphnia_magna     82.30%    passed     21.40%
+ 126  XP_032788031.1_Daphnia_magna     81.92%    passed      8.78%
+ 127  XP_032788034.1_Daphnia_magna     82.75%    passed      8.53%
+ 128  XP_032788037.1_Daphnia_magna     82.68%    passed      9.07%
+ 129  XP_021959021.1_Folsomia_candid   82.78%    passed     54.48%
+ 130  XP_021959023.1_Folsomia_candid   82.54%    passed     47.67%
+ 131  XP_021965243.1_Folsomia_candid   82.54%    passed     36.97%
+ 132  XP_021961902.1_Folsomia_candid   80.56%    passed     74.70%
+ 133  XP_021952145.1_Folsomia_candid   81.95%    passed     81.17%
+ 134  XP_021952675.1_Folsomia_candid   82.47%    passed     81.37%
+ 135  XP_021965239.1_Folsomia_candid   82.78%    passed     50.42%
+ 136  XP_021965263.1_Folsomia_candid   81.85%    passed     78.72%
+ 137  XP_021961403.1_Folsomia_candid   82.64%    passed     11.18%
+ 138  XP_021946758.1_Folsomia_candid   82.82%    passed     26.22%
+ 139  XP_021963506.1_Folsomia_candid   82.61%    passed     33.85%
+ 140  XP_014208505.1_Copidosoma_flor   82.19%    passed      9.58%
+ 141  XP_017775985.1_Nicrophorus_ves   82.23%    passed     32.77%
+ 142  XP_018320791.1_Agrilus_planipe   80.84%    failed      2.81%
+ 143  XP_018320225.2_Agrilus_planipe   73.38%    passed     14.46%
+ 144  XP_018320224.1_Agrilus_planipe   81.85%    passed      5.80%
+ 145  XP_028029942.1_Bombyx_mandarin   83.34%    failed      4.23%
+ 146  XP_028029973.1_Bombyx_mandarin   82.40%    passed     85.22%
+ 147  XP_028029974.1_Bombyx_mandarin   82.37%    passed     94.88%
+ 148  XP_028036753.1_Bombyx_mandarin   85.73%    passed     75.28%
+ 149  XP_023936329.1_Bicyclus_anynan   81.57%    passed     99.00%
+ 150  XP_031768072.1_Galleria_mellon   69.63%    failed      4.10%
+ 151  XP_030026260.1_Manduca_sexta     81.88%    passed     94.59%
+ 152  XP_028029940.1_Bombyx_mandarin   82.92%    passed     33.27%
+ 153  XP_028036762.1_Bombyx_mandarin   83.20%    passed     72.93%
+ 154  XP_030026270.1_Manduca_sexta     82.64%    passed     77.31%
+ 155  XP_023952311.1_Bicyclus_anynan   81.36%    passed     22.85%
+ 156  XP_023950607.1_Bicyclus_anynan   80.70%    passed     73.63%
+ 157  XP_023953337.1_Bicyclus_anynan   82.51%    passed     70.56%
+ 158  XP_023952790.1_Bicyclus_anynan   81.50%    passed     39.67%
+ 159  XP_023952801.1_Bicyclus_anynan   83.37%    passed     74.44%
+ 160  XP_022818247.1_Spodoptera_litu   82.71%    passed     76.01%
+ 161  XP_021197062.1_Helicoverpa_arm   83.03%    passed     32.44%
+ 162  XP_021197047.1_Helicoverpa_arm   82.89%    passed     88.59%
+ 163  XP_022818485.1_Spodoptera_litu   83.76%    passed     78.03%
+ 164  XP_022818653.1_Spodoptera_litu   82.78%    passed     28.42%
+ 165  XP_022818654.1_Spodoptera_litu   82.64%    passed     66.90%
+ 166  XP_013200045.1_Amyelois_transi   81.08%    passed     55.09%
+ 167  XP_013200053.1_Amyelois_transi   80.87%    passed     58.97%
+ 168  XP_028037411.1_Bombyx_mandarin   83.72%    passed     81.28%
+ 169  XP_023936365.1_Bicyclus_anynan   62.48%    passed      6.98%
+ 170  XP_032525939.1_plexippus_plexi   82.16%    passed     18.84%
+ 171  XP_032526253.1_plexippus_plexi   86.81%    passed     27.68%
+ 172  XP_030026240.1_Manduca_sexta     82.99%    passed     35.56%
+ 173  XP_031768073.1_Galleria_mellon   68.21%    passed     62.82%
+ 174  XP_028036782.1_Bombyx_mandarin   81.64%    passed     72.19%
+ 175  XP_028037389.1_Bombyx_mandarin   81.81%    passed     66.70%
+ 176  XP_030026236.1_Manduca_sexta     81.92%    passed     61.74%
+ 177  XP_014367814.1_Papilio_machaon   86.08%    passed     73.81%
+ 178  XP_026762202.1_Galleria_mellon   82.64%    passed     34.44%
+ 179  XP_014367803.1_Papilio_machaon   84.07%    passed     57.97%
+ 180  XP_014367804.1_Papilio_machaon   85.56%    passed     78.91%
+ 181  XP_022818244.1_Spodoptera_litu   82.78%    passed     36.44%
+ 182  XP_022818655.1_Spodoptera_litu   65.53%    passed     58.84%
+ 183  XP_021197068.1_Helicoverpa_arm   68.83%    passed     27.84%
+ 184  XP_022818242.1_Spodoptera_litu   82.75%    passed     73.63%
+ 185  XP_021197058.1_Helicoverpa_arm   82.75%    passed     85.03%
+ 186  XP_028038643.1_Bombyx_mandarin   83.23%    passed     70.62%
+ 187  XP_030026263.1_Manduca_sexta     82.85%    passed     37.82%
+ 188  XP_030026258.1_Manduca_sexta     82.99%    passed     91.11%
+ 189  XP_030026264.1_Manduca_sexta     65.81%    passed     40.16%
+ 190  XP_030026255.1_Manduca_sexta     82.96%    passed     71.68%
+ 191  XP_030026265.1_Manduca_sexta     83.34%    passed     96.61%
+ 192  XP_030026267.1_Manduca_sexta     83.06%    passed     81.54%
+ 193  XP_021200637.1_Helicoverpa_arm   81.74%    passed     57.87%
+ 194  XP_022825432.1_Spodoptera_litu   82.19%    passed     57.58%
+ 195  XP_028026026.1_Bombyx_mandarin   81.92%    passed     74.08%
+ 196  XP_030041345.1_Manduca_sexta     81.99%    passed     82.85%
+ 197  XP_021200721.1_Helicoverpa_arm   81.85%    passed     53.23%
+ 198  XP_022825294.1_Spodoptera_litu   81.88%    passed     48.27%
+ 199  XP_014370888.1_Papilio_machaon   85.94%    passed     82.80%
+ 200  XP_032513180.1_plexippus_plexi   81.88%    passed     71.35%
+ 201  XP_023948991.1_Bicyclus_anynan   81.95%    passed     31.02%
+ 202  XP_026755414.1_Galleria_mellon   81.67%    passed     90.10%
+ 203  XP_013190175.1_Amyelois_transi   81.92%    passed     88.84%
+ 204  XP_022913995.1_Onthophagus_tau   81.78%    failed      1.31%
+ 205  XP_022913991.1_Onthophagus_tau   81.57%    failed      2.64%
+ 206  XP_022913994.1_Onthophagus_tau   81.67%    passed      9.67%
+ 207  XP_025835618.1_Agrilus_planipe   80.56%    failed      0.00%
+ 208  XP_018320779.1_Agrilus_planipe   81.15%    failed      4.54%
+ 209  XP_025835611.1_Agrilus_planipe   81.43%    failed      4.84%
+ 210  XP_021698831.1_Aedes_aegypti     81.53%    passed     86.69%
+ 211  XP_316460.3_str._PEST            81.08%    passed     24.35%
+ 212  XP_017461585.1_Rhagoletis_zeph   91.81%    passed     99.73%
+ 213  XP_017483824.1_Rhagoletis_zeph   80.74%    passed     78.97%
+ 214  NP_648918.1_Drosophila_melanog   81.22%    passed     32.92%
+ 215  XP_005191668.2_Musca_domestica   89.97%    passed     63.63%
+ 216  XP_557100.2_str._PEST            80.39%    passed     63.87%
+ 217  XP_001850321.1_Culex_quinquefa   80.22%    failed      0.58%
+ 218  XP_021698828.1_Aedes_aegypti     79.80%    failed      0.80%
+ 219  XP_001237813.1_str._PEST         82.47%    passed     76.91%
+ 220  XP_316461.3_str._PEST            82.47%    passed     52.47%
+ 221  XP_001850320.1_Culex_quinquefa   81.53%    passed     86.37%
+ 222  XP_001650340.2_Aedes_aegypti     81.64%    passed     97.63%
+ 223  XP_557098.2_str._PEST            81.01%    passed     46.53%
+ 224  XP_001659854.2_Aedes_aegypti     84.59%    passed     93.08%
+ 225  XP_001850319.1_Culex_quinquefa   81.46%    passed     91.98%
+ 226  XP_021698830.1_Aedes_aegypti     81.50%    passed     96.18%
+ 227  XP_001850318.1_Culex_quinquefa   68.07%    passed     52.70%
+ 228  XP_001864161.1_Culex_quinquefa   81.99%    passed     10.83%
+ 229  XP_021694990.1_Aedes_aegypti     81.99%    passed      5.25%
+ 230  XP_002426209.1_humanus_corpori   73.62%    failed      0.00%
+ 231  XP_021196646.1_Helicoverpa_arm   81.99%    passed     18.13%
+ 232  XP_022827475.1_Spodoptera_litu   81.19%    passed     32.73%
+ 233  XP_021196645.1_Helicoverpa_arm   82.33%    passed     46.51%
+ 234  XP_022827446.1_Spodoptera_litu   82.47%    passed     37.23%
+ 235  XP_030037804.1_Manduca_sexta     82.19%    passed     34.24%
+ 236  XP_032523585.1_plexippus_plexi   83.27%    passed     49.41%
+ 237  XP_023950089.1_Bicyclus_anynan   83.27%    passed     70.60%
+ 238  XP_013185165.1_Amyelois_transi   82.51%    passed     73.72%
+ 239  XP_031763958.1_Galleria_mellon   83.34%    passed     37.07%
+ 240  XP_014242467.1_Cimex_lectulari   83.65%    passed     44.12%
+ 241  XP_017770832.1_Nicrophorus_ves   80.94%    passed     51.57%
+ 242  XP_018330919.1_Agrilus_planipe   82.16%    passed     90.50%
+ 243  XP_025830222.1_Agrilus_planipe   82.58%    passed     24.60%
+ 244  XP_022913989.1_Onthophagus_tau   81.46%    passed     68.63%
+ 245  XP_028142171.1_virgifera_virgi   65.71%    passed     21.82%
+ 246  XP_028145693.1_virgifera_virgi   82.75%    passed     67.63%
+ 247  XP_032528982.1_plexippus_plexi   82.51%    passed     90.59%
+ 248  XP_028040808.1_Bombyx_mandarin   82.51%    passed     89.68%
+ 249  XP_026758988.2_Galleria_mellon   82.54%    passed     89.89%
+ 250  XP_013194175.1_Amyelois_transi   82.30%    passed     89.91%
+ 251  XP_023934074.1_Bicyclus_anynan   79.52%    passed     63.51%
+ 252  XP_014367000.1_Papilio_machaon   82.51%    passed     96.87%
+ 253  XP_030037279.1_Manduca_sexta     82.47%    passed     92.72%
+ 254  XP_022822385.1_Spodoptera_litu   82.68%    passed     96.64%
+ 255  XP_021194049.1_Helicoverpa_arm   82.37%    passed     86.63%
+ 256  XP_026277353.1_Frankliniella_o   80.32%    passed     15.02%
+ 257  XP_026277354.1_Frankliniella_o   80.39%    passed     13.79%
+ 258  XP_018322931.1_Agrilus_planipe   83.27%    passed     84.79%
+ 259  XP_018332984.1_Agrilus_planipe   82.92%    passed     29.43%
+ 260  XP_025830262.1_Agrilus_planipe   82.89%    passed     75.27%
+ 261  XP_018320187.1_Agrilus_planipe   82.85%    passed     14.14%
+ 262  XP_018320185.1_Agrilus_planipe   82.78%    passed      8.45%
+ 263  XP_025830317.1_Agrilus_planipe   77.54%    passed      6.19%
+ 264  XP_025830271.1_Agrilus_planipe   82.68%    passed     43.79%
+ 265  XP_025830274.1_Agrilus_planipe   82.99%    passed     30.31%
+ 266  XP_018320233.1_Agrilus_planipe   82.58%    passed     23.11%
+ 267  XP_018320177.1_Agrilus_planipe   82.99%    passed     12.32%
+ 268  XP_018320189.2_Agrilus_planipe   82.75%    failed      3.65%
+ 269  XP_025830272.1_Agrilus_planipe   82.75%    failed      3.65%
+ 270  XP_025830269.1_Agrilus_planipe   82.64%    failed      1.63%
+ 271  XP_018320181.1_Agrilus_planipe   82.71%    passed      5.13%
+ 272  XP_018320182.1_Agrilus_planipe   82.75%    failed      0.94%
+ 273  XP_018320184.1_Agrilus_planipe   82.75%    failed      0.90%
+ 274  XP_018320216.1_Agrilus_planipe   82.96%    passed     91.12%
+ 275  XP_013188067.1_Amyelois_transi   82.02%    passed     77.43%
+ 276  XP_026754269.1_Galleria_mellon   82.26%    passed     26.32%
+ 277  XP_023935498.1_Bicyclus_anynan   81.36%    passed     62.84%
+ 278  XP_032523523.1_plexippus_plexi   82.71%    passed     29.96%
+ 279  XP_028028205.1_Bombyx_mandarin   82.26%    passed     77.63%
+ 280  XP_030029896.1_Manduca_sexta     82.23%    passed     32.60%
+ 281  XP_022827201.1_Spodoptera_litu   64.80%    passed     31.31%
+ 282  XP_021191447.1_Helicoverpa_arm   64.35%    passed     17.55%
+ 283  XP_026279277.1_Frankliniella_o   84.76%    passed     85.81%
+ 284  XP_027839750.1_Aphis_gossypii    82.09%    passed     15.76%
+ 285  XP_029345815.1_Acyrthosiphon_p   80.01%    passed     54.49%
+ 286  XP_021196985.1_Helicoverpa_arm   81.95%    passed     86.40%
+ 287  XP_022827607.1_Spodoptera_litu   81.99%    passed     31.07%
+ 288  XP_030033142.1_Manduca_sexta     82.19%    passed     54.50%
+ 289  XP_028043691.1_Bombyx_mandarin   82.47%    passed     47.74%
+ 290  XP_032523485.1_plexippus_plexi   82.02%    passed     81.93%
+ 291  XP_026754137.1_Galleria_mellon   82.58%    passed     92.57%
+ 292  XP_028035150.1_Bombyx_mandarin   81.64%    passed     62.44%
+ 293  XP_013194729.1_Amyelois_transi   81.57%    passed      6.99%
+ 294  XP_026759049.1_Galleria_mellon   81.64%    failed      3.42%
+ 295  XP_030026885.1_Manduca_sexta     81.64%    passed     20.27%
+ 296  XP_032527041.1_plexippus_plexi   81.64%    passed     26.42%
+ 297  XP_023951871.1_Bicyclus_anynan   81.67%    passed     19.95%
+ 298  XP_014362958.1_Papilio_machaon   81.57%    passed      9.25%
+ 299  XP_021200470.1_Helicoverpa_arm   81.64%    passed      6.00%
+ 300  XP_022822475.1_Spodoptera_litu   81.60%    passed     11.49%
+ 301  XP_030035516.1_Manduca_sexta     64.01%    failed      0.97%
+ 302  XP_028030232.1_Bombyx_mandarin   68.59%    passed     18.98%
+ 303  XP_023948567.1_Bicyclus_anynan   85.87%    passed     97.50%
+ 304  XP_023949452.1_Bicyclus_anynan   64.18%    passed     30.02%
+ 305  XP_031763669.1_Galleria_mellon   65.19%    failed      2.46%
+ 306  XP_026756863.1_Galleria_mellon   82.23%    passed     81.92%
+ 307  XP_023947340.1_Bicyclus_anynan   64.84%    passed     22.09%
+ 308  XP_023947354.1_Bicyclus_anynan   65.01%    passed     14.38%
+ 309  XP_023953689.1_Bicyclus_anynan   89.86%    passed     92.97%
+ 310  XP_023949451.1_Bicyclus_anynan   83.17%    passed     93.38%
+ 311  XP_023951152.1_Bicyclus_anynan   84.24%    passed     72.34%
+ 312  XP_023952689.1_Bicyclus_anynan   82.58%    passed     96.95%
+ 313  XP_023948571.1_Bicyclus_anynan   82.02%    passed     91.72%
+ 314  XP_032529517.1_plexippus_plexi   87.82%    passed     61.31%
+ 315  XP_032529519.1_plexippus_plexi   65.05%    passed      7.45%
+ 316  XP_032530179.1_plexippus_plexi   82.37%    passed     85.75%
+ 317  XP_032510674.1_plexippus_plexi   85.32%    passed     91.66%
+ 318  XP_032529516.1_plexippus_plexi   64.91%    passed      5.18%
+ 319  XP_030025072.1_Manduca_sexta     50.43%    failed      0.08%
+ 320  XP_030025073.1_Manduca_sexta     64.80%    passed     44.68%
+ 321  XP_014362019.1_Papilio_machaon   64.60%    passed      5.22%
+ 322  XP_014362016.1_Papilio_machaon   59.39%    failed      1.94%
+ 323  XP_014362018.1_Papilio_machaon   64.18%    passed     11.35%
+ 324  XP_013189559.1_Amyelois_transi   64.70%    failed      2.91%
+ 325  XP_026757122.1_Galleria_mellon   64.07%    passed     23.72%
+ 326  XP_013182836.1_Amyelois_transi   82.09%    passed     89.51%
+ 327  XP_013201179.1_Amyelois_transi   63.76%    passed     52.75%
+ 328  XP_014362015.1_Papilio_machaon   64.70%    failed      3.46%
+ 329  XP_021186007.1_Helicoverpa_arm   82.30%    passed     67.91%
+ 330  XP_022820790.1_Spodoptera_litu   82.30%    passed     89.85%
+ 331  XP_022830560.1_Spodoptera_litu   81.81%    passed     29.23%
+ 332  XP_021183317.1_Helicoverpa_arm   82.61%    passed     63.08%
+ 333  XP_021200129.1_Helicoverpa_arm   82.47%    passed     63.97%
+ 334  XP_028043767.1_Bombyx_mandarin   82.44%    passed     77.27%
+ 335  XP_030020991.1_Manduca_sexta     82.51%    passed     75.70%
+ 336  XP_014364917.1_Papilio_machaon   81.92%    passed     90.44%
+ 337  XP_021191417.1_Helicoverpa_arm   82.37%    passed     85.86%
+ 338  XP_022827203.1_Spodoptera_litu   62.65%    passed     17.78%
+ 339  XP_022827260.1_Spodoptera_litu   82.44%    passed     87.39%
+ 340  XP_021191415.1_Helicoverpa_arm   81.85%    passed     97.19%
+ 341  XP_028028072.1_Bombyx_mandarin   82.40%    passed     63.34%
+ 342  XP_028028070.1_Bombyx_mandarin   82.40%    passed     67.38%
+ 343  XP_028028071.1_Bombyx_mandarin   82.40%    passed     51.33%
+ 344  XP_022827202.1_Spodoptera_litu   62.13%    passed     34.73%
+ 345  XP_021191446.1_Helicoverpa_arm   65.08%    passed     49.84%
+ 346  XP_030037524.1_Manduca_sexta     82.40%    passed     47.04%
+ 347  XP_030039701.1_Manduca_sexta     91.95%    passed     91.39%
+ 348  XP_023935452.1_Bicyclus_anynan   82.40%    passed     86.90%
+ 349  XP_026764169.1_Galleria_mellon   82.47%    passed     81.77%
+ 350  XP_023935450.1_Bicyclus_anynan   82.47%    passed     85.90%
+ 351  XP_023935490.1_Bicyclus_anynan   82.44%    passed     90.55%
+ 352  XP_023935446.1_Bicyclus_anynan   82.47%    passed     88.63%
+ 353  XP_023935495.1_Bicyclus_anynan   82.47%    passed     98.88%
+ 354  XP_032523499.1_plexippus_plexi   84.38%    passed     85.98%
+ 355  XP_032523501.1_plexippus_plexi   82.75%    passed     73.86%
+ 356  XP_032523527.1_plexippus_plexi   82.58%    passed     59.67%
+ 357  XP_032523564.1_plexippus_plexi   84.38%    passed     80.43%
+ 358  XP_013193075.1_Amyelois_transi   82.40%    passed     96.15%
+ 359  XP_014364862.1_Papilio_machaon   82.47%    passed     33.29%
+ 360  XP_021937620.1_Zootermopsis_ne   79.10%    failed      0.00%
+ 361  XP_033609442.1_Cryptotermes_se   61.16%    passed     16.90%
+ 362  XP_021942419.1_Zootermopsis_ne   81.01%    passed     26.58%
+ 363  XP_023717244.1_Cryptotermes_se   80.70%    passed     69.47%
+ 364  XP_966332.1_Tribolium_castaneu   82.92%    passed      6.47%
+ 365  XP_028129562.1_virgifera_virgi   83.72%    passed     31.37%
+ 366  XP_018565386.1_Anoplophora_gla   82.58%    failed      4.52%
+ 367  XP_028143930.1_virgifera_virgi   82.78%    passed     37.79%
+ 368  XP_015181990.1_Polistes_dominu   82.16%    failed      0.77%
+ 369  XP_011144220.1_Harpegnathos_sa   82.30%    passed     65.34%
+ 370  XP_018054703.1_Atta_colombica    82.47%    passed     82.08%
+ 371  XP_011059477.1_Acromyrmex_echi   82.02%    passed     79.77%
+ 372  XP_008213502.1_Nasonia_vitripe   82.68%    passed     78.65%
+ 373  XP_016842778.1_Nasonia_vitripe   82.54%    passed     21.93%
+ 374  XP_001600108.2_Nasonia_vitripe   82.96%    passed     67.37%
+ 375  XP_023245728.1_Copidosoma_flor   77.23%    passed     40.46%
+ 376  XP_014208575.1_Copidosoma_flor   82.89%    passed     84.33%
+ 377  NP_001136332.1_Nasonia_vitripe   82.75%    passed     45.49%
+ 378  XP_015182011.1_Polistes_dominu   82.37%    passed     23.32%
+ 379  XP_015191850.1_Polistes_dominu   82.37%    passed     23.32%
+ 380  XP_015431062.1_Dufourea_novaea   82.92%    passed     45.33%
+ 381  XP_026296997.1_Apis_mellifera    82.78%    passed     42.00%
+ 382  XP_012174803.1_Bombus_terrestr   82.78%    passed     91.86%
+ 383  XP_015608814.1_Cephus_cinctus    82.37%    passed     39.85%
+ 384  XP_012287227.1_Orussus_abietin   82.89%    passed     69.73%
+ 385  XP_023289585.1_Orussus_abietin   86.08%    passed     90.26%
+ 386  XP_023289587.1_Orussus_abietin   86.08%    passed     90.26%
+ 387  XP_012287111.1_Orussus_abietin   82.68%    passed     94.16%
+ 388  XP_012287125.1_Orussus_abietin   82.68%    passed     81.21%
+ 389  XP_021965237.1_Folsomia_candid   79.38%    failed      1.50%
+ 390  XP_021965305.1_Folsomia_candid   83.20%    passed     65.03%
+ 391  XP_022906938.1_Onthophagus_tau   82.68%    passed     19.16%
+ 392  XP_022188302.1_Nilaparvata_lug   82.37%    passed     23.39%
+ 393  XP_022915568.1_Onthophagus_tau   81.85%    passed      7.69%
+ 394  XP_022915096.1_Onthophagus_tau   82.23%    passed     99.52%
+ 395  XP_022917213.1_Onthophagus_tau   82.26%    passed     82.61%
+ 396  XP_022917226.1_Onthophagus_tau   82.71%    passed     67.97%
+ 397  XP_017774277.1_Nicrophorus_ves   80.46%    passed     56.60%
+ 398  XP_970224.1_Tribolium_castaneu   83.13%    passed     18.72%
+ 399  XP_018571865.1_Anoplophora_gla   82.89%    passed     55.10%
+ 400  XP_018335102.1_Agrilus_planipe   82.54%    passed     69.39%
+ 401  XP_025828888.1_Agrilus_planipe   82.89%    passed     60.75%
+ 402  XP_025828881.1_Agrilus_planipe   82.89%    passed      7.80%
+ 403  XP_018321395.1_Agrilus_planipe   82.96%    passed     27.07%
+ 404  XP_023715347.1_Cryptotermes_se   82.37%    passed     38.73%
+ 405  XP_026683681.1_Diaphorina_citr   68.38%    failed      1.25%
+ 406  XP_014364994.1_Papilio_machaon   82.82%    failed      2.32%
+ 407  XP_031768866.1_Galleria_mellon   87.96%    passed     90.66%
+ 408  XP_013188038.1_Amyelois_transi   82.51%    passed     96.66%
+ 409  XP_030032537.1_Manduca_sexta     82.68%    passed     82.24%
+ 410  XP_030032573.1_Manduca_sexta     82.71%    passed     99.18%
+ 411  XP_030032559.1_Manduca_sexta     82.71%    passed     83.75%
+ 412  XP_023941626.1_Bicyclus_anynan   82.71%    passed     93.83%
+ 413  XP_028040485.1_Bombyx_mandarin   83.17%    passed      7.69%
+ 414  XP_021194593.1_Helicoverpa_arm   82.61%    passed     85.87%
+ 415  XP_021194605.1_Helicoverpa_arm   82.33%    passed     65.44%
+ 416  XP_022821775.1_Spodoptera_litu   82.44%    passed     74.30%
+ 417  PSN36756.1_Blattella_germanica   66.78%    passed      6.40%
+ 418  XP_021932743.1_Zootermopsis_ne   63.35%    failed      0.44%
+ 419  XP_023715346.1_Cryptotermes_se   81.53%    passed     21.73%
+ 420  XP_001946492.1_Acyrthosiphon_p   83.44%    passed     86.54%
+ 421  XP_027839519.1_Aphis_gossypii    83.83%    passed     84.33%
+ 422  XP_027839550.1_Aphis_gossypii    87.12%    passed     67.20%
+ 423  XP_027839553.1_Aphis_gossypii    82.47%    passed      9.84%
+ 424  XP_001952406.2_Acyrthosiphon_p   82.96%    passed     46.97%
+ 425  XP_026289622.1_Frankliniella_o   81.46%    failed      0.12%
+ 426  XP_014371456.1_Papilio_machaon   80.63%    passed     77.71%
+ 427  XP_014366706.1_Papilio_machaon   81.88%    passed     52.71%
+ 428  XP_014366709.1_Papilio_machaon   82.19%    passed     22.11%
+ 429  XP_017782709.1_Nicrophorus_ves   82.82%    passed     51.39%
+ 430  XP_017782710.1_Nicrophorus_ves   83.37%    passed     48.68%
+ 431  XP_015837080.1_Tribolium_casta   82.92%    passed     88.87%
+ 432  XP_975666.1_Tribolium_castaneu   82.58%    passed     48.56%
+ 433  XP_022187263.1_Nilaparvata_lug   83.58%    passed     21.58%
+ 434  XP_033609438.1_Cryptotermes_se   81.53%    passed     86.68%
+ 435  PSN50028.1_Blattella_germanica   83.30%    passed     22.58%
+ 436  PSN48334.1_Blattella_germanica   31.73%    failed      0.00%
+ 437  XP_023723773.1_Cryptotermes_se   82.75%    passed     66.46%
+ 438  XP_021923688.1_Zootermopsis_ne   63.07%    passed      7.33%
+ 439  XP_023723774.1_Cryptotermes_se   82.78%    passed     14.14%
+ 440  PSN34232.1_Blattella_germanica   82.26%    passed     92.98%
+ 441  PSN35602.1_Blattella_germanica   88.48%    passed     75.59%
+ 442  XP_021923730.1_Zootermopsis_ne   80.74%    passed     53.20%
+ 443  XP_023721113.1_Cryptotermes_se   80.67%    passed     37.98%
+ 444  XP_023717252.2_Cryptotermes_se   82.16%    passed     44.54%
+ 445  XP_023723770.1_Cryptotermes_se   82.61%    passed     80.96%
+ 446  XP_021923725.1_Zootermopsis_ne   64.87%    passed     25.76%
+ 447  XP_023723772.1_Cryptotermes_se   82.71%    passed     67.13%
+ 448  PSN34231.1_Blattella_germanica   90.11%    passed     84.85%
+ 449  PSN50030.1_Blattella_germanica   86.32%    passed     99.03%
+ 450  XP_021923692.1_Zootermopsis_ne   84.14%    passed     86.77%
+ 451  XP_023721122.1_Cryptotermes_se   83.48%    passed     95.88%
+ 452  XP_022915744.1_Onthophagus_tau   82.75%    passed     27.16%
+ 453  XP_017782121.1_Nicrophorus_ves   81.50%    passed     50.77%
+ 454  XP_022915458.1_Onthophagus_tau   82.75%    passed     30.37%
+ 455  XP_022915650.1_Onthophagus_tau   82.75%    passed     52.04%
+ 456  XP_022915768.1_Onthophagus_tau   82.64%    passed     73.33%
+WARNING: 455 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                            80.89%  46 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: XP_025830272.1_Agrilus_planipe is identical to XP_018320189.2_Agrilus_planipe but kept for subsequent analysis
+NOTE: XP_015191850.1_Polistes_dominu is identical to XP_015182011.1_Polistes_dominu but kept for subsequent analysis
+NOTE: XP_023289587.1_Orussus_abietin is identical to XP_023289585.1_Orussus_abietin but kept for subsequent analysis
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 1.097 seconds
+Generating 3000 samples for ultrafast bootstrap (seed: 7896788)...
+
+NOTE: 1781 MB RAM (1 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -339173.306
+2. Current log-likelihood: -313834.302
+3. Current log-likelihood: -313370.180
+4. Current log-likelihood: -313332.401
+5. Current log-likelihood: -313323.808
+6. Current log-likelihood: -313320.684
+7. Current log-likelihood: -313319.434
+8. Current log-likelihood: -313318.885
+9. Current log-likelihood: -313318.763
+Optimal log-likelihood: -313318.622
+Site proportion and rates:  (0.023,0.029) (0.029,0.093) (0.049,0.188) (0.056,0.276) (0.060,0.374) (0.090,0.492) (0.119,0.655) (0.143,0.883) (0.156,1.197) (0.275,1.874)
+Parameters optimization took 9 rounds (146.142 sec)
+Computing ML distances based on estimated model parameters... 160.278 sec
+Computing BIONJ tree...
+0.186 seconds
+Log-likelihood of BIONJ tree: -314115.967
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 114.614 second
+Computing log-likelihood of 98 initial trees ... 170.133 seconds
+Current best score: -313318.622
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -312776.280
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -312759.927
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 7: -312747.839
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 8: -312648.770
+Iteration 10 / LogL: -312668.982 / Time: 0h:20m:46s
+Iteration 20 / LogL: -312856.251 / Time: 0h:24m:25s
+Finish initializing candidate tree set (20)
+Current best tree score: -312648.770 / CPU time: 1290.597
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -312610.269
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -312604.091
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -312593.354
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -312584.174
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -312581.013
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -312578.027
+Iteration 30 / LogL: -312580.713 / Time: 0h:32m:19s (1h:49m:7s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 34: -312570.151
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 39: -312567.364
+Iteration 40 / LogL: -312577.727 / Time: 0h:37m:21s (1h:34m:45s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 45: -312562.622
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 48: -312552.004
+Iteration 50 / LogL: -312592.909 / Time: 0h:42m:45s (1h:25m:27s left)
+Log-likelihood cutoff on original alignment: -312816.422
+Iteration 60 / LogL: -312654.240 / Time: 0h:46m:39s (1h:9m:33s left)
+Iteration 70 / LogL: -312725.031 / Time: 0h:50m:41s (0h:57m:15s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 74: -312545.551
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 76: -312536.632
+Iteration 80 / LogL: -312618.400 / Time: 0h:55m:18s (1h:7m:10s left)
+Iteration 90 / LogL: -312538.373 / Time: 0h:59m:6s (0h:57m:5s left)
+Iteration 100 / LogL: -312548.302 / Time: 1h:3m:20s (0h:48m:35s left)
+Log-likelihood cutoff on original alignment: -312816.422
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.980
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 103: -312533.768
+Iteration 110 / LogL: -312563.896 / Time: 1h:7m:44s (0h:57m:46s left)
+Iteration 120 / LogL: -312549.428 / Time: 1h:11m:24s (0h:49m:47s left)
+Iteration 130 / LogL: -312560.167 / Time: 1h:15m:10s (0h:42m:31s left)
+Iteration 140 / LogL: -312540.501 / Time: 1h:19m:22s (0h:35m:57s left)
+Iteration 150 / LogL: -312552.776 / Time: 1h:23m:11s (0h:29m:34s left)
+Log-likelihood cutoff on original alignment: -312804.933
+Iteration 160 / LogL: -312539.249 / Time: 1h:27m:5s (0h:23m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 167: -312528.392
+Iteration 170 / LogL: -312536.960 / Time: 1h:31m:37s (0h:52m:34s left)
+Iteration 180 / LogL: -312578.732 / Time: 1h:35m:29s (0h:46m:23s left)
+Iteration 190 / LogL: -312541.749 / Time: 1h:39m:24s (0h:40m:29s left)
+Iteration 200 / LogL: -312554.116 / Time: 1h:42m:59s (0h:34m:40s left)
+Log-likelihood cutoff on original alignment: -312804.933
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 210 / LogL: -312566.112 / Time: 1h:47m:2s (0h:46m:4s left)
+Iteration 220 / LogL: -312555.012 / Time: 1h:50m:49s (0h:40m:28s left)
+Iteration 230 / LogL: -312568.261 / Time: 1h:54m:52s (0h:35m:6s left)
+Iteration 240 / LogL: -312552.068 / Time: 1h:58m:28s (0h:29m:44s left)
+Iteration 250 / LogL: -312547.055 / Time: 2h:2m:9s (0h:24m:31s left)
+Log-likelihood cutoff on original alignment: -312804.933
+Iteration 260 / LogL: -312556.138 / Time: 2h:6m:27s (0h:19m:31s left)
+TREE SEARCH COMPLETED AFTER 268 ITERATIONS / Time: 2h:9m:31s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -312528.392
+2. Current log-likelihood: -312528.338
+3. Current log-likelihood: -312528.305
+4. Current log-likelihood: -312528.291
+5. Current log-likelihood: -312528.278
+6. Current log-likelihood: -312528.264
+Optimal log-likelihood: -312528.252
+Site proportion and rates:  (0.018,0.022) (0.027,0.070) (0.028,0.150) (0.051,0.222) (0.072,0.318) (0.093,0.454) (0.126,0.620) (0.142,0.839) (0.183,1.168) (0.261,1.943)
+Parameters optimization took 6 rounds (35.429 sec)
+BEST SCORE FOUND : -312528.252
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+Alternative NNI shows better log-likelihood -312528.221 > -312528.252
+Alternative NNI shows better log-likelihood -312528.053 > -312528.252
+5.815 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file final1.splits.nex
+Total tree length: 330.306
+
+Total number of iterations: 268
+CPU time used for tree search: 87994.769 sec (24h:26m:34s)
+Wall-clock time used for tree search: 7596.722 sec (2h:6m:36s)
+Total CPU time used: 90532.054 sec (25h:8m:52s)
+Total wall-clock time used: 7817.298 sec (2h:10m:17s)
+
+Computing bootstrap consensus tree...
+Reading input file final1.splits.nex...
+456 taxa and 1878 splits.
+Consensus tree written to final1.contree
+Reading input trees file final1.contree
+Log-likelihood of consensus tree: -312530.405
+
+Analysis results written to: 
+  IQ-TREE report:                final1.iqtree
+  Maximum-likelihood tree:       final1.treefile
+  Likelihood distances:          final1.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          final1.splits.nex
+  Consensus tree:                final1.contree
+  Screen log file:               final1.log
+
+Date and Time: Sun Oct 25 22:55:18 2020
