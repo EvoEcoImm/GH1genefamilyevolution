@@ -1,0 +1,55 @@
+Species Name	C	S	D	F	M	Du	Lo	Species	Dups	Losses		Dup	Loss	Color
+Acromyrmex echinatior	98.9	98.4	0.5	0.8	0.3	0	0	Acromyrmex	0	0	Acromyrmex	0	0	aquamarine
+Acyrthosiphon pisum	97.4	94	3.4	0.5	2.1	0	0	Acyrthosiphon	0	0	Acyrthosiphon	0	0	darkviolet
+Aedes aegypti	99	93.7	5.3	0.5	0.5	0	1	Aedes	0	1	Aedes	0	0	aquamarine
+Agrilus planipennis	98.3	90.7	7.6	0.4	1.3	26	2	Agrilus	25	1	Agrilus	26	5	blue
+Amyelois transitella	97.9	95.5	2.4	0.5	1.6	2	6	Amyelois	2	7	Amyelois	2	5	green
+Anopheles gambiae str. PEST	99.1	97.1	2	0.3	0.6	0	1	Anopheles	0	0	Anopheles	0	1	orange
+Anoplophora glabripennis	98.4	96.6	1.8	1	0.6	32	2	Anoplophora	32	2	Anoplophora	32	2	orange
+Aphis gossypii	95.2	91.3	3.9	1.8	3	1	0	Aphis	1	0	Aphis	1	0	darkviolet
+Apis mellifera	99.4	99.3	0.1	0.2	0.4	0	0	Apis	0	0	Apis	0	0	aquamarine
+Centruroides sculpturatus	89.2	85.4	3.8	4.1	6.7									
+Cephus cinctus	99.1	98.9	0.2	0.5	0.4	0	3	Cephus	0	3	Cephus	0	3	aquamarine
+Cimex lectularius	99.1	98.3	0.8	0.2	0.7	0	1	Cimex	0	2	Cimex	0	1	darkviolet
+Copidosoma floridanum	95.9	93	2.9	1.3	2.8	0	1	Copidosoma	0	1	Copidosoma	1	1	aquamarine
+Cryptotermes secundus	97.2	95.7	1.5	1.7	1.1	1	1	Cryptotermes	1	1	Cryptotermes	1	1	gray
+Culex quinquefasciatus	94.9	90.5	4.4	0.9	4.2	1	2	Culex	1	2	Culex	1	1	orange
+Danaus plexippus plexippus	97.5	95.7	1.8	1.4	1.1	7	6	Danaus	7	6	Danaus	7	6	green
+Daphnia magna	98	96.9	1.1	0.9	1.1	4	2	Daphnia	4	1	Daphnia	4	2	black
+Dendroctonus ponderosae	96.5	92.3	4.2	1.4	2.1	13	0	Dendroctonus	13	0	Dendroctonus	14	0	blue
+Dermatophagoides pteronyssinus	90.4	89.8	0.6	1.2	8.4									
+Diabrotica virgifera virgifera	92	90.7	1.3	4	4	20	5	Diabrotica	20	5	Diabrotica	19	4	blue
+Diaphorina citri	86	81.2	4.8	7.5	6.5	0	1	Diaphorina	0	1	Diaphorina	0	2	darkviolet
+Drosophila melanogaster	99.8	99.2	0.6	0	0.2	0	2	Drosophila	0	2	Drosophila	0	2	orange
+Dufourea novaeangliae	99.3	99.2	0.1	0.4	0.3	0	0	Dufourea	0	0	Dufourea	0	0	aquamarine
+Folsomia candida	96.3	95.4	0.9	0.8	2.9	12	2	Folsomia	12	1	Folsomia	12	2	black
+Frankliniella occidentalis	98.3	96.7	1.6	0.8	0.9	4	1	Frankliniella	5	0	Frankliniella	4	1	darkviolet
+Galleria mellonella	89.9	89.7	0.2	5.5	4.6	2	4	Galleria	1	4	Galleria	1	2	green
+Harpegnathos saltator	99.1	97.8	1.3	0.4	0.5	0	0	Harpegnathos	0	0	Harpegnathos	0	0	aquamarine
+Helicoverpa armigera	96.4	95.9	0.5	1.5	2.1	1	3	Helicoverpa	1	2	Helicoverpa	2	2	green
+Hyposmocoma kahamanoa	91.5	90.6	0.9	2.3	6.2									
+Limulus polyphemus	86.5	76.1	10.4	5	8.5									
+Manduca sexta	95.8	93.5	2.3	2.3	1.9	10	5	Manduca	9	5	Manduca	9	4	green
+Musca domestica	97.9	96.1	1.8	1.1	1	0	1	Musca	0	1	Musca	0	1	orange
+Nasonia vitripennis	98.2	97.4	0.8	0.3	1.5	1	2	Nasonia	1	2	Nasonia	1	1	aquamarine
+Nicrophorus vespilloides	99.7	98.4	1.3	0.1	0.2	1	3	Nicrophorus	1	4	Nicrophorus	1	3	blue
+Nilaparvata lugens	90.5	81.8	8.7	4.3	5.2	0	0	Nilaparvata	0	1	Nilaparvata	0	0	darkviolet
+Onthophagus taurus	99.5	96.2	3.3	0.1	0.4	8	3	Onthophagus	8	4	Onthophagus	8	3	blue
+Orussus abietinus	98.6	98.1	0.5	0.4	1	4	3	Orussus	4	3	Orussus	4	3	darkviolet
+Papilio machaon	94.4	93.5	0.9	3	2.6	6	9	Papilio	5	7	Papilio	6	6	green
+Pediculus humanus corporis	97	97	0	1.8	1.2	0	5	Pediculus	0	2	Pediculus	0	6	black
+Penaeus vannamei	85.9	80.1	5.8	5.4	8.7									
+Plutella xylostella	89.8	75.1	14.7	3.1	7.1									
+Polistes dominula	99.7	99.2	0.5	0	0.3	1	1	Polistes	1	0	Polistes	1	1	aquamarine
+Rhagoletis zephyria	98.2	75.6	22.6	0.6	1.2	2	1	Rhagoletis	2	1	Rhagoletis	2	1	orange
+Sitophilus oryzae	98.8	97.4	1.4	0.4	0.8	6	5	Sitophilus	6	5	Sitophilus	6	4	green
+Spodoptera litura	97.7	96.6	1.1	0.6	1.7	3	4	Spodoptera	3	3	Spodoptera	3	2	green
+Tetranychus urticae	89.3	85.5	3.8	2.6	8.1									
+Tribolium castaneum	98.9	98.5	0.4	0.8	0.3	7	1	Tribolium	7	1	Tribolium	7	2	blue
+Varroa jacobsoni	89.8	88.9	0.9	1.9	8.3									
+Zootermopsis nevadensis	97.8	97.3	0.5	1.6	0.6	0	5	Zootermopsis	0	5	Zootermopsis	0	5	gray
+Blattella germanica	96.3	94.2	2.1	1.7	2	1	4	Blattella	1	5	Blattella	1	3	gray
+Atta colombica	99.3	98.9	0.4	0.5	0.2	0	0	Atta	0	0	Atta	0	0	aquamarine
+Bicyclus anynana	97.2	96.5	0.7	1.3	1.5	13	2	Bicyclus	13	2	Bicyclus	13	2	green
+Bombus terrestris	98.5	98.4	0.1	1.1	0.4	0	0	Bombus	0	0	Bombus	0	0	aquamarine
+Bombyx mandarina	94	93.5	0.5	0.7	5.3	7	6	Bombyx	7	7	Bombyx	7	6	green
