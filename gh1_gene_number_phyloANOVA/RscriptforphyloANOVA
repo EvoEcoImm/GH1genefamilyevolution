@@ -1,0 +1,11 @@
+library(phytools)
+#1-separate feeding groups as Figure 1;2-separate feeding groups as their plant cell wall feeding or not.
+tr<-read.tree("Species_dated_tree.newick")
+tree<-drop.tip(tr,"Daphnia_magna")
+genet<-read.csv("gene_n_type_annotated.csv",header=T)
+geneto<-genet[match(tree$tip.label,genet$Species_name),]
+#test between herbivores and non-herbivores
+phylANOVA(tree,geneto$Herbivorous,geneto$GeneN,nsim=1000,posthoc=T,p.adj="holm")
+
+#test separation groups of direct feeding and non-direct feeding on plant celll walls.
+phylANOVA(tree,geneto$Plant_cell_wall,geneto$GeneN,nsim=1000,posthoc=T,p.adj="holm")
