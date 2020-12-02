@@ -1,52 +1,41 @@
 ### 1. database buildup
-__extract extract GH1 proteins from dbCAN by Biopython__ 
+__extract extract GH1 proteins from dbCAN by Biopython__
 ```console
-cat << EOF > pyscript.py
-#!/usr/bin/python
-from Bio import SeqIO
-
-a=[se for se in SeqIO.parse("CAZyDB.07312019.fa","fasta") if se.id.split("|")[-1]=="GH1"]
-SeqIO.write(a,"GH1_dbcan.fasta","fasta")
-
-EOF
-
-chmod 755 pyscript.py
-./pyscript.py
-
-
-##################################################################
-#get taxonomy for GH1 of dbCAN database, which is NOT THE BEST YET
-##################################################################
-grep ">" GH1_dbcan.fasta |cut -f1 -d "|"|sed 's/^>//g' > protein.ids
-for i in `cat protein.ids`; do \
-echo $i >> protein_id2tax; \
-esearch -db protein -query $i| \
-elink -target taxonomy| \
-efetch -format xml| \
-xtract -pattern Taxon -tab "," -first TaxId ScientificName \
--group Taxon -KING "(-)" -PHYL "(-)" -CLSS "(-)" -ORDR "(-)" -FMLY "(-)" -GNUS "(-)" \
--block "*/Taxon" -match "Rank:kingdom" -KING ScientificName \
--block "*/Taxon" -match "Rank:phylum" -PHYL ScientificName \
--block "*/Taxon" -match "Rank:class" -CLSS ScientificName \
--block "*/Taxon" -match "Rank:order" -ORDR ScientificName \
--block "*/Taxon" -match "Rank:family" -FMLY ScientificName \
--block "*/Taxon" -match "Rank:genus" -GNUS ScientificName \
--group Taxon -tab "," -element "&KING" "&PHYL" "&CLSS" "&ORDR" "&FMLY" "&GNUS" \
->> protein_id2tax ; \
-done
+##setup run_dbCAN with Anoconda
+conda create -n run_dbcan python=3.8 diamond hmmer prodigal -c conda-forge -c bioconda
+conda activate run_dbcan
+pip install run-dbcan==2.0.11
+test -d db || mkdir db
+cd db \
+    && wget http://bcb.unl.edu/dbCAN2/download/CAZyDB.07312019.fa.nr && diamond makedb --in CAZyDB.07312019.fa.nr -d CAZy \
+    && wget http://bcb.unl.edu/dbCAN2/download/Databases/dbCAN-HMMdb-V8.txt && mv dbCAN-HMMdb-V8.txt dbCAN.txt && hmmpress dbCAN.txt \
+    && wget http://bcb.unl.edu/dbCAN2/download/Databases/tcdb.fa && diamond makedb --in tcdb.fa -d tcdb \
+    && wget http://bcb.unl.edu/dbCAN2/download/Databases/tf-1.hmm && hmmpress tf-1.hmm \
+    && wget http://bcb.unl.edu/dbCAN2/download/Databases/tf-2.hmm && hmmpress tf-2.hmm \
+    && wget http://bcb.unl.edu/dbCAN2/download/Databases/stp.hmm && hmmpress stp.hmm \
+    && cd ../ && wget http://bcb.unl.edu/dbCAN2/download/Samples/EscheriaColiK12MG1655.fna \
+    && wget http://bcb.unl.edu/dbCAN2/download/Samples/EscheriaColiK12MG1655.faa \
+    && wget http://bcb.unl.edu/dbCAN2/download/Samples/EscheriaColiK12MG1655.gff
 ```
+extract GH1 hmm from whole hmm database. and run_dbCAN.py with only GH1 prediction.
+
 ### 2.predict/extract GH1 from assembly of genomes in Genome/resource/Arthropoda_Refseq/genomes
 ```console
 #predict GH1 with run_dbCAN.py
+
 ls /media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/ >Genome_specids #get species id
 for i in `cat Genome_specids`; do python run_dbcan.py /media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/$i/GC_*_protein.faa protein --out_pre $i --out_dir $i --db_dir ../ ;done 
 ```
+
+### 3. get details and sequences of predicted proteins. 
 __R scripts to extract gff from genes__
 ```R
 library(rtracklayer)
 library(Biostrings)
 library(rentrez)
+library(tidyverse)
 
+###This getting cds from genebank probably is not perfect because the protein sequences do not match.
 get_gb<-function(gid){ #retrieve genbank format based on gene id from ncbi
 	gidsum<-entrez_summary(db="gene",id=gid)
 	if(!length(gidsum$genomicinfo)){
@@ -63,7 +52,7 @@ get_gb<-function(gid){ #retrieve genbank format based on gene id from ncbi
 	return(gidgb)
 	}
 
-
+###This can work with nuc seqs.
 get_genes_gff<-function(spec){ #define function to extract and output gene gffs,represent_proteins
 	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
 	GH1s<-GH1[GH1$X.ofTools>=3,]
@@ -74,7 +63,9 @@ get_genes_gff<-function(spec){ #define function to extract and output gene gffs,
 	} else {
 	genome_folder_path<-"/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
 	gff_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.gff$")
+	nuc_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.fna$")
 	gff_fp<-file.path(genome_folder_path,spec,gff_fn)
+	nuc_fp<-file.path(genome_folder_path,spec,nuc_fn)
 	gff<-import(gff_fp,format="gff3")
 	if("locus_tag"%in%colnames(mcols(gff))){
 		locus_tag_value<-subset(gff,gff$protein_id%in%GH1s$Gene.ID)$locus_tag
@@ -90,19 +81,26 @@ get_genes_gff<-function(spec){ #define function to extract and output gene gffs,
 	export(GH1s_gff,con,format="gff3")
 	close(con)
 	genes_gff<- GH1s_gff[GH1s_gff$type=="gene"]
-	if("locus_tag"%in%colnames(mcols(genes_gff))&!any(is.na(genes_gff$locus_tag))){
-		gene_names<- unlist(lapply(genes_gff$locus_tag, function(x) sub("[A-z]*[A-z]","",x)))
-		} else {
-		gene_names<- unlist(lapply(genes_gff$gene, function(x) sub("[A-z]*[A-z]","",x)))
-		}
-	genegbs<-""
-	for (gname in gene_names){
-		gidgbs<-get_gb(gname)
-		genegbs<-paste0(genegbs,gidgbs)
-		}
-	gbfilename <- paste0(spec,"_GH1s.gb")
-	write(genegbs,file=gbfilename,append=T)
+	#if("locus_tag"%in%colnames(mcols(genes_gff))&!any(is.na(genes_gff$locus_tag))){
+	#	gene_names<- unlist(lapply(genes_gff$locus_tag, function(x) sub("[A-z]*[A-z]","",x)))
+	#	} else {
+	#	gene_names<- unlist(lapply(genes_gff$gene, function(x) sub("[A-z]*[A-z]","",x)))
+	#	}
+	#genegbs<-""
+	#for (gname in gene_names){
+	#	gidgbs<-get_gb(gname)
+	#	genegbs<-paste0(genegbs,gidgbs)
+	#	}
+	#gbfilename <- paste0(spec,"_GH1s.gb")
+	#write(genegbs,file=gbfilename,append=T)
+	abc=readDNAStringSet(nuc_fp)
+	genefas=DNAStringSet()
+	for (sid in GH1s$Gene.ID){
+		sidq=abc[grepl(sid,names(abc))]
+		genefas=c(genefas,sidq)	
 	}
+	fasfilename <- paste0(spec,"_GH1s.fna")
+	writeXStringSet(genefas,fasfilename,format='fasta')
 	return(genes_gff)
 	}
 
@@ -336,7 +334,7 @@ totalseqs=[replaceseqname(seq) for f in totalseq if f!="" for seq in f]
 SeqIO.write(totalseqs,"GH1s_genome_protein.faa",'fasta')
 
 ```
-__retrieve cds and protein seqs__
+__retrieve protein seqs__
 ```R
 library(dplyr)
 library(stringr)
@@ -400,6 +398,7 @@ dev.off()
 for i in {00..09}; do ~/GH1/taxonomy_contamination_detect_transcriptome.py -i GH1s_genome_protein.$i.faa.alignment.xml -o GH1s_genome_protein.$i.faa.alignment.xml.tax; done;cat *xml.tax > GH1s_genome_protein.faa.alignment.xml.tax; rm GH1s_genome_protein.*.faa.alignment.xml.tax
 #manully check the sequences from bacteria.
 ```
+
 ### 4. Dual domain proteins
 __#extract protein with multiple domains with "python"__
 ```python
