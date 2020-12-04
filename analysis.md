@@ -251,7 +251,7 @@ write.csv(totalgid[-1,],"Genome_ids_GH1_list.csv",quote=F,row.names=F)
 #"""End of R"""
 
 ```
-__python to get represent protein id__
+__python to get represent protein id and sequences__
 ```python
 import pandas as pd
 from Bio import SeqIO
@@ -334,7 +334,7 @@ totalseqs=[replaceseqname(seq) for f in totalseq if f!="" for seq in f]
 SeqIO.write(totalseqs,"GH1s_genome_protein.faa",'fasta')
 
 ```
-__retrieve protein seqs__
+__retrieve summary data__
 ```R
 library(dplyr)
 library(stringr)
