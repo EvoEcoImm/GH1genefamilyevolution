@@ -1,5 +1,6 @@
 ### 1. database buildup
-__extract extract GH1 proteins from dbCAN by Biopython__
+__extract GH1 proteins from dbCAN by Biopython__
+extract GH1 hmm from whole hmm database. and run_dbCAN.py with only GH1 prediction.
 ```console
 ##setup run_dbCAN with Anoconda
 conda create -n run_dbcan python=3.8 diamond hmmer prodigal -c conda-forge -c bioconda
@@ -16,8 +17,40 @@ cd db \
     && cd ../ && wget http://bcb.unl.edu/dbCAN2/download/Samples/EscheriaColiK12MG1655.fna \
     && wget http://bcb.unl.edu/dbCAN2/download/Samples/EscheriaColiK12MG1655.faa \
     && wget http://bcb.unl.edu/dbCAN2/download/Samples/EscheriaColiK12MG1655.gff
+
+#database and running tools, run_dbcan, diamond, hmmer,hotpep; form the hmmer database, diamond database and hotpep databases.
+##tools
+wget https://files.pythonhosted.org/packages/ae/87/431b9b651544ead5b0889c39e6fddb9e1dd98e773c2ed5c229e18e063ee6/run_dbcan-2.0.11.tar.gz && tar zxvf run_dbcan-2.0.11.tar.gz
+wget http://bcb.unl.edu/dbCAN2/download/Tools/hotpep-python-08-06-2020.tar.gz
+wget http://bcb.unl.edu/dbCAN2/download/Tools/hmmscan-parser.gz
+#wget http://bcb.unl.edu/dbCAN2/download/Tools/run_dbcan.tar.gz
+
+pip install run-dbcan
+
+#database
+wget http://bcb.unl.edu/dbCAN2/download/dbCAN-HMMdb-V9.txt
+wget http://bcb.unl.edu/dbCAN2/download/CAZyDB.07312020.fa
+wget http://bcb.unl.edu/dbCAN2/download/Databases/CAZyDB.07302020.fam.subfam.ec.txt
+wget http://bcb.unl.edu/dbCAN2/download/Databases/CAZyDB.07302020.fam-activities.txt
+wget http://bcb.unl.edu/dbCAN2/download/Databases/stp.hmm
+wget http://bcb.unl.edu/dbCAN2/download/Databases/tcdb.fa
+wget http://bcb.unl.edu/dbCAN2/download/Databases/tf-1.hmm
+wget http://bcb.unl.edu/dbCAN2/download/Databases/tf.fa
+wget http://bcb.unl.edu/dbCAN2/download/Databases/tf-2.hmm
+
+##filter GH1 for make database
+#edit Hotpep family file in Hotpep folder
+mv fam_list.txt fam_list_BACKUP.txt && echo "GH1" > fam_list.txt
+#get GH1 protein sequences and build up database for diamond
+awk 'BEGIN{RS="^";FS="\n"}$1~/GH1/{print $0}' CAZyDB.07312019.fa > CAZyDB.GH1.07312019.fa && diamond makedb --in CAZyDB.GH1.07312020.fa -d CAZy
+#get GH1 profile and build up profile for diamond
+hmmfetch dbCAN-HMMdb-V9.txt GH1.hmm > GH1.dbCAN.txt && hmmpress GH1.dbCAN.txt 
+diamond makedb --in tcdb.fa -d tcdb
+hmmpress tf-1.hmm
+hmmpress tf-2.hmm
+hmmpress stp.hmm
+
 ```
-extract GH1 hmm from whole hmm database. and run_dbCAN.py with only GH1 prediction.
 
 ### 2.predict/extract GH1 from assembly of genomes in Genome/resource/Arthropoda_Refseq/genomes
 ```console
