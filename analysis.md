@@ -51,16 +51,66 @@ hmmpress tf-2.hmm
 hmmpress stp.hmm
 
 ```
+### 2. Download genome assemblies and annotations
+search genome resources
+Refine "Eukaryotes" in Genome of NCBI; search "Arthropoda" ; restriction in: 1)Asseembly level, Chromosome+Scaffold; 2) RefSeq category, reference+representative
+in table, select RefSeqFTP not empty; keep all chromosome assembly and one representative genome in rest of each genus:1)level, chromosome > scaffold; 2) modified Date, newest> older 
+```R
+#!/usr/bin/env Rscript
 
-### 2.predict/extract GH1 from assembly of genomes in Genome/resource/Arthropoda_Refseq/genomes
+#download genome resources from NCBI genome database
+
+library(readODS)
+library(RCurl)
+
+args = commandArgs(trailingOnly=TRUE)
+setwd(".")
+print(args[1])
+assembly_list<-read_ods(args[1],sheet=2)
+
+dla_rsync<- function(doc){
+	doc["GenBank FTP"]<-lapply(doc["GenBank FTP"],function(colsub) sub("ftp","rsync",colsub))
+	for (ni in 1:nrow(doc)){
+		dirn<-sub(" ","_",doc[ni,"#Organism Name"])
+		dir.create(dirn)
+		downloadscript_cds<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*cds_from_genomic.fna.gz ./", dirn)
+		downloadscript_protein<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*protein.faa.gz ./", dirn)
+		downloadscript_gff<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*genomic.gff.gz ./", dirn)
+		system(downloadscript_cds)
+		system(downloadscript_protein)
+		system(downloadscript_gff)
+		}
+	}
+
+dla_https<- function(doc){
+	doc["RefSeq FTP"]<-lapply(doc["RefSeq FTP"],function(colsub) sub("ftp","https",colsub))
+	for (ni in 1:nrow(doc)){
+		dirn<-sub(" ","_",doc[ni,"#Organism Name"])
+		filepref<-gsub(".*/","",doc[ni,"RefSeq FTP"])
+		dir.create(dirn)
+		downloadscript_cds<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref,"_cds_from_genomic.fna.gz -P ./", dirn)
+		downloadscript_protein<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref, "_protein.faa.gz -P ./", dirn)
+		downloadscript_gff<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref,"_genomic.gff.gz -P ./", dirn)
+		system(downloadscript_cds)
+		system(downloadscript_protein)
+		system(downloadscript_gff)
+		}
+	}
+
+setwd("Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq")
+dla_https(assembly_list)
+```
+seperate download Blattella gemanica genome
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/018/175/GCA_003018175.1_Bger_1.1
+
+### 3.predict/extract GH1 from assembly of genomes in Genome/resource/Arthropoda_Refseq/genomes
 ```console
 #predict GH1 with run_dbCAN.py
-
 ls /media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/ >Genome_specids #get species id
 for i in `cat Genome_specids`; do python run_dbcan.py /media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/$i/GC_*_protein.faa protein --out_pre $i --out_dir $i --db_dir ../ ;done 
 ```
 
-### 3. get details and sequences of predicted proteins. 
+### 4. get details and sequences of predicted proteins. 
 __R scripts to extract gff from genes__
 ```R
 library(rtracklayer)
@@ -69,6 +119,7 @@ library(rentrez)
 library(tidyverse)
 
 ###This getting cds from genebank probably is not perfect because the protein sequences do not match.
+if (FALSE) {
 get_gb<-function(gid){ #retrieve genbank format based on gene id from ncbi
 	gidsum<-entrez_summary(db="gene",id=gid)
 	if(!length(gidsum$genomicinfo)){
@@ -84,7 +135,7 @@ get_gb<-function(gid){ #retrieve genbank format based on gene id from ncbi
 		}
 	return(gidgb)
 	}
-
+}
 ###This can work with nuc seqs.
 get_genes_gff<-function(spec){ #define function to extract and output gene gffs,represent_proteins
 	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
@@ -92,13 +143,11 @@ get_genes_gff<-function(spec){ #define function to extract and output gene gffs,
 	if (!nrow(GH1s)){
 	genes_gff<-""
 	file(paste0(spec,"_GH1.gff3"),"w")
-	file(paste0(spec,"_GH1.gb"),"w")
+	file(paste0(spec,"_GH1.fna"),"w")
 	} else {
 	genome_folder_path<-"/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
 	gff_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.gff$")
-	nuc_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.fna$")
 	gff_fp<-file.path(genome_folder_path,spec,gff_fn)
-	nuc_fp<-file.path(genome_folder_path,spec,nuc_fn)
 	gff<-import(gff_fp,format="gff3")
 	if("locus_tag"%in%colnames(mcols(gff))){
 		locus_tag_value<-subset(gff,gff$protein_id%in%GH1s$Gene.ID)$locus_tag
@@ -126,23 +175,74 @@ get_genes_gff<-function(spec){ #define function to extract and output gene gffs,
 	#	}
 	#gbfilename <- paste0(spec,"_GH1s.gb")
 	#write(genegbs,file=gbfilename,append=T)
-	abc=readDNAStringSet(nuc_fp)
-	genefas=DNAStringSet()
-	for (sid in GH1s$Gene.ID){
-		sidq=abc[grepl(sid,names(abc))]
-		genefas=c(genefas,sidq)	
-	}
-	fasfilename <- paste0(spec,"_GH1s.fna")
-	writeXStringSet(genefas,fasfilename,format='fasta')
 	return(genes_gff)
 	}
-
+}
 specs<-readLines("Genome_specids") #get species ids
 specs_genes<-list()
 for (specid in specs){ #except "Culex_quinquefasciatus" and "Pediculus_humanus", manually download, get genbank files and gff3 structures for all the genes
 	try(specs_genes[[specid]]<-get_genes_gff(specid))
 	}
 
+###############################################################
+#Summary genes and gene details
+################################################################
+#__retrieve summary data__
+
+library(dplyr)
+library(stringr)
+library(rtracklayer)
+library(GenomicFeatures)
+specs<-readLines("Genome_specids_selected_tree")
+options(ucscChromosomeNames=FALSE)
+
+get_r_summary<-function(gff3){
+	sTxDB<-makeTxDbFromGFF(gff3,format="gff3")
+	genelist<-transcriptsBy(sTxDB,by="gene")
+	#tranlist<-lapply(exonsBy(sTxDB,by="gene"),function(x)length(disjoin(x)))
+	#for(i in names(genelist)){genelist[[i]]$nexon<-tranlist[[i]]}
+	gened<-as.data.frame(genelist)
+	rownames(gened)<-gened$tx_name
+	t2nexon<-as.data.frame(sapply(exonsBy(sTxDB,by="tx",use.name=T),function(x)length(x)))
+	t2cdsl<-as.data.frame(sapply(cdsBy(sTxDB,by="tx",use.name=T),function(x)sum(width(x))))
+	t2cdsn<-as.data.frame(sapply(cdsBy(sTxDB,by="tx",use.name=T),function(x)unique(x$cds_name)))
+	g1<-cbind(t2cdsn,t2cdsl[,1][match(rownames(t2cdsn),rownames(t2cdsl))],t2nexon[,1][match(rownames(t2cdsn),rownames(t2nexon))])
+	colnames(g1)<- c("proteinname","wcds","nexon")
+	genesummary<-merge(gened,g1,by="row.names")[,-1]
+	return(genesummary)
+	}
+
+for (spec in specs){
+	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
+	GH1s<-GH1[GH1$X.ofTools>=3,]
+	nps<-nrow(GH1s)
+	if (!nps) {
+	geneids<-""
+	} else {
+	GH1s$ndom<-str_count(GH1s$HMMER,'\\+')+1
+	abc<-get_r_summary(paste0(spec,"_GH1.gff3"))
+	abcn<-merge(abc,GH1s[,c(1,2,7)],by.x="proteinname",by.y="Gene.ID")
+	abcn$Org<-spec
+	if (exists("allsummary")){allsummary<-rbind(allsummary,abcn)} else {allsummary<-abcn}
+	}
+	}
+write.table(allsummary,"all_genome_GH1.gene.summary.csv",quote=F,sep="\t",row.names=F)
+
+#plot gene number to tree
+library(tidyverse)
+library(phytools)
+all<-read.csv("all_genome_GH1.gene2protein.summary.csv",stringsAsFactor=F,row.names=1)
+summaryall<- all %>% group_by(Org) %>% summarise(proteincount=n(),genecount=n_distinct(group_name)) %>% as.data.frame
+spectreetxt<-"((Limulus_polyphemus,((Varroa_jacobsoni,(Dermatophagoides_pteronyssinus,Tetranychus_urticae)),Centruroides_sculpturatus)),(Penaeus_vannamei,(Daphnia_magna,(Folsomia_candida,((Blattella_germanica,(Zootermopsis_nevadensis,Cryptotermes_secundus)),((Frankliniella_occidentalis,((Diaphorina_citri,(Aphis_gossypii,Acyrthosiphon_pisum)),(Nilaparvata_lugens,Cimex_lectularius))),(Pediculus_humanus,((Cephus_cinctus,(Orussus_abietinus,((Nasonia_vitripennis,Copidosoma_floridanum),(Polistes_dominula,((Harpegnathos_saltator,(Atta_colombica,Acromyrmex_echinatior)),(Dufourea_novaeangliae,(Apis_mellifera,Bombus_terrestris))))))),((Agrilus_planipennis,((Onthophagus_taurus,Nicrophorus_vespilloides),(Tribolium_castaneum,((Anoplophora_glabripennis,Diabrotica_virgifera),(Sitophilus_oryzae,Dendroctonus_ponderosae))))),((Plutella_xylostella,((Papilio_machaon,(Danaus_plexippus,Bicyclus_anynana)),(Hyposmocoma_kahamanoa,((Galleria_mellonella,Amyelois_transitella),((Helicoverpa_armigera,Spodoptera_litura),(Bombyx_mandarina,Manduca_sexta)))))),(((Culex_quinquefasciatus,Aedes_aegypti),Anopheles_gambiae),(Drosophila_melanogaster,(Rhagoletis_zephyria,Musca_domestica)))))))))))));"
+spectree<-read.tree(text=spectreetxt)
+#dotTree(spectree,snumbers[,1:2])
+nogene<-data.frame("Org" = c("Limulus_polyphemus","Dermatophagoides_pteronyssinus","Tetranychus_urticae","Centruroides_sculpturatus","Penaeus_vannamei"), "proteincount" = rep(0,5), "genecount" = rep(0,5))
+countall<-rbind(summaryall,nogene)
+rownames(countall)<-countall[,1]
+plotTree.barplot(spectree,countall[,c(3,2)],args.plotTree=list(cex=0.5),args.barplot=list(col=c("blue","red"),legend.text=c("gene","protein"),main="No. of genes and proteins",args.legend=list(bty="n"),beside=TRUE))
+#dotTree(spectree,snumbers[,1:2])
+dev.print(pdf,"Number_summary_pandg.pdf")
+dev.off()
 
 summarynumber<- function(spec){ #return no. of proteins and no. of genes
 	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
@@ -177,6 +277,9 @@ snumbers<-numbers[rownames(numbers)%in%spectree$tip.label,]
 plotTree.barplot(spectree,snumbers[,c(2,1)],args.plotTree=list(cex=0.5),args.barplot=list(col=c("blue","red"),legend.text=c("gene","protein"),main="No. of genes/proteins",args.legend=list(bty="n")))
 dev.print(pdf,"summary_p2g.pdf")
 dev.off()
+
+
+
 #############################################
 ##############	R plot genes	##############
 #############################################
@@ -258,181 +361,59 @@ popViewport(1)
 }
 dev.print(pdf,paste0(sps[54],"_GH1.gff3.pdf"))
 
+
 ###################################################################################
-###############	get representing protein seqs for each gene	##############
+###############	get representing protein seqs and cds seqs for each gene	##############
 ###################################################################################
+
 """r script"""
 library(rtracklayer)
-specs<-readLines("Genome_specids_selected")
-totalgid=data.frame("ID"="","Org"="")
-for (spec in specs){ #get genes of each species
-	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
-	GH1s<-GH1[GH1$X.ofTools>=3,]
-	nps<-nrow(GH1s)
-	if (!nps) {
-	geneids<-""
-	} else {
-	GH1s_gff<-import(paste0(spec,"_GH1.gff3"),format="gff3")
-	ID<-GH1s_gff[GH1s_gff$type=="gene"]$ID
-	dfg<-as.data.frame(ID)
-	dfg$"Org"<-spec
-	}
-	totalgid<-rbind(totalgid,dfg)
-	}
-write.csv(totalgid[-1,],"Genome_ids_GH1_list.csv",quote=F,row.names=F)
-
-#"""End of R"""
-
-```
-__python to get represent protein id and sequences__
-```python
-import pandas as pd
-from Bio import SeqIO
-data=pd.read_csv("Genome_ids_GH1_list.csv")
-data['ID']=data['ID'].str.replace("^gene-","")
-orgset=set(data['Org'].values.tolist())
-spec2ids2={a:data[data.Org==a]['ID'].values.tolist() for a in orgset}
-
-#create species 2 gene ids dictionary
-data2list=data.values.tolist()
-spec2ids=dict()
-for a,b in data2list:
-	if b not in spec2ids.keys():
-		spec2ids[b]=[a]
-	else:
-		spec2ids[b].append(a)
-
-
-def retrieve_p(spec,idlist):
-	fa="./"+spec+"_GH1s.gb"
-	fq=[seq for seq in SeqIO.parse(fa,'gb')]
-	genestr='_'.join(idlist)
-	g2p_dict={}
-	for seq in fq:
-		sfqf=[sf for sf in seq.features if sf.type=="CDS" ]
-		slecqf=[sfe for sfe in sfqf if sfe.qualifiers["gene"][0] in genestr]
-		g_id=slecqf[0].qualifiers["gene"][0]
-		if len(slecqf)==1:
-			protein_id=slecqf[0].qualifiers["protein_id"][0]
-		else:
-			protein_f=slecqf[0]
-			for ssf in slecqf[1:]:
-				if len(ssf) > len(protein_f):
-					protein_f=ssf
-			protein_id=protein_f.qualifiers["protein_id"][0]
-		g2p_dict[g_id]=protein_id
-	return g2p_dict
-total={}
-for spec,glist in spec2ids.items():
-	try:
-		total[spec]=retrieve_p(spec,glist)
-	except KeyError:
-		print(spec,"cds has no gene ids")
-	except IndexError:
-		print(spec,"has no cds annotation")
-for spec in total.keys():
-	df=pd.DataFrame.from_dict(total[spec],orient='index')
-	df.to_csv(spec+"_GHs_g2p.csv",header=False)
-
-###"""python retrieve protein seqs from database"""###
-from Bio import SeqIO,Seq
-import os
-
-def retrieve_p_seq(spec):
-	genome_folder_path="/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
-	p_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith("_protein.faa")]
-	p_fp=os.path.join(genome_folder_path,spec,p_fn[0])
-	id_fn=spec+"_GHs_g2p.csv"
-	try:
-		with open(id_fn,'r') as file:
-			ids=[e.strip('\n').split(',')[-1] for e in file.readlines()]
-		pseq=[seq for seq in SeqIO.parse(p_fp,'fasta') if seq.id in ids]
-	except FileNotFoundError:
-		print(spec,"has no GH1 genes")
-		pseq=""
-	return pseq
-
-def replaceseqname(seq):
-	cid=seq.description.replace('[',"").replace(']',"").split(' ')
-	cidn='_'.join([cid[0],cid[-2],cid[-1]])
-	seq.id=cidn
-	return seq
-
-with open("Genome_specids_selected",'rt') as file:
-	specs=[item.strip('\n') for item in file.readlines()]
-
-totalseq=[retrieve_p_seq(spec) for spec in specs]
-totalseqs=[replaceseqname(seq) for f in totalseq if f!="" for seq in f]
-
-SeqIO.write(totalseqs,"GH1s_genome_protein.faa",'fasta')
-
-```
-__retrieve summary data__
-```R
-library(dplyr)
-library(stringr)
-library(rtracklayer)
-library(GenomicFeatures)
-specs<-readLines("Genome_specids_selected_tree")
-options(ucscChromosomeNames=FALSE)
-
-get_r_summary<-function(gff3){
-	sTxDB<-makeTxDbFromGFF(gff3,format="gff3")
-	genelist<-transcriptsBy(sTxDB,by="gene")
-	#tranlist<-lapply(exonsBy(sTxDB,by="gene"),function(x)length(disjoin(x)))
-	#for(i in names(genelist)){genelist[[i]]$nexon<-tranlist[[i]]}
-	gened<-as.data.frame(genelist)
-	rownames(gened)<-gened$tx_name
-	t2nexon<-as.data.frame(sapply(exonsBy(sTxDB,by="tx",use.name=T),function(x)length(x)))
-	t2cdsl<-as.data.frame(sapply(cdsBy(sTxDB,by="tx",use.name=T),function(x)sum(width(x))))
-	t2cdsn<-as.data.frame(sapply(cdsBy(sTxDB,by="tx",use.name=T),function(x)unique(x$cds_name)))
-	g1<-cbind(t2cdsn,t2cdsl[,1][match(rownames(t2cdsn),rownames(t2cdsl))],t2nexon[,1][match(rownames(t2cdsn),rownames(t2nexon))])
-	colnames(g1)<- c("proteinname","wcds","nexon")
-	genesummary<-merge(gened,g1,by="row.names")[,-1]
-	#sgenesummary<- genesummary %>% group_by(group_name) %>% filter(wcds==max(wcds)) %>% top_n(1) %>% ungroup() %>% as.data.frame
-	return(genesummary)
-	}
-
-for (spec in specs){
-	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
-	GH1s<-GH1[GH1$X.ofTools>=3,]
-	nps<-nrow(GH1s)
-	if (!nps) {
-	geneids<-""
-	} else {
-	GH1s$ndom<-str_count(GH1s$HMMER,'\\+')+1
-	abc<-get_r_summary(paste0(spec,"_GH1.gff3"))
-	abcn<-merge(abc,GH1s[,c(1,2,7)],by.x="proteinname",by.y="Gene.ID")
-	abcn$Org<-spec
-	if (exists("allsummary")){allsummary<-rbind(allsummary,abcn)} else {allsummary<-abcn}
-	}
-	}
-write.table(allsummary,"all_genome_GH1.gene.summary.csv",quote=F,sep="\t",row.names=F)
-
-#plot gene number to tree
 library(tidyverse)
-library(phytools)
-all<-read.csv("all_genome_GH1.gene2protein.summary.csv",stringsAsFactor=F,row.names=1)
-summaryall<- all %>% group_by(Org) %>% summarise(proteincount=n(),genecount=n_distinct(group_name)) %>% as.data.frame
-spectreetxt<-"((Limulus_polyphemus,((Varroa_jacobsoni,(Dermatophagoides_pteronyssinus,Tetranychus_urticae)),Centruroides_sculpturatus)),(Penaeus_vannamei,(Daphnia_magna,(Folsomia_candida,((Blattella_germanica,(Zootermopsis_nevadensis,Cryptotermes_secundus)),((Frankliniella_occidentalis,((Diaphorina_citri,(Aphis_gossypii,Acyrthosiphon_pisum)),(Nilaparvata_lugens,Cimex_lectularius))),(Pediculus_humanus,((Cephus_cinctus,(Orussus_abietinus,((Nasonia_vitripennis,Copidosoma_floridanum),(Polistes_dominula,((Harpegnathos_saltator,(Atta_colombica,Acromyrmex_echinatior)),(Dufourea_novaeangliae,(Apis_mellifera,Bombus_terrestris))))))),((Agrilus_planipennis,((Onthophagus_taurus,Nicrophorus_vespilloides),(Tribolium_castaneum,((Anoplophora_glabripennis,Diabrotica_virgifera),(Sitophilus_oryzae,Dendroctonus_ponderosae))))),((Plutella_xylostella,((Papilio_machaon,(Danaus_plexippus,Bicyclus_anynana)),(Hyposmocoma_kahamanoa,((Galleria_mellonella,Amyelois_transitella),((Helicoverpa_armigera,Spodoptera_litura),(Bombyx_mandarina,Manduca_sexta)))))),(((Culex_quinquefasciatus,Aedes_aegypti),Anopheles_gambiae),(Drosophila_melanogaster,(Rhagoletis_zephyria,Musca_domestica)))))))))))));"
-spectree<-read.tree(text=spectreetxt)
-#dotTree(spectree,snumbers[,1:2])
-nogene<-data.frame("Org" = c("Limulus_polyphemus","Dermatophagoides_pteronyssinus","Tetranychus_urticae","Centruroides_sculpturatus","Penaeus_vannamei"), "proteincount" = rep(0,5), "genecount" = rep(0,5))
-countall<-rbind(summaryall,nogene)
-rownames(countall)<-countall[,1]
-plotTree.barplot(spectree,countall[,c(3,2)],args.plotTree=list(cex=0.5),args.barplot=list(col=c("blue","red"),legend.text=c("gene","protein"),main="No. of genes and proteins",args.legend=list(bty="n"),beside=TRUE))
-#dotTree(spectree,snumbers[,1:2])
-dev.print(pdf,"Number_summary_pandg.pdf")
-dev.off()
+genesummary<-read.csv("all_genome_GH1.gene2protein.summary.csv",header=T,sep=",",stringsAsFactors=F)
+sgenesummary<- genesummary %>% group_by(group_name) %>% filter(wcds==max(wcds)) %>% top_n(1) %>% ungroup() %>% as.data.frame
+specs<-readLines("Genome_specids")
+genome_folder_path<-"/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
+
+get_protein_cds<-function(spec){ #define function to extract and output gene gffs,represent_proteins
+	protein_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.faa$")
+	nuc_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.fna$")
+	protein_fp<-file.path(genome_folder_path,spec,protein_fn)
+	nuc_fp<-file.path(genome_folder_path,spec,nuc_fn)
+	specsummary=sgenesummary[sgenesummary$Org==spec,]
+	proseqs=readAAStringSet(protein_fp)
+	profas=AAStringSet()
+	nucseqs=readDNAStringSet(nuc_fp)
+	genefas=DNAStringSet()
+	for (sid in specsummary$proteinname){
+		sidq=nucseqs[grepl(sid,names(nucseqs))]
+		names(sidq)=sid
+		genefas=c(genefas,sidq)
+		pidp=proseqs[grepl(sid,names(proseqs))]
+		profas=c(profas,pidp)
+		if (len(sidp)%%3){
+			print(paste(spec,sid))
+			}
+	fasfilename <- paste0(spec,"_GH1s.fna")
+	profilename <- paste0(spec,"_GH1s.faa")
+	writeXStringSet(genefas,fasfilename,format='fasta')
+	writeXStringSet(profas,profilename,format='fasta')
+	}
+}
+
+
+
+lapply(specs, get_protein_cds)
 ```
 
-### 3. run taxonomy text for all proteins by top 10 blastp search from ncbi
+
+### 5. run taxonomy text for all proteins by top 10 blastp search from ncbi
 ```console
 for i in {00..09}; do ~/GH1/taxonomy_contamination_detect_transcriptome.py -i GH1s_genome_protein.$i.faa.alignment.xml -o GH1s_genome_protein.$i.faa.alignment.xml.tax; done;cat *xml.tax > GH1s_genome_protein.faa.alignment.xml.tax; rm GH1s_genome_protein.*.faa.alignment.xml.tax
 #manully check the sequences from bacteria.
 ```
+Becareful check the bacterial origin proteins, should check the flanking genes around the protein.
 
-### 4. Dual domain proteins
+### 6. Dual domain proteins
 __#extract protein with multiple domains with "python"__
 ```python
 import pandas as pd
@@ -444,7 +425,7 @@ with open("Genome_specids_selected_tree",'rt') as file:
 def retrieve_dual_domain_protein(spec):
 	GH1o=pd.read_table("./"+spec+"/"+spec+"overview.txt")
 	GH1os=GH1o[GH1o['#ofTools']>2]
-	if any(GH1os['HMMER'].str.contains("\+")):
+	if any(GH1os['HMMER'].str.contains("\+")):# the "+" means another domains.
 		pids=GH1os['Gene ID'].values.tolist()
 		genome_folder_path="/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
 		p_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith("_protein.faa")]
@@ -472,7 +453,7 @@ library(Biostrings)
 specs<-readLines("Genome_specids_selected_tree")
 for(spec in specs){
 GH1os<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F) %>% filter(.,X.ofTools>2)%>%mutate(Org=spec)
-specre<- if (any(grepl("\\+",GH1os$HMMER))) GH1os else GH1os[0,]
+specre<- if (any(grepl("\\+",GH1os$HMMER))) GH1os else GH1os[0,] # the "+" means another domains.
 #genome_folder_path<-"/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
 #protein_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.faa$")
 #protein_fp<-file.path(genome_folder_path,spec,protein_fn)
@@ -489,7 +470,7 @@ write.table(specsre,"./Dual_domain_protein/Dual_GH1_domain_gene.csv",sep="\t",qu
 
 
 ```
-### 5. TREE BUILDING for whole GH1s from genomes
+### 7. TREE BUILDING for whole GH1s from genomes
 ```console
 #alignment with AQUA
 AQUA.tcl GH1s_genome_protein.faa GH1_genome_AQUA
@@ -571,7 +552,7 @@ SeqIO.write(tseqs,"test.fasta",'fasta')
 
 ```
 
-### 6.NOTUNG reconsilation of gene tree from species tree
+### 8.NOTUNG reconsilation of gene tree from species tree
 __both tree should be rooted__
 __prepare tree tips names__
 ```R
@@ -594,7 +575,7 @@ mv GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.mod
 java -jar ~/opt/Notung/Notung-2.9.1.5.jar -g GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted -s GH1s_genome_species.tree.modified --rearrange --speciestag postfix --threshold 85% --bootstraps name --outputdir GH1_reconciletest --log --events --parsable --treestats --progressbar --savepng --saveweakedgespng --homologtablecsv
 ```
 
-### 7. get cds sequences from database based on protein sequences
+### 9. get cds sequences from database based on protein sequences
 ```python
 from Bio import SeqIO
 import os
@@ -659,7 +640,7 @@ os.chdir("../")
 #manually check to remove the additional nucleotides and aa in files###
 ############### Modified_cds_note #####################################
 ```
-### Tree building according to orders based on the edited cds/protein files
+### 10.Tree building according to orders based on the edited cds/protein files
 
 ```python
 from Bio import SeqIO
@@ -777,7 +758,7 @@ __gene conversion test__
 ~/opt/pal2nal.v14/pal2nal.pl Hymenoptera_genome_protein_GH1e.faa.muscle Hymenoptera_genome_cds_GH1e.fna -output fasta >Hymenoptera__codon.aln.fa
 ~/opt/pal2nal.v14/pal2nal.pl Diptera_genome_protein_GH1e.faa.muscle.rascal.edi Diptera_genome_cds_GH1e.fna -output fasta >Diptera_codon.aln.fa
 ```
-### 8. GH1 positive selection test
+### 11. GH1 positive selection test
 `Cockroaches_genome_protein_GH1e.faa Hymenoptera_genome_protein_GH1e.faa Hemiptera_genome_protein_GH1e.faa Bettles_genome_protein_GH1e.faa Diptera_genome_protein_GH1e.faa Lepitoptera_genome_protein_GH1e.faa Folsomia_candida_genome_protein_GH1.faa Pediculus_humanus_genome_protein_GH1.faa Daphnia_magna_genome_protein_GH1.faa > All_genome_protein_GH1e.faa`
 `cat Cockroaches_genome_cds_GH1e.fna Hymenoptera_genome_cds_GH1e.fna Hemiptera_genome_cds_GH1e.fna Bettles_genome_cds_GH1e.fna Lepitoptera_genome_cds_GH1e.fna Diptera_genome_cds_GH1e.fna Folsomia_candida_genome_cds_GH1.fna Pediculus_humanus_genome_cds_GH1.fna Daphnia_magna_genome_cds_GH1.fna > All_genome_cds_GH1e.fna`
 __get modified gene tree__
