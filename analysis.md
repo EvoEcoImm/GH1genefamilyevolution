@@ -1,7 +1,9 @@
 ### 1. database buildup
+
 __extract GH1 proteins from dbCAN by Biopython__
 extract GH1 hmm from whole hmm database. and run_dbCAN.py with only GH1 prediction.
-```console
+
+```bash
 ##setup run_dbCAN with Anoconda
 conda create -n run_dbcan python=3.8 diamond hmmer prodigal -c conda-forge -c bioconda
 conda activate run_dbcan
@@ -42,20 +44,22 @@ wget http://bcb.unl.edu/dbCAN2/download/Databases/tf-2.hmm
 #edit Hotpep family file in Hotpep folder
 mv fam_list.txt fam_list_BACKUP.txt && echo "GH1" > fam_list.txt
 #get GH1 protein sequences and build up database for diamond
-awk 'BEGIN{RS="^";FS="\n"}$1~/GH1/{print $0}' CAZyDB.07312019.fa > CAZyDB.GH1.07312019.fa && diamond makedb --in CAZyDB.GH1.07312020.fa -d CAZy
+awk 'BEGIN{RS=">";FS="\n"}$1~/\<GH1\>/{print ">"$0}' CAZyDB.07312020.fa |sed '/^$/d' > CAZyDB.GH1.fa && diamond makedb --in CAZyDB.GH1.fa -d CAZy
 #get GH1 profile and build up profile for diamond
 hmmfetch dbCAN-HMMdb-V9.txt GH1.hmm > GH1.dbCAN.txt && hmmpress GH1.dbCAN.txt 
 diamond makedb --in tcdb.fa -d tcdb
 hmmpress tf-1.hmm
 hmmpress tf-2.hmm
 hmmpress stp.hmm
-
 ```
+
 ### 2. Download genome assemblies and annotations
+
 search genome resources
 Refine "Eukaryotes" in Genome of NCBI; search "Arthropoda" ; restriction in: 1)Asseembly level, Chromosome+Scaffold; 2) RefSeq category, reference+representative
 in table, select RefSeqFTP not empty; keep all chromosome assembly and one representative genome in rest of each genus:1)level, chromosome > scaffold; 2) modified Date, newest> older 
-```R
+
+```r
 #!/usr/bin/env Rscript
 
 #download genome resources from NCBI genome database
@@ -69,50 +73,54 @@ print(args[1])
 assembly_list<-read_ods(args[1],sheet=2)
 
 dla_rsync<- function(doc){
-	doc["GenBank FTP"]<-lapply(doc["GenBank FTP"],function(colsub) sub("ftp","rsync",colsub))
-	for (ni in 1:nrow(doc)){
-		dirn<-sub(" ","_",doc[ni,"#Organism Name"])
-		dir.create(dirn)
-		downloadscript_cds<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*cds_from_genomic.fna.gz ./", dirn)
-		downloadscript_protein<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*protein.faa.gz ./", dirn)
-		downloadscript_gff<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*genomic.gff.gz ./", dirn)
-		system(downloadscript_cds)
-		system(downloadscript_protein)
-		system(downloadscript_gff)
-		}
-	}
+    doc["GenBank FTP"]<-lapply(doc["GenBank FTP"],function(colsub) sub("ftp","rsync",colsub))
+    for (ni in 1:nrow(doc)){
+        dirn<-sub(" ","_",doc[ni,"#Organism Name"])
+        dir.create(dirn)
+        downloadscript_cds<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*cds_from_genomic.fna.gz ./", dirn)
+        downloadscript_protein<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*protein.faa.gz ./", dirn)
+        downloadscript_gff<- paste0("rsync --copy-links --times --verbose ",doc[ni,"GenBank FTP"],"/",doc[ni,"Assembly"],"_*genomic.gff.gz ./", dirn)
+        system(downloadscript_cds)
+        system(downloadscript_protein)
+        system(downloadscript_gff)
+        }
+    }
 
 dla_https<- function(doc){
-	doc["RefSeq FTP"]<-lapply(doc["RefSeq FTP"],function(colsub) sub("ftp","https",colsub))
-	for (ni in 1:nrow(doc)){
-		dirn<-sub(" ","_",doc[ni,"#Organism Name"])
-		filepref<-gsub(".*/","",doc[ni,"RefSeq FTP"])
-		dir.create(dirn)
-		downloadscript_cds<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref,"_cds_from_genomic.fna.gz -P ./", dirn)
-		downloadscript_protein<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref, "_protein.faa.gz -P ./", dirn)
-		downloadscript_gff<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref,"_genomic.gff.gz -P ./", dirn)
-		system(downloadscript_cds)
-		system(downloadscript_protein)
-		system(downloadscript_gff)
-		}
-	}
+    doc["RefSeq FTP"]<-lapply(doc["RefSeq FTP"],function(colsub) sub("ftp","https",colsub))
+    for (ni in 1:nrow(doc)){
+        dirn<-sub(" ","_",doc[ni,"#Organism Name"])
+        filepref<-gsub(".*/","",doc[ni,"RefSeq FTP"])
+        dir.create(dirn)
+        downloadscript_cds<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref,"_cds_from_genomic.fna.gz -P ./", dirn)
+        downloadscript_protein<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref, "_protein.faa.gz -P ./", dirn)
+        downloadscript_gff<- paste0("wget ",doc[ni,"RefSeq FTP"],"/",filepref,"_genomic.gff.gz -P ./", dirn)
+        system(downloadscript_cds)
+        system(downloadscript_protein)
+        system(downloadscript_gff)
+        }
+    }
 
 setwd("Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq")
 dla_https(assembly_list)
 ```
+
 seperate download Blattella gemanica genome
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/003/018/175/GCA_003018175.1_Bger_1.1
 
 ### 3.predict/extract GH1 from assembly of genomes in Genome/resource/Arthropoda_Refseq/genomes
-```console
+
+```bash
 #predict GH1 with run_dbCAN.py
 ls /media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/ >Genome_specids #get species id
 for i in `cat Genome_specids`; do python run_dbcan.py /media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/$i/GC_*_protein.faa protein --out_pre $i --out_dir $i --db_dir ../ ;done 
 ```
 
-### 4. get details and sequences of predicted proteins. 
+### 4. get details and sequences of predicted proteins.
+
 __R scripts to extract gff from genes__
-```R
+
+```r
 library(rtracklayer)
 library(Biostrings)
 library(rentrez)
@@ -121,68 +129,68 @@ library(tidyverse)
 ###This getting cds from genebank probably is not perfect because the protein sequences do not match.
 if (FALSE) {
 get_gb<-function(gid){ #retrieve genbank format based on gene id from ncbi
-	gidsum<-entrez_summary(db="gene",id=gid)
-	if(!length(gidsum$genomicinfo)){
-		gbcommand<-paste0("efetch -db gene -id ",gid, " -format docsum|xtract -pattern DocumentSummary -block LocationHist -first ChrAccVer ChrStart ChrStop")
-		cd_out<-system(gbcommand,intern=T)
-		gbcoo<- unlist(strsplit(cd_out,"\t"))
-		stopco<- as.numeric(gbcoo[3])+1
-		startco<- as.numeric(gbcoo[2])+1
-		acc<-gbcoo[1]
-		gidgb<-entrez_fetch(db="nuccore", id=acc, rettype="gb", seq_start=startco, seq_stop=stopco)
-		} else {
-		gidgb<-entrez_fetch(db="nuccore", id=gidsum$genomicinfo$chraccver, rettype="gb", seq_start=gidsum$genomicinfo$chrstart+1, seq_stop=gidsum$genomicinfo$chrstop+1)
-		}
-	return(gidgb)
-	}
+    gidsum<-entrez_summary(db="gene",id=gid)
+    if(!length(gidsum$genomicinfo)){
+        gbcommand<-paste0("efetch -db gene -id ",gid, " -format docsum|xtract -pattern DocumentSummary -block LocationHist -first ChrAccVer ChrStart ChrStop")
+        cd_out<-system(gbcommand,intern=T)
+        gbcoo<- unlist(strsplit(cd_out,"\t"))
+        stopco<- as.numeric(gbcoo[3])+1
+        startco<- as.numeric(gbcoo[2])+1
+        acc<-gbcoo[1]
+        gidgb<-entrez_fetch(db="nuccore", id=acc, rettype="gb", seq_start=startco, seq_stop=stopco)
+        } else {
+        gidgb<-entrez_fetch(db="nuccore", id=gidsum$genomicinfo$chraccver, rettype="gb", seq_start=gidsum$genomicinfo$chrstart+1, seq_stop=gidsum$genomicinfo$chrstop+1)
+        }
+    return(gidgb)
+    }
 }
 ###This can work with nuc seqs.
 get_genes_gff<-function(spec){ #define function to extract and output gene gffs,represent_proteins
-	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
-	GH1s<-GH1[GH1$X.ofTools>=3,]
-	if (!nrow(GH1s)){
-	genes_gff<-""
-	file(paste0(spec,"_GH1.gff3"),"w")
-	file(paste0(spec,"_GH1.fna"),"w")
-	} else {
-	genome_folder_path<-"/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
-	gff_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.gff$")
-	gff_fp<-file.path(genome_folder_path,spec,gff_fn)
-	gff<-import(gff_fp,format="gff3")
-	if("locus_tag"%in%colnames(mcols(gff))){
-		locus_tag_value<-subset(gff,gff$protein_id%in%GH1s$Gene.ID)$locus_tag
-		if (any(is.na(locus_tag_value))){
-		GH1s_gff<-gff[gff$gene%in%(unique(subset(gff,gff$protein_id%in%GH1s$Gene.ID)$gene))]
-		} else {
-		GH1s_gff<-gff[gff$locus_tag%in%(unique(locus_tag_value))]
-		}
-		} else {
-		GH1s_gff<-gff[gff$gene%in%(unique(subset(gff,gff$protein_id%in%GH1s$Gene.ID)$gene))]
-		}
-	con<-file(paste0(spec,"_GH1.gff3"),"w")
-	export(GH1s_gff,con,format="gff3")
-	close(con)
-	genes_gff<- GH1s_gff[GH1s_gff$type=="gene"]
-	#if("locus_tag"%in%colnames(mcols(genes_gff))&!any(is.na(genes_gff$locus_tag))){
-	#	gene_names<- unlist(lapply(genes_gff$locus_tag, function(x) sub("[A-z]*[A-z]","",x)))
-	#	} else {
-	#	gene_names<- unlist(lapply(genes_gff$gene, function(x) sub("[A-z]*[A-z]","",x)))
-	#	}
-	#genegbs<-""
-	#for (gname in gene_names){
-	#	gidgbs<-get_gb(gname)
-	#	genegbs<-paste0(genegbs,gidgbs)
-	#	}
-	#gbfilename <- paste0(spec,"_GH1s.gb")
-	#write(genegbs,file=gbfilename,append=T)
-	return(genes_gff)
-	}
+    GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
+    GH1s<-GH1[GH1$X.ofTools>=3,]
+    if (!nrow(GH1s)){
+    genes_gff<-""
+    file(paste0(spec,"_GH1.gff3"),"w")
+    file(paste0(spec,"_GH1.fna"),"w")
+    } else {
+    genome_folder_path<-"/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
+    gff_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.gff$")
+    gff_fp<-file.path(genome_folder_path,spec,gff_fn)
+    gff<-import(gff_fp,format="gff3")
+    if("locus_tag"%in%colnames(mcols(gff))){
+        locus_tag_value<-subset(gff,gff$protein_id%in%GH1s$Gene.ID)$locus_tag
+        if (any(is.na(locus_tag_value))){
+        GH1s_gff<-gff[gff$gene%in%(unique(subset(gff,gff$protein_id%in%GH1s$Gene.ID)$gene))]
+        } else {
+        GH1s_gff<-gff[gff$locus_tag%in%(unique(locus_tag_value))]
+        }
+        } else {
+        GH1s_gff<-gff[gff$gene%in%(unique(subset(gff,gff$protein_id%in%GH1s$Gene.ID)$gene))]
+        }
+    con<-file(paste0(spec,"_GH1.gff3"),"w")
+    export(GH1s_gff,con,format="gff3")
+    close(con)
+    genes_gff<- GH1s_gff[GH1s_gff$type=="gene"]
+    #if("locus_tag"%in%colnames(mcols(genes_gff))&!any(is.na(genes_gff$locus_tag))){
+    #    gene_names<- unlist(lapply(genes_gff$locus_tag, function(x) sub("[A-z]*[A-z]","",x)))
+    #    } else {
+    #    gene_names<- unlist(lapply(genes_gff$gene, function(x) sub("[A-z]*[A-z]","",x)))
+    #    }
+    #genegbs<-""
+    #for (gname in gene_names){
+    #    gidgbs<-get_gb(gname)
+    #    genegbs<-paste0(genegbs,gidgbs)
+    #    }
+    #gbfilename <- paste0(spec,"_GH1s.gb")
+    #write(genegbs,file=gbfilename,append=T)
+    return(genes_gff)
+    }
 }
 specs<-readLines("Genome_specids") #get species ids
 specs_genes<-list()
 for (specid in specs){ #except "Culex_quinquefasciatus" and "Pediculus_humanus", manually download, get genbank files and gff3 structures for all the genes
-	try(specs_genes[[specid]]<-get_genes_gff(specid))
-	}
+    try(specs_genes[[specid]]<-get_genes_gff(specid))
+    }
 
 ###############################################################
 #Summary genes and gene details
@@ -197,35 +205,35 @@ specs<-readLines("Genome_specids_selected_tree")
 options(ucscChromosomeNames=FALSE)
 
 get_r_summary<-function(gff3){
-	sTxDB<-makeTxDbFromGFF(gff3,format="gff3")
-	genelist<-transcriptsBy(sTxDB,by="gene")
-	#tranlist<-lapply(exonsBy(sTxDB,by="gene"),function(x)length(disjoin(x)))
-	#for(i in names(genelist)){genelist[[i]]$nexon<-tranlist[[i]]}
-	gened<-as.data.frame(genelist)
-	rownames(gened)<-gened$tx_name
-	t2nexon<-as.data.frame(sapply(exonsBy(sTxDB,by="tx",use.name=T),function(x)length(x)))
-	t2cdsl<-as.data.frame(sapply(cdsBy(sTxDB,by="tx",use.name=T),function(x)sum(width(x))))
-	t2cdsn<-as.data.frame(sapply(cdsBy(sTxDB,by="tx",use.name=T),function(x)unique(x$cds_name)))
-	g1<-cbind(t2cdsn,t2cdsl[,1][match(rownames(t2cdsn),rownames(t2cdsl))],t2nexon[,1][match(rownames(t2cdsn),rownames(t2nexon))])
-	colnames(g1)<- c("proteinname","wcds","nexon")
-	genesummary<-merge(gened,g1,by="row.names")[,-1]
-	return(genesummary)
-	}
+    sTxDB<-makeTxDbFromGFF(gff3,format="gff3")
+    genelist<-transcriptsBy(sTxDB,by="gene")
+    #tranlist<-lapply(exonsBy(sTxDB,by="gene"),function(x)length(disjoin(x)))
+    #for(i in names(genelist)){genelist[[i]]$nexon<-tranlist[[i]]}
+    gened<-as.data.frame(genelist)
+    rownames(gened)<-gened$tx_name
+    t2nexon<-as.data.frame(sapply(exonsBy(sTxDB,by="tx",use.name=T),function(x)length(x)))
+    t2cdsl<-as.data.frame(sapply(cdsBy(sTxDB,by="tx",use.name=T),function(x)sum(width(x))))
+    t2cdsn<-as.data.frame(sapply(cdsBy(sTxDB,by="tx",use.name=T),function(x)unique(x$cds_name)))
+    g1<-cbind(t2cdsn,t2cdsl[,1][match(rownames(t2cdsn),rownames(t2cdsl))],t2nexon[,1][match(rownames(t2cdsn),rownames(t2nexon))])
+    colnames(g1)<- c("proteinname","wcds","nexon")
+    genesummary<-merge(gened,g1,by="row.names")[,-1]
+    return(genesummary)
+    }
 
 for (spec in specs){
-	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
-	GH1s<-GH1[GH1$X.ofTools>=3,]
-	nps<-nrow(GH1s)
-	if (!nps) {
-	geneids<-""
-	} else {
-	GH1s$ndom<-str_count(GH1s$HMMER,'\\+')+1
-	abc<-get_r_summary(paste0(spec,"_GH1.gff3"))
-	abcn<-merge(abc,GH1s[,c(1,2,7)],by.x="proteinname",by.y="Gene.ID")
-	abcn$Org<-spec
-	if (exists("allsummary")){allsummary<-rbind(allsummary,abcn)} else {allsummary<-abcn}
-	}
-	}
+    GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
+    GH1s<-GH1[GH1$X.ofTools>=3,]
+    nps<-nrow(GH1s)
+    if (!nps) {
+    geneids<-""
+    } else {
+    GH1s$ndom<-str_count(GH1s$HMMER,'\\+')+1
+    abc<-get_r_summary(paste0(spec,"_GH1.gff3"))
+    abcn<-merge(abc,GH1s[,c(1,2,7)],by.x="proteinname",by.y="Gene.ID")
+    abcn$Org<-spec
+    if (exists("allsummary")){allsummary<-rbind(allsummary,abcn)} else {allsummary<-abcn}
+    }
+    }
 write.table(allsummary,"all_genome_GH1.gene.summary.csv",quote=F,sep="\t",row.names=F)
 
 #plot gene number to tree
@@ -245,18 +253,18 @@ dev.print(pdf,"Number_summary_pandg.pdf")
 dev.off()
 
 summarynumber<- function(spec){ #return no. of proteins and no. of genes
-	GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
-	GH1s<-GH1[GH1$X.ofTools>=3,]
-	nps<-nrow(GH1s)
-	if (!nps) {
-	ngs<-0
-	} else {
-	GH1s_gff<-import(paste0(spec,"_GH1.gff3"),format="gff3")
-	ngs<-length(GH1s_gff[GH1s_gff$type=="gene"])
-	}
-	stotal<-c(nps,ngs)
-	return(stotal)
-	}
+    GH1<-read.delim(paste0(spec,"/",spec,"overview.txt"),stringsAsFactors=F)
+    GH1s<-GH1[GH1$X.ofTools>=3,]
+    nps<-nrow(GH1s)
+    if (!nps) {
+    ngs<-0
+    } else {
+    GH1s_gff<-import(paste0(spec,"_GH1.gff3"),format="gff3")
+    ngs<-length(GH1s_gff[GH1s_gff$type=="gene"])
+    }
+    stotal<-c(nps,ngs)
+    return(stotal)
+    }
 
 specs<-readLines("Genome_specids")
 specs_genes_su<-list()
@@ -279,9 +287,9 @@ dev.print(pdf,"summary_p2g.pdf")
 dev.off()
 ```
 
-```
+```r
 #############################################
-##############	R plot genes	##############
+##############    R plot genes    ##############
 #############################################
 library(genoPlotR) #http://genoplotr.r-forge.r-project.org/vignette.php
 library(rtracklayer)
@@ -289,43 +297,43 @@ library(GenomicFeatures)
 library(Gviz)
 
 grange2dnaseg<-function(x){ #define a function to transform grange object to dna_seg object
-	gd<-as.data.frame(granges(x))
-	gd<-gd[,-which(names(gd)%in%c("width"))]
-	colnames(gd)<-c("name","start","end","strand")
-	droplevels(gd)
-	levels(gd$strand) <- c(levels(gd$strand), 1,-1)
-	gd$strand[gd$strand=="-"]<--1 #can use with function to replace
-	#linshi$strand<- with(gd,ifelse(strand=="-",-1,1))
-	gd$strand[gd$strand=="+"]<-1
-	return(dna_seg(gd))
-	}
+    gd<-as.data.frame(granges(x))
+    gd<-gd[,-which(names(gd)%in%c("width"))]
+    colnames(gd)<-c("name","start","end","strand")
+    droplevels(gd)
+    levels(gd$strand) <- c(levels(gd$strand), 1,-1)
+    gd$strand[gd$strand=="-"]<--1 #can use with function to replace
+    #linshi$strand<- with(gd,ifelse(strand=="-",-1,1))
+    gd$strand[gd$strand=="+"]<-1
+    return(dna_seg(gd))
+    }
 
 getannotation<-function(x){
-	pl<-split(x,x$protein_id)
-	pll<-lapply(pl,function(x)as.data.frame(range(x),stringsAsFactors=F))
-	ad<-do.call(rbind.data.frame, pll)
-	#data.frame(t(sapply(pll,c)))
-	#dcast(melt(pll),L1~variable)
-	ad$text<-rownames(ad)
-	ad$x1<-ad$start
-	ad$x2<-ad$end
-	ad$rot<- 15
-	anno<-as.annotation(ad[,c("text","x1","x2","rot")])
-	return(anno)
-	}
+    pl<-split(x,x$protein_id)
+    pll<-lapply(pl,function(x)as.data.frame(range(x),stringsAsFactors=F))
+    ad<-do.call(rbind.data.frame, pll)
+    #data.frame(t(sapply(pll,c)))
+    #dcast(melt(pll),L1~variable)
+    ad$text<-rownames(ad)
+    ad$x1<-ad$start
+    ad$x2<-ad$end
+    ad$rot<- 15
+    anno<-as.annotation(ad[,c("text","x1","x2","rot")])
+    return(anno)
+    }
 
 getxlim<-function(x){
-	pl<-split(x,x$protein_id)
-	pll<-lapply(pl,function(x)as.data.frame(range(x),stringsAsFactors=F))
-	ad<-do.call(rbind.data.frame, pll)
-	#data.frame(t(sapply(pll,c)))
-	#dcast(melt(pll),L1~variable)
-	ad$text<-rownames(ad)
-	ad$x1<-ifelse(ad$start>ad$end,ad$start+50,ad$start-50)
-	ad$x2<-ifelse(ad$start>ad$end,ad$end-50,ad$end+50)
-	ads<-ad[order(ad$x1),]
-	lims=unlist(as.vector(t(unique(ads[,c("x1","x2")]))))
-	return(lims)
+    pl<-split(x,x$protein_id)
+    pll<-lapply(pl,function(x)as.data.frame(range(x),stringsAsFactors=F))
+    ad<-do.call(rbind.data.frame, pll)
+    #data.frame(t(sapply(pll,c)))
+    #dcast(melt(pll),L1~variable)
+    ad$text<-rownames(ad)
+    ad$x1<-ifelse(ad$start>ad$end,ad$start+50,ad$start-50)
+    ad$x2<-ifelse(ad$start>ad$end,ad$end-50,ad$end+50)
+    ads<-ad[order(ad$x1),]
+    lims=unlist(as.vector(t(unique(ads[,c("x1","x2")]))))
+    return(lims)
 }
 
 sps=readLines("Genome_specids_selected_tree")
@@ -363,7 +371,7 @@ dev.print(pdf,paste0(sps[54],"_GH1.gff3.pdf"))
 
 
 ###################################################################################
-###############	get representing protein seqs and cds seqs for each gene	##############
+###############    get representing protein seqs and cds seqs for each gene    ##############
 ###################################################################################
 
 """r script"""
@@ -375,29 +383,29 @@ specs<-readLines("Genome_specids")
 genome_folder_path<-"/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
 
 get_protein_cds<-function(spec){ #define function to extract and output gene gffs,represent_proteins
-	protein_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.faa$")
-	nuc_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.fna$")
-	protein_fp<-file.path(genome_folder_path,spec,protein_fn)
-	nuc_fp<-file.path(genome_folder_path,spec,nuc_fn)
-	specsummary=sgenesummary[sgenesummary$Org==spec,]
-	proseqs=readAAStringSet(protein_fp)
-	profas=AAStringSet()
-	nucseqs=readDNAStringSet(nuc_fp)
-	genefas=DNAStringSet()
-	for (sid in specsummary$proteinname){
-		sidq=nucseqs[grepl(sid,names(nucseqs))]
-		names(sidq)=sid
-		genefas=c(genefas,sidq)
-		pidp=proseqs[grepl(sid,names(proseqs))]
-		profas=c(profas,pidp)
-		if (len(sidp)%%3){
-			print(paste(spec,sid))
-			}
-	fasfilename <- paste0(spec,"_GH1s.fna")
-	profilename <- paste0(spec,"_GH1s.faa")
-	writeXStringSet(genefas,fasfilename,format='fasta')
-	writeXStringSet(profas,profilename,format='fasta')
-	}
+    protein_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.faa$")
+    nuc_fn<-list.files(paste0(genome_folder_path,spec),pattern = "\\.fna$")
+    protein_fp<-file.path(genome_folder_path,spec,protein_fn)
+    nuc_fp<-file.path(genome_folder_path,spec,nuc_fn)
+    specsummary=sgenesummary[sgenesummary$Org==spec,]
+    proseqs=readAAStringSet(protein_fp)
+    profas=AAStringSet()
+    nucseqs=readDNAStringSet(nuc_fp)
+    genefas=DNAStringSet()
+    for (sid in specsummary$proteinname){
+        sidq=nucseqs[grepl(sid,names(nucseqs))]
+        names(sidq)=sid
+        genefas=c(genefas,sidq)
+        pidp=proseqs[grepl(sid,names(proseqs))]
+        profas=c(profas,pidp)
+        if (len(sidp)%%3){
+            print(paste(spec,sid))
+            }
+    fasfilename <- paste0(spec,"_GH1s.fna")
+    profilename <- paste0(spec,"_GH1s.faa")
+    writeXStringSet(genefas,fasfilename,format='fasta')
+    writeXStringSet(profas,profilename,format='fasta')
+    }
 }
 
 
@@ -405,17 +413,20 @@ get_protein_cds<-function(spec){ #define function to extract and output gene gff
 lapply(specs, get_protein_cds)
 ```
 
-
 ### 5. run taxonomy text for all proteins by top 10 blastp search from ncbi
-```console
+
+```bash
 for i in {00..09}; do ~/GH1/taxonomy_contamination_detect_transcriptome.py -i GH1s_genome_protein.$i.faa.alignment.xml -o GH1s_genome_protein.$i.faa.alignment.xml.tax; done;cat *xml.tax > GH1s_genome_protein.faa.alignment.xml.tax; rm GH1s_genome_protein.*.faa.alignment.xml.tax
 #manully check the sequences from bacteria.
 ```
+
 Becareful check the bacterial origin proteins, should check the flanking genes around the protein.
 
 ### 6.CAFE analysis (not suitable because of not for genes but for multiple gene families) and ANOVA test predict gene numbers with feeding groups or orders
+
 __preparing tree and analysis__
-```R
+
+```r
 #1. Download the time phylogeny for part of the species.[from the supplementary file in the paper -Gene content evolution in the arthropods-](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1925-7)
 
 library(phytools)
@@ -446,12 +457,16 @@ snumbers<-numbers[rownames(numbers)%in%tree$tip.label,]
 write.(t(snumbers),"gene_numbers.txt")
 #edit gene_numbers.txt table to suit cafe analysis.
 ```
+
 __run cafe analysis, multiple times to check convergency. CAFE is suitable for analysis a large number of families not a single families. And it does not count the gene phylogeny.__
-```console
+
+```bash
 for i in {1..5}; do cafexp -i gene_numbers.txt -t Species_dated_tree.newick -o result$i; done
 ```
+
 __compare genes with feeding groups and orders__
-```R
+
+```r
 #1-separate feeding groups as Figure 1;2-separate feeding groups as their plant cell wall feeding or not.
 tr<-read.tree("Species_dated_tree.newick")
 tree<-drop.tip(tr,"Daphnia_magna")
@@ -462,44 +477,46 @@ phylANOVA(tree,geneto$Herbivorous,geneto$GeneN,nsim=1000,posthoc=T,p.adj="holm")
 
 #test separation groups of direct feeding and non-direct feeding on plant celll walls.
 phylANOVA(tree,geneto$Plant_cell_wall,geneto$GeneN,nsim=1000,posthoc=T,p.adj="holm")
- 
 ```
 
 ### 6. Dual domain proteins
+
 __#extract protein with multiple domains with "python"__
+
 ```python
 import pandas as pd
 from Bio import SeqIO
 import os
 with open("Genome_specids_selected_tree",'rt') as file:
-	specs=[c.strip('\n') for c in file.readlines()]
+    specs=[c.strip('\n') for c in file.readlines()]
 
 def retrieve_dual_domain_protein(spec):
-	GH1o=pd.read_table("./"+spec+"/"+spec+"overview.txt")
-	GH1os=GH1o[GH1o['#ofTools']>2]
-	if any(GH1os['HMMER'].str.contains("\+")):# the "+" means another domains.
-		pids=GH1os['Gene ID'].values.tolist()
-		genome_folder_path="/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
-		p_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith("_protein.faa")]
-		p_fp=os.path.join(genome_folder_path,spec,p_fn[0])
-		pseq=[seq for seq in SeqIO.parse(p_fp,'fasta') if seq.id in pids]
-		cds_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith(".fna")]
-		cds_fp=os.path.join(genome_folder_path,spec,cds_fn[0])
-		cds=[seq for seq in SeqIO.parse(cds_fp,'fasta') if seq.id.split("_cds_")[-1].rsplit("_",1)[0] in pids]
-		for seq in cds:
-			seq.id=seq.id.split("_cds_")[-1].rsplit("_",1)[0]
-		return (pseq,cds)
+    GH1o=pd.read_table("./"+spec+"/"+spec+"overview.txt")
+    GH1os=GH1o[GH1o['#ofTools']>2]
+    if any(GH1os['HMMER'].str.contains("\+")):# the "+" means another domains.
+        pids=GH1os['Gene ID'].values.tolist()
+        genome_folder_path="/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
+        p_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith("_protein.faa")]
+        p_fp=os.path.join(genome_folder_path,spec,p_fn[0])
+        pseq=[seq for seq in SeqIO.parse(p_fp,'fasta') if seq.id in pids]
+        cds_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith(".fna")]
+        cds_fp=os.path.join(genome_folder_path,spec,cds_fn[0])
+        cds=[seq for seq in SeqIO.parse(cds_fp,'fasta') if seq.id.split("_cds_")[-1].rsplit("_",1)[0] in pids]
+        for seq in cds:
+            seq.id=seq.id.split("_cds_")[-1].rsplit("_",1)[0]
+        return (pseq,cds)
 
 allseqs={spec:retrieve_dual_domain_protein(spec) for spec in specs if retrieve_dual_domain_protein(spec)!=None }
 os.mkdir("Dual_domain_protein")
 os.chdir("Dual_domain_protein")
 for sp,se in allseqs.items():
-	SeqIO.write(se[0],sp+".faa",'fasta')
-	SeqIO.write(se[1],sp+".fna",'fasta')
+    SeqIO.write(se[0],sp+".faa",'fasta')
+    SeqIO.write(se[1],sp+".fna",'fasta')
 ```
+
 __extract protein with multiple domains with R__
 
-```R
+```r
 library(tidyverse)
 library(Biostrings)
 specs<-readLines("Genome_specids_selected_tree")
@@ -513,23 +530,25 @@ specre<- if (any(grepl("\\+",GH1os$HMMER))) GH1os else GH1os[0,] # the "+" means
 #GH1h<-read.delim(paste0(spec,"/",spec,"hmmer.out"),stringsAsFactors=F) %>% filter(., Gene.ID%in%GH1os$Gene.ID)
 #specre<-dplyr::filter(GH1,GH1$Gene.ID%in%GH1$Gene.ID[duplicated(GH1$Gene.ID)])%>%mutate(Org=spec)
 if (!exists('specsre')) {
-	specsre<-specre
-	} else {
-	specsre<- bind_rows(specsre,specre)
-	}
+    specsre<-specre
+    } else {
+    specsre<- bind_rows(specsre,specre)
+    }
 }
 write.table(specsre,"./Dual_domain_protein/Dual_GH1_domain_gene.csv",sep="\t",quote=F)
-
-
 ```
+
 ### 7. TREE BUILDING for whole GH1s from genomes
-```console
+
+```bash
 #alignment with AQUA
 AQUA.tcl GH1s_genome_protein.faa GH1_genome_AQUA
 #build tree with iqtree
 iqtree -s GH1s_genome_protein.faa.mafft.rascal -nt 10 -bb 1000 -alrt 1000
 ```
+
 __format with python to phylip for aligment to use exbasyes__ __*not used*__
+
 ```python
 import re
 import pandas as pd
@@ -539,21 +558,24 @@ fsp=re.compile(r"\d+\.\d+\_(\w*)\.*\_\w*$")
 i=0
 ids2fullids={}
 for seq in ali:
-	i+=1
-	sids=fsp.findall(seq.id)[0]
-	sid=sids[:7]+f"{i:03d}" if len(sids)>7 else sids+f"{i:03d}"
-	ids2fullids[sid]=seq.id
-	seq.id=sid
+    i+=1
+    sids=fsp.findall(seq.id)[0]
+    sid=sids[:7]+f"{i:03d}" if len(sids)>7 else sids+f"{i:03d}"
+    ids2fullids[sid]=seq.id
+    seq.id=sid
 AlignIO.write(ali,"GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.phylip",'phylip')
 #df=pd.DataFrame.from_dict(ids2fullids,orient="index")
 #df.to_csv("GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.id2phylipid")
 pd.Series(ids2fullids).to_csv('GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.id2phylipid',sep="\t",header=False)
 ```
+
 #run exabayes with 2 runs 4 chains, 0.01 sdsf, LG protein model.
+
 > `mpirun -np 8 exabayes -f GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.phylip -m PROT -r GH1sexabayes -s 258 -c config.nex`
 
 __to retrieve tips *R*__
-```R
+
+```r
 library(phytools)
 library(stringi)
 library(rtracklayer)
@@ -575,21 +597,23 @@ cdsset<-cdsBy(sTxDB,by='gene')
 scdsset<-cdsset[sapply(cdsset,function(x)any(x$cds_name%in%extract_seqs_ids))]
 
 cdsgrange2dnaseg<-function(x){ #define a function to transform grange object to dna_seg object
-	gd<-as.data.frame(granges(x))
-	gd<-gd[,-which(names(gd)%in%c("width"))]
-	colnames(gd)<-c("name","start","end","strand")
-	droplevels(gd)
-	levels(gd$strand) <- c(levels(gd$strand), 1,-1)
-	gd$strand[gd$strand=="-"]<--1 #can use with function to replace
-	#linshi$strand<- with(gd,ifelse(strand=="-",-1,1))
-	gd$strand[gd$strand=="+"]<-1
-	return(dna_seg(gd))
-	}
+    gd<-as.data.frame(granges(x))
+    gd<-gd[,-which(names(gd)%in%c("width"))]
+    colnames(gd)<-c("name","start","end","strand")
+    droplevels(gd)
+    levels(gd$strand) <- c(levels(gd$strand), 1,-1)
+    gd$strand[gd$strand=="-"]<--1 #can use with function to replace
+    #linshi$strand<- with(gd,ifelse(strand=="-",-1,1))
+    gd$strand[gd$strand=="+"]<-1
+    return(dna_seg(gd))
+    }
 
 dna_segs<-lapply(scdsset,cdsgrange2dnaseg)
 plot_gene_map(dna_segs,scale=TRUE, dna_seg_scale=TRUE,dna_seg_labels=names(scdsset),gene_type=)
 ```
+
 __to retrieve tips *Python*__
+
 ```python
 from ete3 import Tree
 from Bio import SeqIO,Seq
@@ -601,13 +625,14 @@ detach_node=GH1t.get_common_ancestor(["XP_026292938.1_Frankliniella_o","XP_02627
 tids=[i.rsplit('_',2)[0] for i in detach_node.get_leaf_names()]
 tseqs=[seq for seq in SeqIO.parse("/home/shulinhe/GH1/GH1_from_dbCAN/run_dbCAN/GH1s_genome_protein.faa",'fasta') if seq.id.rsplit('_',2)[0] in tids]
 SeqIO.write(tseqs,"test.fasta",'fasta')
-
 ```
 
 ### 8.NOTUNG reconsilation of gene tree from species tree
+
 __both tree should be rooted__
 __prepare tree tips names__
-```R
+
+```r
 library(ape)
 library(tidyverse)
 genetree=read.tree("GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree")
@@ -620,67 +645,72 @@ spectreetxt<-"((Limulus,((Varroa,(Dermatophagoides,Tetranychus)),Centruroides)),
 spectree<-read.tree(text=spectreetxt)
 write.tree(spectree,"GH1s_genome_species.tree.modified")
 ```
+
 __run notung__
-```console
+
+```bash
 mv GH1s_genome_species.tree.modified GH1s_genome_species.tree.modified.nwk
 mv GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted.nws
 java -jar ~/opt/Notung/Notung-2.9.1.5.jar -g GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted -s GH1s_genome_species.tree.modified --rearrange --speciestag postfix --threshold 85% --bootstraps name --outputdir GH1_reconciletest --log --events --parsable --treestats --progressbar --savepng --saveweakedgespng --homologtablecsv
 ```
+
 __correlation test with duplication/loss with BUSCO scores__
-```
+
+```r
 library(ggpubr)
 abc=read.csv("busco_correlation_test.csv",header=T,sep="\t",stringsAsFactors=F)
 ggscatter(abc[abc$Color!="",], x="M", y="Loss", add="reg.line",conf.int=T, cor.coef=T,cor.method="pearson",xlab="BUSCO Missing", ylab="Gene Loss")
 dev.print(pdf,"Missing2Loss.pdf")
 ggscatter(abc[abc$Color!="",], x="D", y="Dup", add="reg.line",conf.int=T, cor.coef=T,cor.method="pearson",xlab="BUSCO Duplication", ylab="Gene Duplicate")
 dev.print(pdf,"Dup2Duplication.pdf")
-
 ```
+
 ### 9. get cds sequences from database based on protein sequences
+
 ```python
 from Bio import SeqIO
 import os
 import re
 
 def getsequences(pseq,cdss):
-	if len(cdss)%3==1:
-		print(cdss.id,"has",1,"more nucleotides in cds.")
-		c=cdss[:-1]
-	elif len(cdss)%3==2:
-		print(cdss.id,"has",2,"more nucleotides in cds. Removed")
-		c=cdss[:-2]
-	else:
-		c=cdss
-	if len(pseq)*3>len(c):
-		print(pseq.id,"has more aa than cds")
+    if len(cdss)%3==1:
+        print(cdss.id,"has",1,"more nucleotides in cds.")
+        c=cdss[:-1]
+    elif len(cdss)%3==2:
+        print(cdss.id,"has",2,"more nucleotides in cds. Removed")
+        c=cdss[:-2]
+    else:
+        c=cdss
+    if len(pseq)*3>len(c):
+        print(pseq.id,"has more aa than cds")
 
 
 fid=re.compile(r"\_cds\_(\w*\.\d+)\_\d+$")
 
 def retrieve_pcds(specful,ids):
-	spec="_".join(specful.split(" ")[:2])
-	genome_folder_path="/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
-	p_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith("_protein.faa")]
-	p_fp=os.path.join(genome_folder_path,spec,p_fn[0])
-	psseqs=[seq for seq in SeqIO.parse(p_fp,'fasta') if seq.id in ids]
-	cds_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith("genomic.fna")]
-	cds_fp=os.path.join(genome_folder_path,spec,cds_fn[0])
-	cdsseqs=[seq for seq in SeqIO.parse(cds_fp,'fasta') if fid.findall(seq.id)[0] in ids]
-	for seq in cdsseqs:
-		seq.id=fid.findall(seq.id)[0]
-	for pid in ids:
-		pse=[seq for seq in psseqs if seq.id==pid][0]
-		cse=[seq for seq in cdsseqs if seq.id==pid][0]
-		getsequences(pse,cse)
-	for seq in cdsseqs:
-		seq.id=seq.id+"_"+spec
-	for seq in psseqs:
-		seq.id=seq.id+"_"+spec
-	return psseqs,cdsseqs
+    spec="_".join(specful.split(" ")[:2])
+    genome_folder_path="/media/shulinhe/DATA/Genome_metagenome_transcriptomes/resource/Arthropoda_genome_Chromo_Scaff_ref_repre_RefSeq/"
+    p_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith("_protein.faa")]
+    p_fp=os.path.join(genome_folder_path,spec,p_fn[0])
+    psseqs=[seq for seq in SeqIO.parse(p_fp,'fasta') if seq.id in ids]
+    cds_fn=[file for file in os.listdir(genome_folder_path+spec) if file.endswith("genomic.fna")]
+    cds_fp=os.path.join(genome_folder_path,spec,cds_fn[0])
+    cdsseqs=[seq for seq in SeqIO.parse(cds_fp,'fasta') if fid.findall(seq.id)[0] in ids]
+    for seq in cdsseqs:
+        seq.id=fid.findall(seq.id)[0]
+    for pid in ids:
+        pse=[seq for seq in psseqs if seq.id==pid][0]
+        cse=[seq for seq in cdsseqs if seq.id==pid][0]
+        getsequences(pse,cse)
+    for seq in cdsseqs:
+        seq.id=seq.id+"_"+spec
+    for seq in psseqs:
+        seq.id=seq.id+"_"+spec
+    return psseqs,cdsseqs
 
-def groupseqs(spec,seqs):	#retrieve protein ids list for spec
-	pids=[seq.description.split(" ")[1] for seq in seqs if spec in seq.description]
-	return pids
+def groupseqs(spec,seqs):    #retrieve protein ids list for spec
+    pids=[seq.description.split(" ")[1] for seq in seqs if spec in seq.description]
+    return pids
 
 pseqs=[a for a in SeqIO.parse("GH1s.genome.protein.faa",'fasta')] #get all proteins
 specs=set([a.description.split("[")[-1].strip("]") for a in pseqs]) #get species names
@@ -688,19 +718,20 @@ spec2pseqi={spec:groupseqs(spec,pseqs) for spec in specs} #species names 2 prote
 os.mkdir("GH1s_cds")
 os.chdir("GH1s_cds")
 for specful,idl in spec2pseqi.items():
-	speci="_".join(specful.split(" ")[:2])
-	print(speci)
-	try:
-		proteinseq,cdsseq=retrieve_pcds(specful,idl)
-		SeqIO.write(proteinseq,speci+"_genome_protein_GH1.faa",'fasta')
-		SeqIO.write(cdsseq,speci+"_genome_cds_GH1.fna",'fasta')
-	except AttributeError:
-		print("Error in processing",speci)
+    speci="_".join(specful.split(" ")[:2])
+    print(speci)
+    try:
+        proteinseq,cdsseq=retrieve_pcds(specful,idl)
+        SeqIO.write(proteinseq,speci+"_genome_protein_GH1.faa",'fasta')
+        SeqIO.write(cdsseq,speci+"_genome_cds_GH1.fna",'fasta')
+    except AttributeError:
+        print("Error in processing",speci)
 
-os.chdir("../") 	
+os.chdir("../")     
 #manually check to remove the additional nucleotides and aa in files###
 ############### Modified_cds_note #####################################
 ```
+
 ### 10.Tree building according to orders based on the edited cds/protein files
 
 ```python
@@ -720,8 +751,8 @@ order2spec={"Chelicearata":["Limulus_polyphemus","Varroa_jacobsoni","Dermatophag
 "Lepitoptera":["Plutella_xylostella","Papilio_machaon","plexippus_plexippus","Bicyclus_anynana","Hyposmocoma_kahamanoa","Galleria_mellonella","Amyelois_transitella","Helicoverpa_armigera","Spodoptera_litura","Bombyx_mandarina","Manduca_sexta"],
 "Diptera":["Culex_quinquefasciatus","Aedes_aegypti","str._PEST","Drosophila_melanogaster","Rhagoletis_zephyria","Musca_domestica"]}
 for a,b in order2spec.items():
-	seqs=[seq for seq in allseq if seq.id.split('_',2)[-1] in b]
-	SeqIO.write(seqs,a+"_genome_protein.faa",'fasta')
+    seqs=[seq for seq in allseq if seq.id.split('_',2)[-1] in b]
+    SeqIO.write(seqs,a+"_genome_protein.faa",'fasta')
 """#end of old version
 
 order2spec={"Chelicearata":["Limulus_polyphemus","Varroa_jacobsoni","Dermatophagoides_pteronyssinus","Tetranychus_urticae","Centruroides_sculpturatus"],
@@ -736,22 +767,24 @@ order2spec={"Chelicearata":["Limulus_polyphemus","Varroa_jacobsoni","Dermatophag
 "Lepitoptera":["Plutella_xylostella","Papilio_machaon","Danaus_plexippus","Bicyclus_anynana","Hyposmocoma_kahamanoa","Galleria_mellonella","Amyelois_transitella","Helicoverpa_armigera","Spodoptera_litura","Bombyx_mandarina","Manduca_sexta"],
 "Diptera":["Culex_quinquefasciatus","Aedes_aegypti","Anopheles_gambiae","Drosophila_melanogaster","Rhagoletis_zephyria","Musca_domestica"]}
 for a,b in order2spec.items():
-	try:
-		sp_p_seqs=[seq for spec in b for seq in SeqIO.parse(spec+"_genome_protein_GH1.faa",'fasta')]
-		sp_cds_seqs=[seq for spec in b for seq in SeqIO.parse(spec+"_genome_cds_GH1.fna",'fasta')]
-		SeqIO.write(sp_p_seqs,a+"_genome_protein_GH1e.faa",'fasta')
-		SeqIO.write(sp_cds_seqs,a+"_genome_cds_GH1e.fna",'fasta')
-	except FileNotFoundError as err:
-		print(err)
+    try:
+        sp_p_seqs=[seq for spec in b for seq in SeqIO.parse(spec+"_genome_protein_GH1.faa",'fasta')]
+        sp_cds_seqs=[seq for spec in b for seq in SeqIO.parse(spec+"_genome_cds_GH1.fna",'fasta')]
+        SeqIO.write(sp_p_seqs,a+"_genome_protein_GH1e.faa",'fasta')
+        SeqIO.write(sp_cds_seqs,a+"_genome_cds_GH1e.fna",'fasta')
+    except FileNotFoundError as err:
+        print(err)
 ```
-```console
+
+```bash
 for i in {"Bettles","Cockroaches","Diptera","Hemiptera","Lepitoptera"}; do \
 AQUA.tcl GH1s_genome_protein.faa GH1_genome_AQUA; \
 
 #build tree with iqtree
 iqtree -s GH1s_genome_protein.faa.mafft.rascal -nt 10 -bb 1000 -alrt 1000
 ```
-```R
+
+```r
 library(ape)
 library(phytools)
 library(tidyverse)
@@ -810,8 +843,10 @@ tipnames<- rownames_to_column(tipnames,var="rowname") %>%mutate(V2=str_replace_a
 genetree$tip.label<-tipnames[["V2"]][match(rownames(tipnames),genetree$tip.label)]
 write.tree(genetree,"Diptera_genome_protein.faa.muscle.rascal.contree.modified") ##root tree with
 ```
+
 __gene conversion test__
-```console
+
+```bash
 ~/opt/pal2nal.v14/pal2nal.pl ./GH1inorder/Tree_bestalin/Bettles_genome_protein_GH1e.faa.muscle.edi Bettles_genome_cds_GH1e.fna -output fasta >Bettles_codon.aln.fa
 ~/opt/pal2nal.v14/pal2nal.pl ./GH1inorder/Tree_bestalin/Lepitoptera_genome_protein_GH1e.faa.muscle.edi ./Lepitoptera_genome_cds_GH1e.fna -output fasta >Lepitoptera_codon.aln.fa
 ~/opt/pal2nal.v14/pal2nal.pl Hemiptera_genome_protein_GH1e.faa.mafft Hemiptera_genome_cds_GH1e.fna -output fasta >Hemiptera_codon.aln.fa
@@ -819,10 +854,13 @@ __gene conversion test__
 ~/opt/pal2nal.v14/pal2nal.pl Hymenoptera_genome_protein_GH1e.faa.muscle Hymenoptera_genome_cds_GH1e.fna -output fasta >Hymenoptera__codon.aln.fa
 ~/opt/pal2nal.v14/pal2nal.pl Diptera_genome_protein_GH1e.faa.muscle.rascal.edi Diptera_genome_cds_GH1e.fna -output fasta >Diptera_codon.aln.fa
 ```
+
 ### 11. GH1 positive selection test
+
 `Cockroaches_genome_protein_GH1e.faa Hymenoptera_genome_protein_GH1e.faa Hemiptera_genome_protein_GH1e.faa Bettles_genome_protein_GH1e.faa Diptera_genome_protein_GH1e.faa Lepitoptera_genome_protein_GH1e.faa Folsomia_candida_genome_protein_GH1.faa Pediculus_humanus_genome_protein_GH1.faa Daphnia_magna_genome_protein_GH1.faa > All_genome_protein_GH1e.faa`
 `cat Cockroaches_genome_cds_GH1e.fna Hymenoptera_genome_cds_GH1e.fna Hemiptera_genome_cds_GH1e.fna Bettles_genome_cds_GH1e.fna Lepitoptera_genome_cds_GH1e.fna Diptera_genome_cds_GH1e.fna Folsomia_candida_genome_cds_GH1.fna Pediculus_humanus_genome_cds_GH1.fna Daphnia_magna_genome_cds_GH1.fna > All_genome_cds_GH1e.fna`
 __get modified gene tree__
+
 ```python
 from ete3 import Tree
 from Bio import SeqIO,Seq
@@ -832,13 +870,13 @@ fsp1=re.compile(r"(\d+[\.]*\d+)\_(\w+)\_*\w*$")
 fsp2=re.compile(r"(\d+[\.]*\d+)\_(\w+)\_\w*$")
 fsp3=re.compile(r"\d+\_\w+\_\w+$")
 def get_phylip_name(id):
-	if bool(fsp3.search(id)):
-		fr=fsp2.findall(id)
-		sid=fr[0][1][:3]+fr[0][0][-9:-2]
-	else:
-		fr=fsp1.findall(id)
-		sid=fr[0][1][:3]+fr[0][0][-9:-2]
-	return sid
+    if bool(fsp3.search(id)):
+        fr=fsp2.findall(id)
+        sid=fr[0][1][:3]+fr[0][0][-9:-2]
+    else:
+        fr=fsp1.findall(id)
+        sid=fr[0][1][:3]+fr[0][0][-9:-2]
+    return sid
 
 
 GH1t=Tree("/home/shulinhe/GH1/GH1s_iqtree/GH1s_full/GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted.swift")
@@ -851,7 +889,7 @@ detach_node=GH1t.get_common_ancestor(["XP_011556095.1_Plutella","XP_557098.2_Ano
 #GH1t_a_d_names=GH1t.get_leaf_names() 
 #GH1t.prune([detach_node]) #prune
 with open("All_codon.aln.fa.rdp5.csv.recombinates",'r') as file:
-	recombinates=[a.strip('\n').rsplit('_',2)[0] for a in file.readlines()]
+    recombinates=[a.strip('\n').rsplit('_',2)[0] for a in file.readlines()]
 
 tids=[i.rsplit('_',1)[0] for i in detach_node.get_leaf_names()]
 tids_tidy=[a for a in tids if a not in recombinates]
@@ -862,24 +900,25 @@ tspsids=[seq.id.rsplit("_",1)[0] for seq in tsps]
 tspsleafs=[ln for ln in detach_node.get_leaf_names() if ln in tspsids]
 detach_node.prune(tspsleafs,preserve_branch_length=False)
 for seq in tsps:
-	seq.id=get_phylip_name(seq.id)
+    seq.id=get_phylip_name(seq.id)
 
 for seq in tscdss:
-	seq.id=get_phylip_name(seq.id)
+    seq.id=get_phylip_name(seq.id)
 
 for leaf in detach_node:
-	leaf.name=get_phylip_name(leaf.name)
+    leaf.name=get_phylip_name(leaf.name)
 
 SeqIO.write(tsps,"lepidip_group2_protein.faa",'fasta')
 SeqIO.write(tscdss,"lepidip_group2_cds.fna",'fasta')
 detach_node.write(format=9, outfile="lepidip_group2_tree.nwk")
-
 ```
+
 __align proteins and faas__
+
 ```console
 mafft beetle_group5_protein.faa > beetle_group5_protein.faa.mafft && muscle -in beetle_group5_protein.faa -out beetle_group5_protein.faa.muscle && ~/opt/rascal1.34/rascal beetle_group5_protein.faa.mafft beetle_group5_protein.faa.mafft.rascal && ~/opt/rascal1.34/rascal beetle_group5_protein.faa.muscle beetle_group5_protein.faa.muscle.rascal
 for i in `ls beetle_group5_protein.faa.*` ; do echo $i >> beetle_group5_protein.faa.normd; ~/opt/normd_noexpat/normd $i >> beetle_group5_protein.faa.normd; done
- 
+
 ~/opt/pal2nal.v14/pal2nal.pl selected_test_protein.faa.muscle.rascal selected_test_cds.fna -output paml >selected_test_codon.aln.paml
 ###################codeml to test positive selection in genes####################
 ##edit "selected_test_tree.nwk" for testing under http://phylotree.hyphy.org/, the output is not rooted, need to add a ";" at the end.
@@ -891,9 +930,10 @@ hyphy meme --alignment selected_test_codon.aln.paml --tree selected_test_tree.nw
 hyphy fel --alignment selected_test_codon.aln.paml --tree selected_test_tree.nwk --branches All --srv Yes --pvalue 0.1 --output selected_test.fel.json #or test branch label
 hyphy fubar --alignment selected_test_codon.aln.paml --tree selected_test_tree.nwk --output selected_test.fel.json
 hyphy relax --alignment selected_test_codon.aln.paml --tree selected_test_tree.nwk --mode Classic --models Minimal --test test --output selected_test.fel.json #a significant K>1 would indicate intensified selection on test lineages, and significant K<1 would indicate relaxed selection on test lineages.
-
 ```
+
 ### plot alignment from full gene tree
+
 ```python
 #python# to retrieve tips.
 from ete3 import Tree
@@ -904,13 +944,13 @@ fsp1=re.compile(r"(\d+[\.]*\d+)\_(\w+)\_*\w*$")
 fsp2=re.compile(r"(\d+[\.]*\d+)\_(\w+)\_\w*$")
 fsp3=re.compile(r"\d+\_\w+\_\w+$")
 def get_phylip_name(id):
-	if bool(fsp3.search(id)):
-		fr=fsp2.findall(id)
-		sid=fr[0][1][:3]+fr[0][0][-9:-2]
-	else:
-		fr=fsp1.findall(id)
-		sid=fr[0][1][:3]+fr[0][0][-9:-2]
-	return sid
+    if bool(fsp3.search(id)):
+        fr=fsp2.findall(id)
+        sid=fr[0][1][:3]+fr[0][0][-9:-2]
+    else:
+        fr=fsp1.findall(id)
+        sid=fr[0][1][:3]+fr[0][0][-9:-2]
+    return sid
 
 
 GH1t=Tree("/home/shulinhe/GH1/GH1s_iqtree/GH1s_full/GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted.swift")
