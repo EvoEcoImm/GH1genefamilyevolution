@@ -277,9 +277,9 @@ snumbers<-numbers[rownames(numbers)%in%spectree$tip.label,]
 plotTree.barplot(spectree,snumbers[,c(2,1)],args.plotTree=list(cex=0.5),args.barplot=list(col=c("blue","red"),legend.text=c("gene","protein"),main="No. of genes/proteins",args.legend=list(bty="n")))
 dev.print(pdf,"summary_p2g.pdf")
 dev.off()
+```
 
-
-
+```
 #############################################
 ##############	R plot genes	##############
 #############################################
@@ -412,6 +412,58 @@ for i in {00..09}; do ~/GH1/taxonomy_contamination_detect_transcriptome.py -i GH
 #manully check the sequences from bacteria.
 ```
 Becareful check the bacterial origin proteins, should check the flanking genes around the protein.
+
+### 6.CAFE analysis (not suitable because of not for genes but for multiple gene families) and ANOVA test predict gene numbers with feeding groups or orders
+__preparing tree and analysis__
+```R
+#1. Download the time phylogeny for part of the species.[from the supplementary file in the paper -Gene content evolution in the arthropods-](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1925-7)
+
+library(phytools)
+library(ape)
+treefrompaper<- "((((((Ladona_fulva:355.768668,Ephemera_danica:355.768668):71.765861,((Blattella_germanica:148.521245,Zootermopsis_nevadensis:148.521245):262.478755,((((((((Copidosoma_floridanum:107.287992,Trichogramma_pretiosum:107.287992):7.283957,Nasonia_vitripennis:114.571949):66.550479,(((Dufourea_novaeangliae:45.641976,Lasioglossum_albipes:45.641976):16.236509,(((((Apis_mellifera:8.103582,Apis_florea:8.103582):20.296418,((Bombus_impatiens:6.188111,Bombus_terrestris:6.188111):17.229702,Melipona_quadrifasciata:23.417813):4.982187):5.656707,Eufriesea_mexicana:34.056707):10.448774,Habropoda_laboriosa:44.505481):9.118989,Megachile_rotundata:53.624470):8.254016):32.021514,(((((((Atta_colombica:9.937519,Acromyrmex_echinatior:9.937519):23.084663,Solenopsis_invicta:33.022181):.740737,Cardiocondyla_obscurior:35.762918):4.330127,Pogonomyrmex_barbatus:40.093046):9.270144,Camponotus_floridanus:49.363190):3.121819,Linepithema_humile:52.485009):11.488588,Harpegnathos_saltator:63.973597):29.926403):87.222428):8.778331,Orussus_abietinus:189.900759):8.601893,Cephus_cinctus:198.502651):28.694151,Athalia_rosae:227.196802):163.862573,((((((Anoplophora_glabripennis:104.531206,Leptinotarsa_decemlineata:104.531206):32.621188,Dendroctonus_ponderosae:137.152394):27.716131,Tribolium_castaneum:164.868525):51.492868,Onthophagus_taurus:216.361394):26.273864,Agrilus_planipennis:242.635258):133.806773,(((((Bombyx_mandarina:80.077648,Manduca_sexta:80.077648):26.739891,(Heliconius_melpomene:73.030688,Danaus_plexippus:73.030688):33.786851):28.317991,Plutella_xylostella:135.135530):145.951499,Limnephilus_lunatus:281.087029):80.418316,(((Aedes_aegypti:83.961536,Culex_quinquefasciatus:83.961536):80.113960,((Anopheles_gambiae:39.856741,Anopheles_funestus:39.856741):48.584539,Anopheles_albimanus:88.441279):75.634217):146.794275,((((((Lucilia_cuprina:74.112753,Musca_domestica:74.112753):29.696044,Glossina_morsitans:103.808797):37.597288,Ceratitis_capitata:141.406085):16.264027,((Drosophila_pseudoobscura:49.846935,Drosophila_melanogaster:49.846935):25.133061,Drosophila_grimshawi:74.979997):82.690116):120.951839,Mayetiola_destructor:278.621951):19.431902,Lutzomyia_longipalpis:298.053853):12.815918):50.635574):14.936686):14.617344):14.029973,(((((((Halyomorpha_halys:108.538881,Oncopeltus_fasciatus:108.538881):71.274364,Cimex_lectularius:179.813245):47.917855,Gerris_buenoi:227.731100):77.820934,Homalodisca_vitripennis:305.552034):35.712699,(Acyrthosiphon_pisum:306.647247,Pachypsylla_venusta:306.647247):34.617486):30.725536,Frankliniella_occidentalis:371.990270):16.709075,Pediculus_humanus:388.699345):16.390004):5.910651):16.534529):59.131713,Catajapyx_aquilonaris:486.666242):35.725916,((Hyalella_azteca:487.000000,Eurytemora_affinis:487.000000):19.394942,Daphnia_magna:506.394942):15.997216):45.942043,Strigamia_maritima:568.334201):2.019415,((((((Latrodectus_hesperus:86.575583,Parasteatoda_tepidariorum:86.575583):52.883152,Stegodyphus_mimosarum:139.458735):112.347677,Loxosceles_reclusa:251.806412):146.585282,Centruroides_sculpturatus:398.391694):71.123177,(Metaseiulus_occidentalis:391.827067,Ixodes_scapularis:391.827067):77.687804):27.994573,Tetranychus_urticae:497.509444):72.844172);"
+spectreetxt<-"((Limulus_polyphemus,((Varroa_jacobsoni,(Dermatophagoides_pteronyssinus,Tetranychus_urticae)),Centruroides_sculpturatus)),(Penaeus_vannamei,(Daphnia_magna,(Folsomia_candida,((Blattella_germanica,(Zootermopsis_nevadensis,Cryptotermes_secundus)),((Frankliniella_occidentalis,((Diaphorina_citri,(Aphis_gossypii,Acyrthosiphon_pisum)),(Nilaparvata_lugens,Cimex_lectularius))),(Pediculus_humanus,((Cephus_cinctus,(Orussus_abietinus,((Nasonia_vitripennis,(Trichogramma_pretiosum,Copidosoma_floridanum)),(Polistes_dominula,((Harpegnathos_saltator,(Linepithema_humile,(Camponotus_floridanus,(Pogonomyrmex_barbatus,(Solenopsis_invicta,(Atta_colombica,Acromyrmex_echinatior)))))),(Dufourea_novaeangliae,(Megachile_rotundata,(Habropoda_laboriosa,(Apis_mellifera,Bombus_terrestris))))))))),((Agrilus_planipennis,((Onthophagus_taurus,Nicrophorus_vespilloides),(Tribolium_castaneum,((Anoplophora_glabripennis,Diabrotica_virgifera),(Sitophilus_oryzae,Dendroctonus_ponderosae))))),((Plutella_xylostella,((Papilio_machaon,(Danaus_plexippus,Bicyclus_anynana)),(Hyposmocoma_kahamanoa,((Galleria_mellonella,Amyelois_transitella),((Helicoverpa_armigera,Spodoptera_litura),(Bombyx_mandarina,Manduca_sexta)))))),(((Culex_quinquefasciatus,Aedes_aegypti),Anopheles_gambiae),(Drosophila_melanogaster,(Rhagoletis_zephyria,Musca_domestica)))))))))))));"
+
+tree<-read.tree(text=treefrompaper)
+tree2<-read.tree(text=spectreetxt)
+bc<-c("Trichogramma_pretiosum","Linepithema_humile","Camponotus_floridanus","Pogonomyrmex_barbatus","Solenopsis_invicta","Megachile_rotundata","Habropoda_laboriosa")
+tree2<-drop.tip(tree2,bc)
+tips<-tree$tip.label[!tree$tip.label%in%tree2$tip.label]
+bc<-append(tips,c("Centruroides_sculpturatus","Tetranychus_urticae"))
+tree<-drop.tip(tree,bc)
+write.tree(tree, "Species_dated_tree.newick")
+
+tree<-read.tree(text=treefrompaper)
+tree2<-read.tree(text=spectreetxt)
+bc<-c("Trichogramma_pretiosum","Linepithema_humile","Camponotus_floridanus","Pogonomyrmex_barbatus","Solenopsis_invicta","Megachile_rotundata","Habropoda_laboriosa")
+tree2<-drop.tip(tree2,bc)
+tips<-tree$tip.label[!tree$tip.label%in%tree2$tip.label]
+bc<-append(tips,c("Centruroides_sculpturatus","Tetranychus_urticae"))
+tree<-drop.tip(tree,bc)
+write.tree(tree, "Species_dated_tree.newick")
+#edit gene numbers
+numbers<-read.csv("summary_p2g.csv",stringsAsFactor=F,row.names=1)
+snumbers<-numbers[rownames(numbers)%in%tree$tip.label,]
+write.(t(snumbers),"gene_numbers.txt")
+#edit gene_numbers.txt table to suit cafe analysis.
+```
+__run cafe analysis, multiple times to check convergency. CAFE is suitable for analysis a large number of families not a single families. And it does not count the gene phylogeny.__
+```console
+for i in {1..5}; do cafexp -i gene_numbers.txt -t Species_dated_tree.newick -o result$i; done
+```
+__compare genes with feeding groups and orders__
+```R
+#1-separate feeding groups as Figure 1;2-separate feeding groups as their plant cell wall feeding or not.
+tr<-read.tree("Species_dated_tree.newick")
+tree<-drop.tip(tr,"Daphnia_magna")
+genet<-read.csv("gene_n_type_annotated.csv",header=T)
+geneto<-genet[match(tree$tip.label,genet$Species_name),]
+#test between herbivores and non-herbivores
+phylANOVA(tree,geneto$Herbivorous,geneto$GeneN,nsim=1000,posthoc=T,p.adj="holm")
+
+#test separation groups of direct feeding and non-direct feeding on plant celll walls.
+phylANOVA(tree,geneto$Plant_cell_wall,geneto$GeneN,nsim=1000,posthoc=T,p.adj="holm")
+ 
+```
 
 ### 6. Dual domain proteins
 __#extract protein with multiple domains with "python"__
@@ -574,7 +626,16 @@ mv GH1s_genome_species.tree.modified GH1s_genome_species.tree.modified.nwk
 mv GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted.nws
 java -jar ~/opt/Notung/Notung-2.9.1.5.jar -g GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal.contree.modified.rooted -s GH1s_genome_species.tree.modified --rearrange --speciestag postfix --threshold 85% --bootstraps name --outputdir GH1_reconciletest --log --events --parsable --treestats --progressbar --savepng --saveweakedgespng --homologtablecsv
 ```
+__correlation test with duplication/loss with BUSCO scores__
+```
+library(ggpubr)
+abc=read.csv("busco_correlation_test.csv",header=T,sep="\t",stringsAsFactors=F)
+ggscatter(abc[abc$Color!="",], x="M", y="Loss", add="reg.line",conf.int=T, cor.coef=T,cor.method="pearson",xlab="BUSCO Missing", ylab="Gene Loss")
+dev.print(pdf,"Missing2Loss.pdf")
+ggscatter(abc[abc$Color!="",], x="D", y="Dup", add="reg.line",conf.int=T, cor.coef=T,cor.method="pearson",xlab="BUSCO Duplication", ylab="Gene Duplicate")
+dev.print(pdf,"Dup2Duplication.pdf")
 
+```
 ### 9. get cds sequences from database based on protein sequences
 ```python
 from Bio import SeqIO
