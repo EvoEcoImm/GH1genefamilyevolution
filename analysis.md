@@ -730,6 +730,7 @@ for specful,idl in spec2pseqi.items():
 os.chdir("../")     
 #manually check to remove the additional nucleotides and aa in files###
 ############### Modified_cds_note #####################################
+####__remove not perfect aligned sequences__###
 ```
 
 ### 10.Tree building according to orders based on the edited cds/protein files
