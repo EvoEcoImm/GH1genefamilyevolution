@@ -1,3 +1,3 @@
-# GHF_evolution
+# GH1-beta glucosidase_evolution
 
-**To investigate the evolution of GH1 gene family in insects**
+**The evolution of glycoside hydrolase family 1 in insects related to their adaptation to plant utilization**
