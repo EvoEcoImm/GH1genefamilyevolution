@@ -850,3 +850,4 @@ tids=[i.rsplit('_',1)[0] for i in detach_node.get_leaf_names()]
 tsps=[seq for seq in SeqIO.parse("GH1s.genome.protein.faa.mafft.contree.extracted.faa.muscle.rascal",'fasta') if seq.id.rsplit('_',2)[0] in tids]
 SeqIO.write(tsps,"test.faa",'fasta')
 ```
+
